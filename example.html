@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-weight: bold}
+.r2 {font-weight: bold; text-decoration: underline}
+.r3 {color: #808000; text-decoration-color: #808000; font-weight: bold}
+.r4 {background-color: #272822}
+.r5 {color: #f8f8f2; text-decoration-color: #f8f8f2; background-color: #272822}
+.r6 {color: #ff4689; text-decoration-color: #ff4689; background-color: #272822}
+.r7 {color: #e6db74; text-decoration-color: #e6db74; background-color: #272822}
+.r8 {color: #66d9ef; text-decoration-color: #66d9ef; background-color: #272822}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">User</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ │
+    │ ┃                      <span class="r1">Step 1: Identification of Biomedical Entities</span>                       ┃ │
+    │ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ │
+    │                                                                                              │
+    │ Analyze the appended scientific publication to identify all biomedical entities mentioned.   │
+    │ Exclude entities mentioned only in the discussion section or the bibliography. Provide a     │
+    │ comprehensive list of these entities.                                                        │
+    │                                                                                              │
+    │ You MUST format your response according to the provided JSON schema.                         │
+    │                                                                                              │
+    │                                                                                              │
+    │                                         <span class="r2">Publication</span>                                          │
+    │                                                                                              │
+    │                                                                                              │
+    │    <span class="r2">The membrane transporter SLC25A48 enables transport of choline into human mitochondria</span>    │
+    │                                                                                              │
+    │                                                                                              │
+    │ OPEN see commentary on page 225                                                              │
+    │                                                                                              │
+    │ Suraj Patil 1,2,3,4 , Oleg Borisov , Nora Scherer 2 2,3 , Christophe Wirth , Pascal          │
+    │ Schlosser 5 2,6 , Matthias Wuttke , 2 Sandra Ehret , Luciana Hannibal 7 6,7 , Kai-Uwe        │
+    │ Eckardt 8,9 , Carola Hunte 5,6,10 , Bjo ¨ rn Neubauer , 1 Anna Ko ¨ttgen 2,6 and Michael Ko  │
+    │ ¨ttgen 1,6                                                                                   │
+    │                                                                                              │
+    │ 1 Department of Medicine IV -Nephrology and Primary Care, Faculty of Medicine and Medical    │
+    │ Center, University of Freiburg, Freiburg, Germany; 2 Institute of Genetic Epidemiology,      │
+    │ Faculty of Medicine and Medical Center -University of Freiburg, Freiburg, Germany; 3 Spemann │
+    │ Graduate School of Biology and Medicine (SGBM), University of Freiburg, Freiburg, Germany; 4 │
+    │ Faculty of Biology, University of Freiburg, Freiburg, Germany; 5 Institute of Biochemistry   │
+    │ and Molecular Biology, ZBMZ, Faculty of Medicine, University of Freiburg, Freiburg, Germany; │
+    │ 6 CIBSS -Centre for Integrative Biological Signalling Studies, University of Freiburg,       │
+    │ Freiburg, Germany; 7 Laboratory of Clinical Biochemistry and Metabolism, Department of       │
+    │ General Pediatrics, Adolescent Medicine and Neonatology, Faculty of Medicine, Medical        │
+    │ Center, University of Freiburg, Freiburg, Germany; 8 Department of Nephrology and Medical    │
+    │ Intensive Care, Charité -Universitätsmedizin Berlin, Berlin, Germany; 9 Department of        │
+    │ Nephrology and Hypertension, University Hospital Erlangen, Friedrich-Alexander-Universität   │
+    │ Erlangen-Nürnberg, Erlangen, Germany; and 10 BIOSS -Centre for Biological Signalling         │
+    │ Studies, University of Freiburg, Freiburg, Germany                                           │
+    │                                                                                              │
+    │ Choline has important physiological functions as a precursor for essential cell components,  │
+    │ signaling molecules, phospholipids, and the neurotransmitter acetylcholine. Choline is a     │
+    │ water-soluble charged molecule requiring transport proteins to cross biological membranes.   │
+    │ Although transporters continue to be identi /uniFB01 ed, membrane transport of choline is    │
+    │ incompletely understood and knowledge about choline transport into intracellular organelles  │
+    │ such as mitochondria remains limited. Here we show that SLC25A48 imports choline into human  │
+    │ mitochondria. Human loss-of-function mutations in SLC25A48 show impaired choline transport   │
+    │ into mitochondria and are associated with elevated urine and plasma choline levels. Thus,    │
+    │ our studies may have implications for understanding and treating conditions related to       │
+    │ choline metabolism.                                                                          │
+    │                                                                                              │
+    │                                                                                              │
+    │                                   <span class="r2">Translational Statement</span>                                    │
+    │                                                                                              │
+    │ Kidney International (2025) 107, 296-301; https://doi.org/10.1016/ j.kint.2024.06.022        │
+    │                                                                                              │
+    │ KEYWORDS: choline transport; deorphanization; mGWAS; mitochondria; SLC25A48                  │
+    │                                                                                              │
+    │ Copyright ª 2024, International Society of Nephrology. Published by Elsevier Inc. This is an │
+    │ open access article under the CC BY license (http:// creativecommons.org/licenses/by/4.0/).  │
+    │                                                                                              │
+    │ Correspondence: Anna Köttgen, Institute of Genetic Epidemiology, Medical Center -University  │
+    │ of Freiburg, Hugstetter Strasse 49, 79106 Freiburg, Germany. E-mail:                         │
+    │ anna.koettgen@uniklinik-freiburg.de; or Michael Köttgen, Department of Medicine IV           │
+    │ -Nephrology and Primary Care, Medical Center -University of Freiburg, Institute for Disease  │
+    │ Modeling and Targeted Medicine, Breisacherstrasse 113, 79106 Freiburg, Germany. E-mail:      │
+    │ michael. koettgen@uniklinik-freiburg.de                                                      │
+    │                                                                                              │
+    │ Received 3 December 2023; revised 7 June 2024; accepted 17 June 2024; published online 29    │
+    │ July 2024                                                                                    │
+    │                                                                                              │
+    │ This study uncovers the function of a human protein called solute carrier SLC25A48 by        │
+    │ showing that it acts as a membrane transporter for choline. Choline has important            │
+    │ physiological functions as a building block for essential cell components and signaling      │
+    │ molecules. Choline is a water-soluble charged molecule and, therefore, requires transport    │
+    │ proteins to cross biological membranes. How it gets into cellular compartments, like         │
+    │ mitochondria, has been poorly understood. This study shows that SLC25A48 transports choline  │
+    │ into mitochondria. Mutations in SLC25A48 disrupt choline transport into mitochondria,        │
+    │ leading to higher levels of choline in urine and blood in humans. These /uniFB01 ndings shed │
+    │ light on how choline is handled within cells and could have implications for understanding   │
+    │ and treating conditions related to choline metabolism.                                       │
+    │                                                                                              │
+    │ M embrane transport proteins play a crucial role in the movement of ions and metabolites     │
+    │ across biological membranes. Their proper functioning is essential for many physiological    │
+    │ processes. Despite signi /uniFB01 cant progress in our understanding of these proteins, a    │
+    │ substantial number of them remain uncharacterized, often referred to as orphan membrane      │
+    │ transport proteins. 1 Deorphanization efforts are essential to unveil the hidden cellular    │
+    │ functions and roles of these proteins in health and disease. Recent large-scale genomewide   │
+    │ association studies of metabolite levels provide links between common genetic variants in    │
+    │ membrane transporterencoding genes and metabolite levels. 2,3 This generates testable        │
+    │ hypotheses to identify the physiological substrates of established and orphan human          │
+    │ transport proteins in vivo .                                                                 │
+    │                                                                                              │
+    │ Choline is an essential nutrient with important roles in a variety of physiological          │
+    │ processes and metabolic pathways. It is an essential component of phospholipids in cell      │
+    │ membranes, such as phosphatidylcholines, a precursor of the neurotransmitter acetylcholine   │
+    │ and of the osmoregulatory betaine, and an important player in lipid metabolism. 4 Recent     │
+    │ studies have uncovered a growing body of evidence linking choline to various diseases, such  │
+    │ as neurologic disorders, metabolic syndromes, and liver disease. 4 Several choline transport │
+    │ proteins have been identi /uniFB01 ed and characterized in model systems, including SLC5A7,  │
+    │ SLC44A1, SLC44A2, SLC44A4, SLC49A1, and SLC49A2. 5 -10 However, it is unclear which          │
+    │ transporters affect systemic levels of free choline in humans and if they are linked to      │
+    │ human genetic variation.                                                                     │
+    │                                                                                              │
+    │                                                                                              │
+    │                                           <span class="r2">METHODS</span>                                            │
+    │                                                                                              │
+    │                                                                                              │
+    │                                      <span class="r2">Molecular biology</span>                                       │
+    │                                                                                              │
+    │ pDONR221_SLC25A48 was a kind gift from the RESOLUTE Consortium (Addgene plasmid number       │
+    │ 131995; http://n2t. net/addgene:131995; research resource identi /uniFB01 er [RRID]:         │
+    │ Addgene_131995). The SLC25A48 transcript was ligated into the pcDNA6. /uniFB02 ag vector,    │
+    │ and mutations were generated by site-directed mutagenesis (see Supplementary Methods for     │
+    │ details).                                                                                    │
+    │                                                                                              │
+    │                                                                                              │
+    │                                         <span class="r2">Cell culture</span>                                         │
+    │                                                                                              │
+    │ HEK293T and HeLa cell lines were cultured as described previously. 11 HEK293T cells were     │
+    │ transfected with the calcium phosphate method, and HeLa cells with FuGENE HD (Promega        │
+    │ E2311).                                                                                      │
+    │                                                                                              │
+    │                                                                                              │
+    │              <span class="r2">Protein isolation, gel electrophoresis, and Western blot analysis</span>               │
+    │                                                                                              │
+    │ Proteins were isolated, separated using sodium dodecylsulfate -polyacrylamide gel            │
+    │ electrophoresis, and transferred to polyvinylidene di /uniFB02 uoride membranes, as          │
+    │ described previously. 12 Antibodies were anti-Flag (Sigma Aldrich F3165) and ß-actin (Sigma  │
+    │ Aldrich A1978). Chemiluminescence signals were captured with the Intas ChemoCam system.      │
+    │ Western blot analyses are representative of 3 experiments with similar results               │
+    │ (Supplementary Methods).                                                                     │
+    │                                                                                              │
+    │                                                                                              │
+    │                                  <span class="r2">Immuno uorescence /uniFB02</span>                                  │
+    │                                                                                              │
+    │ HeLa cells were prepared for indirect immuno /uniFB02 uorescence, as described in the        │
+    │ Supplementary Methods. Confocal imaging was conducted on a Zeiss LSM980 MP AiryScan 2        │
+    │ microscope with a 63 /C2 objective. Quantitative colocalization analysis was performed with  │
+    │ the Colocalization plugin in the Zeiss ZEN blue 3.4 software (Supplementary Methods).        │
+    │                                                                                              │
+    │                                                                                              │
+    │                                   <span class="r2">Mitochondrial isolation</span>                                    │
+    │                                                                                              │
+    │ HEK293T cells were grown and transfected in 500-cm 2 plates. Two days after transfection,    │
+    │ cells were harvested and mitochondrial pellets were obtained. 13 Mitochondrial pellets were  │
+    │ resuspended in a mitochondrial uptake buffer (KCl, 120 mM; sucrose, 25 mM; N                 │
+    │ -2-hydroxyethylpiperazineN 0 -2-ethanesulfonic acid, 10 mM; ethyleneglycol-bis-[ b -         │
+    │ aminoethylether]N N,N ,N , 0 0 -tetraacetic acid, 1 mM; KH2PO4, 1 mM; MgCl2, 5 mM;           │
+    │ glutamate, 15 mM; and malate, 7.5 mM, adjusted to a pH 7.2) 6 (see Supplementary Methods).   │
+    │                                                                                              │
+    │                                                                                              │
+    │                                <span class="r2">3 H choline transport studies</span>                                 │
+    │                                                                                              │
+    │ A total of 25 m g of mitochondria was suspended in 50 m l mitochondrial uptake buffer with   │
+    │ subsequent addition of 2 /C2 choline buffer (mitochondrial uptake buffer supplemented with   │
+    │ 20 m M choline chloride and 10 nM choline chloride [methyl-3H]) and incubated for 5 minutes. │
+    │ Samples were washed twice with ice-cold mitochondria washing buffer (mitochondrial uptake    │
+    │ buffer with 20 m M choline chloride), and the pellet was resuspended in Ultima Gold          │
+    │ scintillation cocktail for quanti /uniFB01 cation of 3H-choline content using liquid         │
+    │ scintillation counting.                                                                      │
+    │                                                                                              │
+    │                                                                                              │
+    │                                     <span class="r2">Statistical analysis</span>                                     │
+    │                                                                                              │
+    │ GraphPad Prism 9.5.1 software was used to graph, analyze, and present the obtained data. All │
+    │ results are expressed as mean /C6 SEM. All experiments were independently performed at least │
+    │ 3 times. A 2-tailed Mann-Whitney test was used to calculate P values when the sample size    │
+    │ (biological replicates) was at least 10, and an unpaired t -test was used when the sample    │
+    │ size was &lt; 10. P &lt; 0.05 was considered signi /uniFB01 cant.                                  │
+    │                                                                                              │
+    │                                                                                              │
+    │              <span class="r2">Study population, choline measurements, and whole-exome sequencing</span>              │
+    │                                                                                              │
+    │ Genetic associations with plasma and urine choline levels, measured as part of the Metabolon │
+    │ HD4 Global Discovery metabolomics panel, were evaluated in the German Chronic Kidney Disease │
+    │ study. 14 The SLC25A48 gene was investigated using whole-exome sequencing data. Details      │
+    │ about the study sample, choline measurements, and whole-exome sequencing (sequencing,        │
+    │ alignment, and variant calling) are found in the Supplementary Methods.                      │
+    │                                                                                              │
+    │                                                                                              │
+    │                         <span class="r2">Variant annotation and rare variant testing</span>                          │
+    │                                                                                              │
+    │ Called variants were annotated using Variant Effect Predictor version 109, incorporating     │
+    │ various tools to predict deleteriousness. 15 -17 Loss-of-function variants for SLC25A48 were │
+    │ evaluated using the LoFtee Variant Effect Predictor plugin. 18 Two masks (&quot;LoF_mis&quot; and      │
+    │ &quot;HI_mis&quot;) that included rare variants (minor allele frequency &lt; 1%) were generated for       │
+    │ variant aggregation testing. The LoF_mis mask included highcon /uniFB01 dence                │
+    │ loss-of-function variants, missense variants with a MetaSVM score &gt; 0, or in-frame           │
+    │ nonsynonymous variants with a fathmm-XF-coding score &gt; 0.5, whereas the HI_mis mask          │
+    │ encompassed variants with high-impact consequences or missense variants meeting speci        │
+    │ /uniFB01 c criteria. Burden tests, adjusting for covariates, were performed using the        │
+    │ seqMeta Rpackage version 1.6.7. Statistical signi /uniFB01 cance was de /uniFB01 ned as P &lt;  │
+    │ 0.05. Single-variant, covariate-adjusted association tests were conducted under additive     │
+    │ modeling. Results are presented for the HI_mis mask, which yielded lower association P       │
+    │ values. Further details are presented in the Supplementary Methods.                          │
+    │                                                                                              │
+    │ Figure 1 | SLC25A48 is a human mitochondrial choline transporter. ( a ) Regional association │
+    │ plot showing association of common genetic variants in the SLC25A48 locus with choline       │
+    │ levels in urine. ( b ) Flag-tagged SLC25A48 localizes to mitochondria, as shown by           │
+    │ colocalization with the mitochondrial marker Mito-DsRed. Colors in merged image: SLC25A48    │
+    │ (turquoise), Mito-DsRed (violet), and 4 ,6-diamidino-2-phenylindole 0 (blue). Maximum        │
+    │ intensity projection of a confocal z-stack. Bar ¼ 5 m M. ( c,d ) Mitochondrial uptake of     │
+    │ radiolabeled 3 H-choline in cells expressing SLC25A48 compared with mock-transfected control │
+    │ cells (n ¼ 10). Average counts per minute (CPMA). *** P &lt; 0.001. ( e ) Time course of        │
+    │ relative choline uptake in mitochondria. ( ) Concentration dependence of choline uptake in   │
+    │ mitochondria from cells expressing SLC25A48 f compared with mock-transfected controls. Chr,  │
+    │ chromosome. To optimize viewing of this image, please see the online version of this article │
+    │ at www.kidney-international.org.                                                             │
+    │                                                                                              │
+    │                                                                                              │
+    │                                                                                              │
+    │               <span class="r2">Associations with gene expression and human traits and diseases</span>                │
+    │                                                                                              │
+    │                                                                                              │
+    │                                    <span class="r2">RESULTS AND DISCUSSION</span>                                    │
+    │                                                                                              │
+    │ Methods related to the association of rare SLC25A48 variants with gene expression, as well   │
+    │ as human traits and diseases from the UK Biobank (application identi /uniFB01 er 64806), are │
+    │ found in the Supplementary Methods.                                                          │
+    │                                                                                              │
+    │                                                                                              │
+    │                           <span class="r2">Structural model generation and analysis</span>                           │
+    │                                                                                              │
+    │ The SLC25A48 AlphaFold 19 model was retrieved from the AlphaFold Protein Structure Database  │
+    │ hosted by the European Molecular Biology Laboratories -European Bioinformatics Institute     │
+    │ (EMBL-EBI; https://alphafold.ebi.ac.uk, accession code Q6ZT89). To identify potential        │
+    │ homologous proteins with experimental structures available, a sequencebased BLAST search of  │
+    │ the Protein Data Bank as well as a structural homology based search using -the DALI Server   │
+    │ 20 were performed. Details about the structures of other SLC25 family members, how they were │
+    │ superimposed, and how the matrix-open structure was modeled can be found in the              │
+    │ Supplementary Methods. Figures were prepared using the PyMOL Molecular Graphics System,      │
+    │ Schrödinger, LLC.                                                                            │
+    │                                                                                              │
+    │ We previously found through genome-wide association studies of metabolite levels that common │
+    │ SLC25A48 variants are associated with altered choline levels in urine (Figure 1a), 2 and now │
+    │ established that the genetic basis of this association is shared with plasma choline as well │
+    │ as SLC25A48 transcript levels in brain tissue (Supplementary Figure S1), supporting the      │
+    │ hypothesis that the orphan solute carrier SLC25A48 may be a choline transporter. SLC25A48    │
+    │ transcript levels are highest in brain and kidney. Within the kidney, expression is high in  │
+    │ epithelial cells of the S3 segment of the proximal tubule, a cell type rich in mitochondria  │
+    │ with diverse energydemanding functions such as bulk reabsorption of /uniFB01 ltered solutes  │
+    │ (Supplementary Figure S2). Overexpressed SLC25A48 localized to mitochondria in human         │
+    │ epithelial cells (Figure 1b; Supplementary Figures S3 and S4). We, therefore, isolated       │
+    │ mitochondria of cells overexpressing SLC25A48 and measured mitochondrial uptake of           │
+    │ radiolabeled choline (Figure 1c). Mitochondria from cells overexpressing SLC25A48 showed a   │
+    │ signi /uniFB01 cant increase of choline uptake compared with mitochondria from control cells │
+    │ (Figure 1d).                                                                                 │
+    │                                                                                              │
+    │ Figure 2 | Rare damaging variants in SLC25A48 impair choline transport. ( a ) Comparison of  │
+    │ inverse normal transformed choline levels in urine and plasma among carriers (N ¼ 47) and    │
+    │ noncarriers (N ¼ 4572 for urine; N ¼ 4666 for plasma) of putative rare damaging driver       │
+    │ variants in SLC25A48 ( P value by unpaired t -test [2 tailed]: 3.8 /C2 10 -21 for urine and  │
+    │ 1.3 /C2 10 -07 for plasma). ( b ) Localization of rare, damaging driver variants with        │
+    │ respect to their protein position in SLC25A48 (Q6ZT89, corresponding to transcript           │
+    │ ENST00000681962.1, domains based on InterPro, x axis). Symbol shape corresponds to variant   │
+    │ consequence, and the size represents the positive effect size of each individual variant on  │
+    │ urine choline levels (Supplementary Table S1). Individual variant association -log10( P      │
+    │ value) with urine choline levels is shown on the y axis. The 4 variants with the largest     │
+    │ effects on urine choline levels were selected for subsequent functional analyses and are     │
+    │ labeled. ( c ) Western blot analysis of wild-type versus mutant /uniFB02 ag-tagged SLC25A48. │
+    │ Actin was used as the loading control. ( d ) Cellular localization of the SLC25A48 missense  │
+    │ mutation p.R179P compared with wild-type SLC25A48. Indirect immuno /uniFB02 uorescence of    │
+    │ SLC25A48/uniFB02 ag and cytochrome C oxidase subunit 4 (COX4) as mitochondrial marker.       │
+    │ Colors in merged image: SLC25A48 (turquoise), COX4 (violet), and 4                           │
+    │ ,6-diamidino-2-phenylindole 0 (blue). Bar ¼ 5 m M. ( e ) Quanti /uniFB01 cation of           │
+    │ colocalization of SLC25A48 and COX4 (Pearson correlation coef /uniFB01 cient) shows a signi  │
+    │ /uniFB01 cant reduction of mitochondrial localization of SLC25A48-R179P compared with wild   │
+    │ type (**** P &lt; 0.0001; see Supplementary Figure S7 for other mutants). ( ) f Relative        │
+    │ mitochondrial uptake of radiolabeled 3 H-choline in cells expressing wild-type and mutant    │
+    │ SLC25A48. Transport of mutant SLC25A48 was normalized to wild-type transport. * P &lt; 0.05,    │
+    │ **** P &lt; 0.0001. ( g ) Position of damaging mutations in model of SLC25A48 (AlphaFold) in    │
+    │ intermembrane space (IMS) -facing conformation (helices numbered). Left: side chains of      │
+    │ mutant residues are highlighted in pink. The protein part that would be truncated in p.R243* │
+    │ is in pink. Center, right: residues of the conserved matrix-salt-bridge network (dotted      │
+    │ line), including D27 (mutation in p.D27G) are highlighted in red and blue sticks for acidic  │
+    │ and basic residues, respectively. Mito_carr, mitochondrial carrier protein repeat; SOLCAR,   │
+    │ solute carrier repeat. To optimize viewing of this image, please see the online version of   │
+    │ this article at www.kidneyinternational.org.                                                 │
+    │                                                                                              │
+    │                                                                                              │
+    │ Conversely, small, interfering RNA -mediated knockdown of endogenous SLC25A48 signi /uniFB01 │
+    │ cantly reduced mitochondrial choline uptake and increased cytosolic choline concentration    │
+    │                                                                                              │
+    │ (Supplementary Figure S5). Mitochondrial uptake of choline was time and concentration        │
+    │ dependent (Figure 1e and f). These data support the hypothesis that SLC25A48 is a newly      │
+    │                                                                                              │
+    │ identi /uniFB01 ed, high-af /uniFB01 nity mitochondrial choline transporter. SLC25A48        │
+    │ transports choline at nanomolar concentrations (Figure 1f), and thus operates at             │
+    │ physiological concentrations of free choline in humans (7 -20 m M). 21                       │
+    │                                                                                              │
+    │ To test whether there is a causal link between altered choline levels in humans and impaired │
+    │ mitochondrial choline transport, we investigated the aggregated impact of rare, putatively   │
+    │ damaging variants in SLC25A48 and found signi /uniFB01 cant associations with urine and      │
+    │ plasma choline levels (burden test P ¼ 1.4 /C2 10 -17 and 4.2 /C2 10 -06 , respectively;     │
+    │ Supplementary Table 1). Carriers of driver variants (Supplementary Methods) showed signi     │
+    │ /uniFB01 cantly higher levels of choline compared with noncarriers, which was more           │
+    │ pronounced in urine than in plasma (Figure 2a). Identi /uniFB01 ed driver variants mapped    │
+    │ into different regions of SLC25A48 (Figure 2b). The association with choline was speci       │
+    │ /uniFB01 c: no metabolite other than choline showed signi /uniFB01 cant genetic associations │
+    │ after correcting for multiple testing (Supplementary Figure S6).                             │
+    │                                                                                              │
+    │ Choline has been implicated in various human conditions, ranging from neurologic diseases to │
+    │ metabolic traits, but there is limited evidence linking genetic defects in choline transport │
+    │ to human disease. We, therefore, tested whether cholinerelated, putative loss-of-function    │
+    │ mutations in SLC25A48 were associated with any of the human traits and diseases ascertained  │
+    │ in the UK Biobank that are related to tissues where SLC25A48 is highly expressed (METHODS).  │
+    │ None of the binary (Supplementary Table 2) or quantitative (Supplementary Table 3) traits    │
+    │ was signi /uniFB01 cantly associated with SLC25A48 putative loss-of-function carrier status  │
+    │ after correction for multiple testing.                                                       │
+    │                                                                                              │
+    │ To investigate whether implicated variants were causally related to altered choline levels,  │
+    │ we generated 4 mutations in the SLC25A48 cDNA using site-directed mutagenesis and            │
+    │ overexpressed these variants in human cell lines to study their effect on protein            │
+    │ expression, localization, and function. Western blot analyses showed reduced protein         │
+    │ expression of some, but not all, investigated SLC25A48 mutations compared with wild-type     │
+    │ protein (Figure 2c). Interestingly, some mutations showed mislocalization from mitochondria  │
+    │ (p.R179P and p.R243*), with a signi /uniFB01 cant reduction of the mitochondrial             │
+    │ colocalization index compared with wild-type SLC25A48 (Figure 2d and e; Supplementary Figure │
+    │ S7), whereas other mutations localized to mitochondria like wild-type transporters (p.D27G   │
+    │ and p.R64L; Supplementary Figure S7). These data show that only some of the investigated     │
+    │ SLC25A48 mutations result in reduced protein expression and/or mislocalization.              │
+    │                                                                                              │
+    │ We subsequently measured choline uptake in mitochondria to investigate which mutations       │
+    │ affect SLC25A48 transport function. Despite differences in abundance and localization, all   │
+    │ tested SLC25A48 mutations signi /uniFB01 cantly impaired mitochondrial choline uptake        │
+    │ (Figure 2f). These data suggest that impaired mitochondrial choline transport via SLC25A48   │
+    │ results in altered plasma and urine choline levels in humans. This notion is supported by    │
+    │ the increased cytosolic concentration of choline in SLC25A48-de /uniFB01 cient cells         │
+    │                                                                                              │
+    │ (Supplementary Figure S5), which decreases the driving force for choline into cells via      │
+    │ plasma membrane choline transporters. From a mechanistic standpoint, our data suggest that   │
+    │ the investigated mutations cause loss-of-function through different pathogenic mechanisms,   │
+    │ including reduced expression, mislocalization, and impaired substrate turnover with normal   │
+    │ expression level and localization.                                                           │
+    │                                                                                              │
+    │ To gain a better mechanistic understanding of why speci /uniFB01 c mutations cause impaired  │
+    │ transport, we analyzed structural models of SLC25A48 in 2 conformations (Figure 2g;          │
+    │ Supplementary Figure S8). The SLC25A48 models were in good agreement with experimental       │
+    │ structures of other SLC25 family members, such as the adenosine diphosphate/adenosine        │
+    │ triphosphate carrier and mitochondrial uncoupling protein (Supplementary Figure S8).         │
+    │ Notably, residue D27 is part of a matrix-salt-bridge network of conserved residues, which is │
+    │ a key component of the matrix gate of these transporters and, thus, essential for transport  │
+    │ function. This is in line with the strongly impaired choline transport of p.D27G despite its │
+    │ normal localization. 22,23 The other mutations were also localized on the matrix side of the │
+    │ transporter and may affect its folding and stability. A limitation of this study is the lack │
+    │ of proteoliposome experiments with puri /uniFB01 ed SLC25A48. Future studies investigating   │
+    │ SLC25A48 in proteoliposomes may provide deeper insights into the biophysical properties, the │
+    │ structure, and the function of this mitochondrial transporter.                               │
+    │                                                                                              │
+    │ In summary, we show that the physiological function of SLC25A48 in humans is choline import  │
+    │ into mitochondria. Loss-of-function mutations in SLC25A48 impair choline transport into      │
+    │ mitochondria and cause higher levels of free choline in urine and plasma. The                │
+    │ deorphanization of SLC25A48 de /uniFB01 nes its molecular function in humans and enables     │
+    │ future well-powered studies addressing its role in health and disease.                       │
+    │                                                                                              │
+    │                                                                                              │
+    │                                          <span class="r2">DISCLOSURE</span>                                          │
+    │                                                                                              │
+    │ All the authors declared no competing interests.                                             │
+    │                                                                                              │
+    │                                                                                              │
+    │                                        <span class="r2">DATA STATEMENT</span>                                        │
+    │                                                                                              │
+    │ All data generated or analyzed in this study were included in the main text and the          │
+    │ Supplementary Material for this article. Other source data that support the /uniFB01 ndings  │
+    │ of this study and uncropped full gel images of Western blot analyses are available from the  │
+    │ corresponding author on reasonable request.                                                  │
+    │                                                                                              │
+    │                                                                                              │
+    │                                       <span class="r2">ACKNOWLEDGMENTS</span>                                        │
+    │                                                                                              │
+    │ The cDNA for SLC25A48 was kindly provided by the RESOLUTE consortium (https://re-solute.eu). │
+    │ The authors acknowledge Simone Diederichsen and Andreas Ungi for expert technical assistance │
+    │ and graphic support. We would like to thank the Lighthouse Core Facility for assistance with │
+    │ microscopy and cell sorting and Oliver Gorka for support with /uniFB02 ow cytometry. The     │
+    │ work of NS, PS, CH, BN, AK, and MK was funded by German Research Foundation (DFG) project    │
+    │ identi /uniFB01 er (ID) 431984000 (Sonderforschungsbereich [SFB] 1453). AK was supported by  │
+    │ DFG KO 3598/4-2. MK was supported by DFG project ID 239283807 (Transregio [TRR] 152).        │
+    │ Germany s Excellence Strategy &#x27; (CIBSS -Centre for Integrative Biological Signalling         │
+    │ Studies, EXC-2189,                                                                           │
+    │                                                                                              │
+    │ project ID 390939984) supported the work of CH, AK, and MK. SP was funded by H2020           │
+    │ MSCA-ITN-2019 ID: 860977 (TrainCKDis). The work of PS was supported by DFG Project-ID        │
+    │ 523737608 (SCHL 2292/2-1). Genotyping and urine metabolomics in the German Chronic Kidney    │
+    │ Disease (GCKD) study were supported by Bayer Pharma. Plasma metabolomics has received        │
+    │ funding from the Innovative Medicines Initiative 2 Joint Undertaking (JU) under grant        │
+    │ agreement no. 115974. The JU receives support from the European Union s Horizon 2020         │
+    │ research and innovation program &#x27; and the European Federation of Pharmaceutical Industries   │
+    │ and Associations (EFPIA) and the Juvenile Diabetes Research Foundation (JDRF). Any           │
+    │ dissemination of results re /uniFB02 ects only the authors &#x27; view; the JU is not responsible │
+    │ for any use that may be made of the information it contains. Whole-exome sequencing data     │
+    │ generation was supported by AstraZeneca, and processing of data was supported by their       │
+    │ Centre for Genomics Research Analytics and Informatics team. The GCKD study was and is       │
+    │ supported by the Bundesministerium für Bildung und Forschung (BMBF; FKZ 01ER 0804, 01ER      │
+    │ 0818, 01ER 0819, 01ER 0820, and 01ER 0821) and the KfH Foundation for Preventive Medicine.   │
+    │ We are grateful for the willingness of the patients to participate in the GCKD study. The    │
+    │ effort of the study personnel of the various regional centers is highly appreciated. We      │
+    │ thank the large number of nephrologists who provide routine care for the patients and        │
+    │ collaborate with the GCKD study.                                                             │
+    │                                                                                              │
+    │ Supplementary material is available online at www.kidneyinternational.org.                   │
+    │                                                                                              │
+    │                                                                                              │
+    │                                          <span class="r2">REFERENCES</span>                                          │
+    │                                                                                              │
+    │ <span class="r3"> •  1 </span>Meixner E, Goldmann U, Sedlyarov V, et al. A substrate-based ontology for human solute │
+    │ <span class="r3">      </span>carriers. Mol Syst Biol . 2020;16:e9652.                                               │
+    │ <span class="r3"> •  2 </span>Schlosser P, Scherer N, Grundner-Culemann F, et al. Genetic studies of paired          │
+    │ <span class="r3">      </span>metabolomes reveal enzymatic and transport processes at the interface of plasma and    │
+    │ <span class="r3">      </span>urine. Nat Genet . 2023;55:995 -1008.                                                  │
+    │ <span class="r3"> •  3 </span>Suhre K, Shin SY, Petersen AK, et al. Human metabolic individuality in biomedical and  │
+    │ <span class="r3">      </span>pharmaceutical research. Nature . 2011;477:54 -60.                                     │
+    │ <span class="r3"> •  4 </span>Ueland PM. Choline and betaine in health and disease. J Inherit Metab Dis . 2011;34:3  │
+    │ <span class="r3">      </span>-15.                                                                                   │
+    │ <span class="r3"> •  5 </span>Apparsundaram S, Ferguson SM, George AL Jr, et al. Molecular cloning of a human,       │
+    │ <span class="r3">      </span>hemicholinium-3-sensitive choline transporter. Biochem Biophys Res Commun .            │
+    │ <span class="r3">      </span>2000;276:862 -867.                                                                     │
+    │ <span class="r3"> •  6 </span>Bennett JA, Mastrangelo MA, Ture SK, et al. The choline transporter Slc44a2 controls   │
+    │ <span class="r3">      </span>platelet activation and thrombosis by regulating mitochondrial function. Nat Commun .  │
+    │ <span class="r3">      </span>2020;11:3479.                                                                          │
+    │ <span class="r3"> •  7 </span>Kenny TC, Khan A, Son Y, et al. Integrative genetic analysis identi /uniFB01 es FLVCR1 │
+    │ <span class="r3">      </span>as a plasma-membrane choline transporter in mammals. Cell Metab . 2023;35:1057         │
+    │ <span class="r3">      </span>-1071.e12.                                                                             │
+    │ <span class="r3"> •  8 </span>Michel V, Bakovic M. The solute carrier 44A1 is a mitochondrial protein and mediates   │
+    │ <span class="r3">      </span>choline transport. FASEB J . 2009;23:2749 -2758.                                       │
+    │ <span class="r3"> •   9 </span>Traiffort E, O Regan S, Ruat M. The choline transporter-like family &#x27; SLC44:          │
+    │ <span class="r3">       </span>properties and roles in human diseases. Mol Aspects Med . 2013;34:646 -654.           │
+    │ <span class="r3"> •  10 </span>Cater RJ, Mukherjee D, Gil-Iturbe E, et al. Structural and molecular basis of choline │
+    │ <span class="r3">       </span>uptake into the brain by FLVCR2. Nature . 2024;629:704 -709.                          │
+    │ <span class="r3"> •  11 </span>Wegierski T, Stef /uniFB02 D, Kopp C, et al. TRPP2 channels regulate apoptosis        │
+    │ <span class="r3">       </span>through the Ca2 þ concentration in the endoplasmic reticulum. EMBO J . 2009;28:490    │
+    │ <span class="r3">       </span>-499.                                                                                 │
+    │ <span class="r3"> •  12 </span>Hofherr A, Seger C, Fitzpatrick F, et al. The mitochondrial transporter SLC25A25      │
+    │ <span class="r3">       </span>links ciliary TRPP2 signaling and cellular metabolism. PLoS Biol . 2018;16:e2005651.  │
+    │ <span class="r3"> •  13 </span>Wieckowski MR, Giorgi C, Lebiedzinska M, et al. Isolation of mitochondria-associated  │
+    │ <span class="r3">       </span>membranes and mitochondria from animal tissues and cells. Nat Protoc . 2009;4:1582    │
+    │ <span class="r3">       </span>-1590.                                                                                │
+    │ <span class="r3"> •  14 </span>Eckardt KU, Barthlein B, Baid-Agrawal S, et al. The German Chronic Kidney Disease     │
+    │ <span class="r3">       </span>(GCKD) study: design and methods. Nephrol Dial Transplant . 2012;27:1454 -1460.       │
+    │ <span class="r3"> •  15 </span>Ioannidis NM, Rothstein JH, Pejaver V, et al. REVEL: an ensemble method for           │
+    │ <span class="r3">       </span>predicting the pathogenicity of rare missense variants. Am J Hum Genet . 2016;99:877  │
+    │ <span class="r3">       </span>-885.                                                                                 │
+    │ <span class="r3"> •  16 </span>Rentzsch P, Witten D, Cooper GM, et al. CADD: predicting the deleteriousness of       │
+    │ <span class="r3">       </span>variants throughout the human genome. Nucleic Acids Res . 2019;47:D886 -D894.         │
+    │ <span class="r3"> •  17 </span>Liu X, Li C, Mou C, et al. dbNSFP v4: a comprehensive database of transcript-speci    │
+    │ <span class="r3">       </span>/uniFB01 c functional predictions and annotations for human nonsynonymous and         │
+    │ <span class="r3">       </span>splice-site SNVs. Genome Med . 2020;12:103.                                           │
+    │ <span class="r3"> •  18 </span>Karczewski KJ, Francioli LC, Tiao G, et al. The mutational constraint spectrum quanti │
+    │ <span class="r3">       </span>/uniFB01 ed from variation in 141,456 humans. Nature . 2020;581: 434 443. -           │
+    │ <span class="r3"> •  19 </span>Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction     │
+    │ <span class="r3">       </span>with AlphaFold. Nature . 2021;596:583 -589.                                           │
+    │ <span class="r3"> •  20 </span>Holm L, Laiho A, Toronen P, et al. DALI shines a light on remote homologs: one        │
+    │ <span class="r3">       </span>hundred discoveries. Protein Sci . 2023;32:e4519.                                     │
+    │ <span class="r3"> •  21 </span>Garcia E, Shalaurova I, Matyus SP, et al. Quanti /uniFB01 cation of choline in serum  │
+    │ <span class="r3">       </span>and plasma using a clinical nuclear magnetic resonance analyzer. Clin Chim Acta .     │
+    │ <span class="r3">       </span>2022;524:106 -112.                                                                    │
+    │ <span class="r3"> •  22 </span>Jones SA, Gogoi P, Ruprecht JJ, et al. Structural basis of purine nucleotide          │
+    │ <span class="r3">       </span>inhibition of human uncoupling protein 1. Sci Adv . 2023;9:eadh4251.                  │
+    │ <span class="r3"> •  23 </span>Ruprecht JJ, Kunji ERS. The SLC25 mitochondrial carrier family: structure and         │
+    │ <span class="r3">       </span>mechanism. Trends Biochem Sci . 2020;45:244 -258.                                     │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Assistant</span>:                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ <span class="r4">                                                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">{</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;entity_list&quot;</span><span class="r5">: [</span><span class="r4">                                                                         </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC25A48&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;choline&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;mitochondria&quot;</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;acetic acid&quot;</span><span class="r4">                                                         </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;betaine&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;phospholipids&quot;</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;phosphatidylcholines&quot;</span><span class="r4">                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;acetylcholine&quot;</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC5A7&quot;</span><span class="r4">                                                              </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A1&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A2&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A4&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A1&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A2&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HEK293T&quot;</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HeLa&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    }</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">  ],</span><span class="r4">                                                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;comment&quot;</span><span class="r5">: </span><span class="r7">&quot;The list includes key transport proteins, metabolites, and cell lines direct</span><span class="r4"> </span> │
+    │ <span class="r4"> </span><span class="r7">referenced in the publication&#x27;s methods and results sections, all of which are relevant to</span><span class="r4"> </span> │
+    │ <span class="r4"> </span><span class="r7">the study&#x27;s focus on choline transport and the membrane transporter SLC25A48.&quot;</span><span class="r4">             </span> │
+    │ <span class="r4"> </span><span class="r5">}</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4">                                                                                            </span> │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">User</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ │
+    │ ┃                                <span class="r1">Step 2: PubTator Analysis</span>                                 ┃ │
+    │ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ │
+    │                                                                                              │
+    │ For each biomedical entity identified in Step 1, determine whether it is listed in PubTator. │
+    │ Provide a list of these entities along with their existence status in PubTator. Do not       │
+    │ include examples or elaborate explanations. A Pubtator ID starts with &#x27;@&#x27; and does NOT       │
+    │ contain a space character. If a Pubtator entity has several IDs, pick the best match.        │
+    │                                                                                              │
+    │ You MUST use the provided Pubtator tool to verify all entities!                              │
+    │                                                                                              │
+    │ You MUST format your response according to the provided JSON schema.                         │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Assistant</span>:                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ [Assistant answered with 16 tool calls]                                                      │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC25A48&#x27;:                                         │
+    │                                                                                              │
+    │ <span class="r3"> • </span>SLC25A48: @GENE_328258 @GENE_SLC25A48                                                     │
+    │ <span class="r3"> • </span>SLC25A48: @GENE_515496 @GENE_SLC25A48                                                     │
+    │ <span class="r3"> • </span>SLC25A48: @GENE_153328 @GENE_SLC25A48                                                     │
+    │ <span class="r3"> • </span>slc25a48: @GENE_436640 @GENE_SLC25A48                                                     │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;choline&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>choline chloride: @CHEMICAL_MESH:D002794 @CHEMICAL_Choline                                │
+    │ <span class="r3"> • </span>Choline: @CHEMICAL_MESH:D002794 @CHEMICAL_Choline                                         │
+    │ <span class="r3"> • </span>choline: @CHEMICAL_MESH:D002794 @CHEMICAL_Choline                                         │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;mitochondria&#x27;: No IDs found.                       │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;acetic acid&#x27;:                                      │
+    │                                                                                              │
+    │ <span class="r3"> • </span>acetic acid: @CHEMICAL_MESH:D019342 @CHEMICAL_Acetic_Acid                                 │
+    │ <span class="r3"> • </span>Acetic acid: @CHEMICAL_MESH:D019342 @CHEMICAL_Acetic_Acid                                 │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;betaine&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>betaine hydrochloride: @CHEMICAL_MESH:D001622 @CHEMICAL_Betaine                           │
+    │ <span class="r3"> • </span>Betaine: @CHEMICAL_MESH:D001622 @CHEMICAL_Betaine                                         │
+    │ <span class="r3"> • </span>betaine: @CHEMICAL_MESH:D001622 @CHEMICAL_Betaine                                         │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;phospholipids&#x27;:                                    │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Phospholipids: @CHEMICAL_MESH:D010743 @CHEMICAL_Phospholipids                             │
+    │ <span class="r3"> • </span>Phospholipid: @CHEMICAL_MESH:D010743 @CHEMICAL_Phospholipids                              │
+    │ <span class="r3"> • </span>phospholipid: @CHEMICAL_MESH:D010743 @CHEMICAL_Phospholipids                              │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;phosphatidylcholines&#x27;:                             │
+    │                                                                                              │
+    │ <span class="r3"> • </span>PLi: @CHEMICAL_MESH:C044850                                                               │
+    │ <span class="r3">   </span>@CHEMICAL_1_myristoyl_2_(12_N_(4_azido_2_nitrophenyl)aminododecanoyl)phosphatidylcholine  │
+    │ <span class="r3"> • </span>Phosphatidylcholine: @CHEMICAL_MESH:D010713 @CHEMICAL_Phosphatidylcholines                │
+    │ <span class="r3"> • </span>phosphatidylcholine: @CHEMICAL_MESH:D010713 @CHEMICAL_Phosphatidylcholines                │
+    │ <span class="r3"> • </span>phosphatidylcholines: @CHEMICAL_MESH:D010713 @CHEMICAL_Phosphatidylcholines               │
+    │ <span class="r3"> • </span>lyso-phosphatidylcholine: @CHEMICAL_MESH:D008244 @CHEMICAL_Lysophosphatidylcholines       │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;acetylcholine&#x27;:                                    │
+    │                                                                                              │
+    │ <span class="r3"> • </span>acetylcholine: @CHEMICAL_MESH:D000109 @CHEMICAL_Acetylcholine                             │
+    │ <span class="r3"> • </span>Acetylcholine: @CHEMICAL_MESH:D000109 @CHEMICAL_Acetylcholine                             │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC5A7&#x27;:                                           │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Slc5a7: @GENE_60482 @GENE_SLC5A7                                                          │
+    │ <span class="r3"> • </span>SLC5A7: @GENE_414870 @GENE_SLC5A7                                                         │
+    │ <span class="r3"> • </span>SLC5A7: @GENE_60482 @GENE_SLC5A7                                                          │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC44A1&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>SLC44A1: @GENE_23446 @GENE_SLC44A1                                                        │
+    │ <span class="r3"> • </span>SLC44A1: @GENE_101102625 @GENE_SLC44A1                                                    │
+    │ <span class="r3"> • </span>SLC44A1: @GENE_100434 @GENE_SLC44A1                                                       │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC44A2&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Slc44a2: @GENE_68682 @GENE_SLC44A2                                                        │
+    │ <span class="r3"> • </span>SLC44A2: @GENE_68682 @GENE_SLC44A2                                                        │
+    │ <span class="r3"> • </span>Slc44a2: @GENE_57153 @GENE_SLC44A2                                                        │
+    │ <span class="r3"> • </span>SLC44A2: @GENE_57153 @GENE_SLC44A2                                                        │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC44A4&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Slc44a4: @GENE_70129 @GENE_SLC44A4                                                        │
+    │ <span class="r3"> • </span>SLC44A4: @GENE_80736 @GENE_SLC44A4                                                        │
+    │ <span class="r3"> • </span>SLC44A4: @GENE_70129 @GENE_SLC44A4                                                        │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC49A1&#x27;: No IDs found.                            │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;SLC49A2&#x27;: No IDs found.                            │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;HEK293T&#x27;:                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>HEK293T: @CELLLINE_CVCL:0063                                                              │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Tool</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ Pubtator entity search results for query &#x27;HeLa&#x27;:                                             │
+    │                                                                                              │
+    │ <span class="r3"> • </span>HeLa: @CELLLINE_CVCL:T292                                                                 │
+    │ <span class="r3"> • </span>HeLa: @CELLLINE_CVCL:0030                                                                 │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Assistant</span>:                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ <span class="r4">                                                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">{</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;entity_list&quot;</span><span class="r5">: [</span><span class="r4">                                                                         </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC25A48&quot;</span><span class="r5">,</span><span class="r4">                                                           </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC25A48&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;choline&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Choline&quot;</span><span class="r4">                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;mitochondria&quot;</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                    </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;acetic acid&quot;</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Acetic_Acid&quot;</span><span class="r4">                                               </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;betaine&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Betaine&quot;</span><span class="r4">                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;phospholipids&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Phospholipids&quot;</span><span class="r4">                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;phosphatidylcholines&quot;</span><span class="r5">,</span><span class="r4">                                               </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Phosphatidylcholines&quot;</span><span class="r4">                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;acetylcholine&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Acetylcholine&quot;</span><span class="r4">                                             </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC5A7&quot;</span><span class="r5">,</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC5A7&quot;</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A1&quot;</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A2&quot;</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A4&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A4&quot;</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                    </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                    </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HEK293T&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CELLLINE_CVCL:0063&quot;</span><span class="r4">                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HeLa&quot;</span><span class="r5">,</span><span class="r4">                                                               </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CELLLINE_CVCL:T292&quot;</span><span class="r4">                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">    }</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">  ],</span><span class="r4">                                                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;comment&quot;</span><span class="r5">: </span><span class="r7">&quot;Status of biomedical entities in PubTator was determined, noting those prese</span><span class="r4"> </span> │
+    │ <span class="r4"> </span><span class="r7">and their respective IDs.&quot;</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">}</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4">                                                                                            </span> │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">User</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ │
+    │ ┃                         <span class="r1">Step 3: Reanalysis for Specific Entities</span>                         ┃ │
+    │ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ │
+    │                                                                                              │
+    │ Reanalyze the scientific publication to identify the presence of specific entities from      │
+    │ different schema categories listed below as subheadings. Follow these rules:                 │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Only include entities explicitly mentioned in the publication, excluding mentions from    │
+    │ <span class="r3">   </span>the discussion section or bibliography.                                                   │
+    │ <span class="r3"> • </span>If the entity is a synonym of the one listed in the schema, use the name from the schema. │
+    │ <span class="r3"> • </span>Do not use the category names as entity names.                                            │
+    │ <span class="r3"> • </span>If entities are listed hierachically, use the most specific entities.                     │
+    │ <span class="r3"> • </span>If you notice entities that are not listed in the subheadings, include them in the list   │
+    │ <span class="r3">   </span>of entities as well.                                                                      │
+    │                                                                                              │
+    │ You MUST format your response according to the provided JSON schema.                         │
+    │                                                                                              │
+    │                                                                                              │
+    │                                            <span class="r2">Schema</span>                                            │
+    │                                                                                              │
+    │                                           <span class="r1">Organism</span>                                           │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Cell line                                                                                 │
+    │ <span class="r3"> • </span>Fruit Fly                                                                                 │
+    │ <span class="r3"> • </span>Human                                                                                     │
+    │ <span class="r3"> • </span>Mouse                                                                                     │
+    │ <span class="r3"> • </span>C. Elegans                                                                                │
+    │ <span class="r3"> • </span>Rabbit                                                                                    │
+    │ <span class="r3"> • </span>Rat                                                                                       │
+    │ <span class="r3"> • </span>Xenopus                                                                                   │
+    │ <span class="r3"> • </span>Zebrafish                                                                                 │
+    │                                                                                              │
+    │                                          <span class="r1">Cell Lines</span>                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>293 (HEK 293)                                                                             │
+    │ <span class="r3"> • </span>293A (HEK 293A)                                                                           │
+    │ <span class="r3"> • </span>293T (HEK 293T)                                                                           │
+    │ <span class="r3"> • </span>AC16 Human Cardiomyocyte Cell Line                                                        │
+    │ <span class="r3"> • </span>HAF                                                                                       │
+    │ <span class="r3"> • </span>HeLa                                                                                      │
+    │ <span class="r3"> • </span>HeLa 229                                                                                  │
+    │ <span class="r3"> • </span>HL-1                                                                                      │
+    │ <span class="r3"> • </span>HUVEC                                                                                     │
+    │ <span class="r3"> • </span>THP-1                                                                                     │
+    │ <span class="r3"> • </span>MDCK                                                                                      │
+    │ <span class="r3"> • </span>mIMCD-3                                                                                   │
+    │ <span class="r3"> • </span>LLC-PK1                                                                                   │
+    │ <span class="r3"> • </span>RPTEC                                                                                     │
+    │                                                                                              │
+    │                                        <span class="r1">Tissue source</span>                                         │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Adrenal gland                                                                             │
+    │ <span class="r3"> • </span>Blood                                                                                     │
+    │ <span class="r3">    • </span>Blood plasma                                                                           │
+    │ <span class="r3">    • </span>Blood serum                                                                            │
+    │ <span class="r3">    • </span>Whole blood                                                                            │
+    │ <span class="r3"> • </span>Bone marrow                                                                               │
+    │ <span class="r3"> • </span>Brain                                                                                     │
+    │ <span class="r3"> • </span>Embryonal tissue                                                                          │
+    │ <span class="r3"> • </span>Heart                                                                                     │
+    │ <span class="r3"> • </span>Intestine                                                                                 │
+    │ <span class="r3"> • </span>Kidney                                                                                    │
+    │ <span class="r3">    • </span>Head kidney                                                                            │
+    │ <span class="r3">    • </span>Juxtaglomerular apparatus                                                              │
+    │ <span class="r3">       • </span>Extraglomerular mesangial cell                                                      │
+    │ <span class="r3">       • </span>Juxtaglomerular cell                                                                │
+    │ <span class="r3">       • </span>Macula densa                                                                        │
+    │ <span class="r3">    • </span>Kidney cancer cell                                                                     │
+    │ <span class="r3">    • </span>Nephridium                                                                             │
+    │ <span class="r3">    • </span>Nephron                                                                                │
+    │ <span class="r3">       • </span>Renal corpuscle                                                                     │
+    │ <span class="r3">       • </span>Renal tubule                                                                        │
+    │ <span class="r3">          • </span>Collecting duct                                                                  │
+    │ <span class="r3">          • </span>Henles loop                                                                      │
+    │ <span class="r3">          • </span>Renal clear cell                                                                 │
+    │ <span class="r3">          • </span>Renal distal tubule                                                              │
+    │ <span class="r3">          • </span>Renal proximal tubule                                                            │
+    │ <span class="r3">          • </span>Renal tubule epithelium                                                          │
+    │ <span class="r3">    • </span>Opisthonephros                                                                         │
+    │ <span class="r3">    • </span>Renal artery                                                                           │
+    │ <span class="r3">    • </span>Renal cortex                                                                           │
+    │ <span class="r3">    • </span>Renal epithelium                                                                       │
+    │ <span class="r3">    • </span>Renal medulla                                                                          │
+    │ <span class="r3">    • </span>Renal neoplasm cell                                                                    │
+    │ <span class="r3">    • </span>Renal parenchyma                                                                       │
+    │ <span class="r3">    • </span>Renal pyramid                                                                          │
+    │ <span class="r3">    • </span>Trunk kidney                                                                           │
+    │ <span class="r3">    • </span>Tubulointerstitium                                                                     │
+    │ <span class="r3"> • </span>Liver                                                                                     │
+    │ <span class="r3"> • </span>Lung                                                                                      │
+    │ <span class="r3"> • </span>Lymph node                                                                                │
+    │ <span class="r3"> • </span>Nerve                                                                                     │
+    │ <span class="r3"> • </span>Skin                                                                                      │
+    │ <span class="r3"> • </span>Spleen                                                                                    │
+    │ <span class="r3"> • </span>Thymus                                                                                    │
+    │ <span class="r3"> • </span>Urine                                                                                     │
+    │ <span class="r3"> • </span>Vascular system                                                                           │
+    │                                                                                              │
+    │                                        <span class="r1">Health status</span>                                         │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Autosomal Dominant Polycystic Kidney Disease (ADPKD)                                      │
+    │ <span class="r3"> • </span>Nephronophthisis                                                                          │
+    │ <span class="r3"> • </span>Chronic Kidney Disease (CKD)                                                              │
+    │ <span class="r3"> • </span>Nephrotic syndrome                                                                        │
+    │ <span class="r3"> • </span>Clear cell renal carcinoma (ccRCC)                                                        │
+    │ <span class="r3"> • </span>Von Hippel Lindau syndrome                                                                │
+    │ <span class="r3"> • </span>Congenital abnormality of the kidney                                                      │
+    │ <span class="r3"> • </span>Congenital abnormality of the ureter                                                      │
+    │                                                                                              │
+    │                                          <span class="r1">Mouse line</span>                                          │
+    │                                                                                              │
+    │ <span class="r3"> • </span>C57BL/6J (wildtype)                                                                       │
+    │ <span class="r3"> • </span>Ksp-Cre                                                                                   │
+    │ <span class="r3"> • </span>Pax8-Cre (Pax8rtTA)                                                                       │
+    │ <span class="r3"> • </span>Pgk-Cre                                                                                   │
+    │ <span class="r3"> • </span>Pod-Cre                                                                                   │
+    │ <span class="r3"> • </span>LC1-Cre                                                                                   │
+    │ <span class="r3"> • </span>Tam-Cre                                                                                   │
+    │ <span class="r3"> • </span>Pkd1-flox                                                                                 │
+    │ <span class="r3"> • </span>Pkd1-                                                                                     │
+    │ <span class="r3"> • </span>Dnajb11 tm1a                                                                              │
+    │ <span class="r3"> • </span>Dnajb11-flox                                                                              │
+    │ <span class="r3"> • </span>Dnajb11-                                                                                  │
+    │                                                                                              │
+    │                                      <span class="r1">Sample preparation</span>                                      │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Cultured cells                                                                            │
+    │ <span class="r3">    • </span>Adipocyte                                                                              │
+    │ <span class="r3">    • </span>Cardiomyocyte                                                                          │
+    │ <span class="r3">    • </span>Dendritic cell                                                                         │
+    │ <span class="r3">    • </span>Embryonic cardiomyocytes                                                               │
+    │ <span class="r3">    • </span>Endothelial cell                                                                       │
+    │ <span class="r3">    • </span>Epithelial cell                                                                        │
+    │ <span class="r3">    • </span>Fibroblast                                                                             │
+    │ <span class="r3">    • </span>hiPSC-CM                                                                               │
+    │ <span class="r3">    • </span>hiPSC-FB                                                                               │
+    │ <span class="r3">    • </span>Immune cell                                                                            │
+    │ <span class="r3">    • </span>Leukocytes                                                                             │
+    │ <span class="r3">    • </span>Lymphocytes                                                                            │
+    │ <span class="r3">    • </span>Macrophage                                                                             │
+    │ <span class="r3">    • </span>Monocytes                                                                              │
+    │ <span class="r3">    • </span>Natural killer cells                                                                   │
+    │ <span class="r3">    • </span>Neuronal cell                                                                          │
+    │ <span class="r3">    • </span>Neurones                                                                               │
+    │ <span class="r3">    • </span>Neutrophils                                                                            │
+    │ <span class="r3">    • </span>Oocyte                                                                                 │
+    │ <span class="r3">    • </span>Pericytes                                                                              │
+    │ <span class="r3">    • </span>Platelet                                                                               │
+    │ <span class="r3">    • </span>Smooth muscle cells                                                                    │
+    │ <span class="r3">    • </span>T cells                                                                                │
+    │ <span class="r3"> • </span>Isolated cells                                                                            │
+    │ <span class="r3">    • </span>Adipocyte                                                                              │
+    │ <span class="r3">    • </span>Cardiomyocyte                                                                          │
+    │ <span class="r3">    • </span>Dendritic cell                                                                         │
+    │ <span class="r3">    • </span>Embryonic cardiomyocytes                                                               │
+    │ <span class="r3">    • </span>Endothelial cell                                                                       │
+    │ <span class="r3">    • </span>Epithelial cell                                                                        │
+    │ <span class="r3">    • </span>Fibroblast                                                                             │
+    │ <span class="r3">    • </span>hiPSC-CM                                                                               │
+    │ <span class="r3">    • </span>hiPSC-FB                                                                               │
+    │ <span class="r3">    • </span>Immune cell                                                                            │
+    │ <span class="r3">    • </span>Leukocytes                                                                             │
+    │ <span class="r3">    • </span>Lymphocytes                                                                            │
+    │ <span class="r3">    • </span>Macrophage                                                                             │
+    │ <span class="r3">    • </span>Monocytes                                                                              │
+    │ <span class="r3">    • </span>Natural killer cells                                                                   │
+    │ <span class="r3">    • </span>Neuronal cell                                                                          │
+    │ <span class="r3">    • </span>Neurones                                                                               │
+    │ <span class="r3">    • </span>Neutrophils                                                                            │
+    │ <span class="r3">    • </span>Oocyte                                                                                 │
+    │ <span class="r3">    • </span>Pericytes                                                                              │
+    │ <span class="r3">    • </span>Platelet                                                                               │
+    │ <span class="r3">    • </span>Smooth muscle cells                                                                    │
+    │ <span class="r3">    • </span>T cells                                                                                │
+    │ <span class="r3"> • </span>Tissue chunk                                                                              │
+    │ <span class="r3"> • </span>Tissue section (thin)                                                                     │
+    │ <span class="r3"> • </span>Tissue slice                                                                              │
+    │ <span class="r3"> • </span>Whole organ                                                                               │
+    │                                                                                              │
+    │                                      <span class="r1">Sample processing</span>                                       │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Cleared fixed tissue                                                                      │
+    │ <span class="r3"> • </span>Formaldehyde fixed and parafin embedded (FFPE)                                            │
+    │ <span class="r3"> • </span>Formaldehyde-fixation                                                                     │
+    │ <span class="r3"> • </span>High pressure frozen                                                                      │
+    │ <span class="r3"> • </span>None (Physiological solution)                                                             │
+    │ <span class="r3"> • </span>OCT embedded and frozen                                                                   │
+    │                                                                                              │
+    │                                           <span class="r1">Readout</span>                                            │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Biomechanics                                                                              │
+    │ <span class="r3">    • </span>Cell stretching                                                                        │
+    │ <span class="r3">    • </span>Nanoindentation                                                                        │
+    │ <span class="r3">    • </span>Sarcomer Length                                                                        │
+    │ <span class="r3">    • </span>Single cell stretching                                                                 │
+    │ <span class="r3">    • </span>Tissue stretching                                                                      │
+    │ <span class="r3">    • </span>Tissue stretching Myodish                                                              │
+    │ <span class="r3"> • </span>Clinical Imaging                                                                          │
+    │ <span class="r3">    • </span>Computed tomography scan                                                               │
+    │ <span class="r3">    • </span>Echocardiography                                                                       │
+    │ <span class="r3">    • </span>Magnetic resonance imaging                                                             │
+    │ <span class="r3">    • </span>Positron emission tomography                                                           │
+    │ <span class="r3"> • </span>Computational modelling                                                                   │
+    │ <span class="r3"> • </span>Electron microscopy                                                                       │
+    │ <span class="r3"> • </span>Electrophysiology (clinical)                                                              │
+    │ <span class="r3"> • </span>Electrophysiology (lab)                                                                   │
+    │ <span class="r3">    • </span>Patch Clamp - current clamp                                                            │
+    │ <span class="r3">    • </span>Patch Clamp - voltage clamp                                                            │
+    │ <span class="r3">    • </span>Sharp Electrode                                                                        │
+    │ <span class="r3"> • </span>Flow cytometry / FACS                                                                     │
+    │ <span class="r3"> • </span>Light microscopy                                                                          │
+    │ <span class="r3">    • </span>Confocal                                                                               │
+    │ <span class="r3">    • </span>Multiphoton                                                                            │
+    │ <span class="r3">    • </span>Slidescanner                                                                           │
+    │ <span class="r3">    • </span>Widefield                                                                              │
+    │ <span class="r3"> • </span>Molecular Biology                                                                         │
+    │ <span class="r3">    • </span>Aptamer (Proteomics)                                                                   │
+    │ <span class="r3">    • </span>Bulk chromatin accessibility                                                           │
+    │ <span class="r3">    • </span>DNA Methylation (array)                                                                │
+    │ <span class="r3">    • </span>Enzyme-linked immunosorbent assay (ELISA)                                              │
+    │ <span class="r3">    • </span>Gene Expression (array)                                                                │
+    │ <span class="r3">    • </span>Genotyping array and imputation                                                        │
+    │ <span class="r3">    • </span>Proximity extension assay (PEA)                                                        │
+    │ <span class="r3">    • </span>Quantitative polymerase chain reaction (qPCR)                                          │
+    │ <span class="r3">    • </span>Standard biochemical assay                                                             │
+    │ <span class="r3">    • </span>Westernblot                                                                            │
+    │ <span class="r3"> • </span>Optical mapping                                                                           │
+    │ <span class="r3"> • </span>Optoacoustics                                                                             │
+    │ <span class="r3"> • </span>Sequencing                                                                                │
+    │ <span class="r3">    • </span>ATAC sequencing                                                                        │
+    │ <span class="r3">    • </span>DNA methylation (WGBS)                                                                 │
+    │ <span class="r3">    • </span>RNA sequencing                                                                         │
+    │ <span class="r3">    • </span>Single Cell chromatin accessibility                                                    │
+    │ <span class="r3">    • </span>Single cell RNA seq                                                                    │
+    │ <span class="r3">    • </span>Whole exome sequencing                                                                 │
+    │ <span class="r3">    • </span>Whole genome sequencing                                                                │
+    │ <span class="r3"> • </span>Mass Spectrometry                                                                         │
+    │ <span class="r3">    • </span>Interaction proteomics                                                                 │
+    │ <span class="r3">    • </span>Metabolomics                                                                           │
+    │ <span class="r3">    • </span>Proteomics                                                                             │
+    │                                                                                              │
+    │                                            <span class="r1">Probes</span>                                            │
+    │                                                                                              │
+    │ <span class="r3"> • </span>Antibodies                                                                                │
+    │ <span class="r3">    • </span>alpha-Actinin                                                                          │
+    │ <span class="r3">    • </span>alpha-SMA (Smooth Muscle Actin)                                                        │
+    │ <span class="r3">    • </span>Amphiphysin II                                                                         │
+    │ <span class="r3">    • </span>ATP5B                                                                                  │
+    │ <span class="r3">    • </span>BDNF                                                                                   │
+    │ <span class="r3">    • </span>beta-Actin                                                                             │
+    │ <span class="r3">    • </span>beta-Tubulin                                                                           │
+    │ <span class="r3">    • </span>Bin1                                                                                   │
+    │ <span class="r3">    • </span>CACNA2D1                                                                               │
+    │ <span class="r3">    • </span>Calnexin                                                                               │
+    │ <span class="r3">    • </span>CaV1.2 (CACNA1C)                                                                       │
+    │ <span class="r3">    • </span>Caveolin-3                                                                             │
+    │ <span class="r3">    • </span>CCL2                                                                                   │
+    │ <span class="r3">    • </span>CD107b / Mac-3                                                                         │
+    │ <span class="r3">    • </span>CD14                                                                                   │
+    │ <span class="r3">    • </span>CD29                                                                                   │
+    │ <span class="r3">    • </span>CD31                                                                                   │
+    │ <span class="r3">    • </span>CD45                                                                                   │
+    │ <span class="r3">    • </span>CD68                                                                                   │
+    │ <span class="r3">    • </span>CD90.1 (Thy-1.1)                                                                       │
+    │ <span class="r3">    • </span>Collagen-I-A1 (COL1A1)                                                                 │
+    │ <span class="r3">    • </span>Connexin 40                                                                            │
+    │ <span class="r3">    • </span>Connexin 43                                                                            │
+    │ <span class="r3">    • </span>COUP-TF II/NR2F2                                                                       │
+    │ <span class="r3">    • </span>CXCL1/GRO-alpha/KC/CINC-1                                                              │
+    │ <span class="r3">    • </span>DDR2                                                                                   │
+    │ <span class="r3">    • </span>GAPDH                                                                                  │
+    │ <span class="r3">    • </span>GFP (green fluorescent protein)                                                        │
+    │ <span class="r3">    • </span>HCN4                                                                                   │
+    │ <span class="r3">    • </span>Histone 3 (PhosphoS10)                                                                 │
+    │ <span class="r3">    • </span>Integrin-alpha-1                                                                       │
+    │ <span class="r3">    • </span>Integrin-beta-1                                                                        │
+    │ <span class="r3">    • </span>KCa1.1/BK                                                                              │
+    │ <span class="r3">    • </span>Kir1.2                                                                                 │
+    │ <span class="r3">    • </span>Kir2.1                                                                                 │
+    │ <span class="r3">    • </span>KV1.3                                                                                  │
+    │ <span class="r3">    • </span>KV1.5                                                                                  │
+    │ <span class="r3">    • </span>mCherry                                                                                │
+    │ <span class="r3">    • </span>Muscarinic Acetycholine Receptor 2/CM2                                                 │
+    │ <span class="r3">    • </span>Myosin Light Chain 2                                                                   │
+    │ <span class="r3">    • </span>Neurofilament Medium                                                                   │
+    │ <span class="r3">    • </span>p53                                                                                    │
+    │ <span class="r3">    • </span>PDGFR-alpha                                                                            │
+    │ <span class="r3">    • </span>Phospho-SMAD2                                                                          │
+    │ <span class="r3">    • </span>Piezo1                                                                                 │
+    │ <span class="r3">    • </span>RFP (red fluorescent protein)                                                          │
+    │ <span class="r3">    • </span>Ryanodine Receptor                                                                     │
+    │ <span class="r3">    • </span>S100B                                                                                  │
+    │ <span class="r3">    • </span>Sarcomeric alpha-Actinin                                                               │
+    │ <span class="r3">    • </span>SERCA2 ATPase                                                                          │
+    │ <span class="r3">    • </span>SLA Class II DR                                                                        │
+    │ <span class="r3">    • </span>Sodium/Calcium Exchanger                                                               │
+    │ <span class="r3">    • </span>SOX10                                                                                  │
+    │ <span class="r3">    • </span>SWC3                                                                                   │
+    │ <span class="r3">    • </span>Talin 1                                                                                │
+    │ <span class="r3">    • </span>TGF-beta-1                                                                             │
+    │ <span class="r3">    • </span>Troponin I                                                                             │
+    │ <span class="r3">    • </span>TRP1                                                                                   │
+    │ <span class="r3">    • </span>TurboGFP                                                                               │
+    │ <span class="r3">    • </span>Tyrosine Hydroxylase                                                                   │
+    │ <span class="r3">    • </span>Vimentin                                                                               │
+    │ <span class="r3">    • </span>YAP                                                                                    │
+    │ <span class="r3"> • </span>Reporter / Marker molecules                                                               │
+    │ <span class="r3">    • </span>BeRST 1                                                                                │
+    │ <span class="r3">    • </span>CellBrite                                                                              │
+    │ <span class="r3">    • </span>Cellmask                                                                               │
+    │ <span class="r3">    • </span>CellTracker                                                                            │
+    │ <span class="r3">    • </span>CNA-35 (collagen probe)                                                                │
+    │ <span class="r3">    • </span>DAPI                                                                                   │
+    │ <span class="r3">    • </span>Dextran                                                                                │
+    │ <span class="r3">    • </span>DI-4-ANBDQPQ                                                                           │
+    │ <span class="r3">    • </span>Di-4-ANEPPDHQ                                                                          │
+    │ <span class="r3">    • </span>Di-4-ANEQ(F)PTEA                                                                       │
+    │ <span class="r3">    • </span>Fluo-4                                                                                 │
+    │ <span class="r3">    • </span>Fura-2                                                                                 │
+    │ <span class="r3">    • </span>Hoechst 33342                                                                          │
+    │ <span class="r3">    • </span>Memglow                                                                                │
+    │ <span class="r3">    • </span>Phalloidin                                                                             │
+    │ <span class="r3">    • </span>Rhod-2                                                                                 │
+    │ <span class="r3">    • </span>Streptavidin                                                                           │
+    │ <span class="r3">    • </span>Sytox Dead Cell Stain                                                                  │
+    │ <span class="r3">    • </span>Tubulin Tracker                                                                        │
+    │ <span class="r3">    • </span>Ulex Europaeus Agglutinin I (UEA I)                                                    │
+    │ <span class="r3">    • </span>Wheat germ agglutinin                                                                  │
+    │ <span class="r3"> • </span>Stain                                                                                     │
+    │ <span class="r3">    • </span>Hematoxylin and eosin                                                                  │
+    │ <span class="r3">    • </span>Horse radish peroxidase                                                                │
+    │ <span class="r3">    • </span>Masson&#x27;s Trichrome                                                                     │
+    │ <span class="r3">    • </span>Sirius Red                                                                             │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Assistant</span>:                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ <span class="r4">                                                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">{</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;entity_list&quot;</span><span class="r5">: [</span><span class="r4">                                                                         </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Human&quot;</span><span class="r5">,</span><span class="r4">                                                              </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Organism&quot;</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;293T (HEK 293T)&quot;</span><span class="r5">,</span><span class="r4">                                                    </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Cell Lines&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HeLa&quot;</span><span class="r5">,</span><span class="r4">                                                               </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Cell Lines&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Kidney&quot;</span><span class="r5">,</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Tissue source&quot;</span><span class="r4">                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Choline&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC25A48&quot;</span><span class="r5">,</span><span class="r4">                                                           </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC5A7&quot;</span><span class="r5">,</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A4&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Acetic acid&quot;</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Betaine&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Phospholipids&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Phosphatidylcholine&quot;</span><span class="r5">,</span><span class="r4">                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Acetylcholine&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">    }</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">  ],</span><span class="r4">                                                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;comment&quot;</span><span class="r5">: </span><span class="r7">&quot;Entities were identified from the publication according to specific schema </span><span class="r4">  </span> │
+    │ <span class="r4"> </span><span class="r7">categories, while also including additional entities found explicitly in the text.&quot;</span><span class="r4">        </span> │
+    │ <span class="r4"> </span><span class="r5">}</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4">                                                                                            </span> │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">User</span>:                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ │
+    │ ┃                             <span class="r1">Step 4: Consolidation of Results</span>                             ┃ │
+    │ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ │
+    │                                                                                              │
+    │ Consolidate the results of Steps 2 and 3: For each category listed in Step 3, list all       │
+    │ entities identified in Step 3 and add the entities identified in Step 2 to the correct       │
+    │ categories. If an entity is listed in both steps, include it only once in the final list,    │
+    │ preferably with the schema name from Step 3. If an entity does not fit in the existing       │
+    │ categories, you may add new ones. Try to use categories that are of the same scope as the    │
+    │ existing ones.                                                                               │
+    │                                                                                              │
+    │ You MUST format your response according to the provided JSON schema.                         │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">Assistant</span>:                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+    ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
+    │ <span class="r4">                                                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">{</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;entity_list&quot;</span><span class="r5">: [</span><span class="r4">                                                                         </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Human&quot;</span><span class="r5">,</span><span class="r4">                                                              </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r5">,</span><span class="r4">                                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Organism&quot;</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;293T (HEK 293T)&quot;</span><span class="r5">,</span><span class="r4">                                                    </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CELLLINE_CVCL:0063&quot;</span><span class="r5">,</span><span class="r4">                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Cell Lines&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;HeLa&quot;</span><span class="r5">,</span><span class="r4">                                                               </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CELLLINE_CVCL:T292&quot;</span><span class="r5">,</span><span class="r4">                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Cell Lines&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Kidney&quot;</span><span class="r5">,</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r5">,</span><span class="r4">                                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Tissue source&quot;</span><span class="r4">                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Choline&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Choline&quot;</span><span class="r5">,</span><span class="r4">                                                  </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC25A48&quot;</span><span class="r5">,</span><span class="r4">                                                           </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC25A48&quot;</span><span class="r5">,</span><span class="r4">                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC5A7&quot;</span><span class="r5">,</span><span class="r4">                                                             </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC5A7&quot;</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A1&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A2&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC44A4&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@GENE_SLC44A4&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A1&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r5">,</span><span class="r4">                                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;SLC49A2&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;&quot;</span><span class="r5">,</span><span class="r4">                                                                   </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Gene&quot;</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Acetic acid&quot;</span><span class="r5">,</span><span class="r4">                                                        </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Acetic_Acid&quot;</span><span class="r5">,</span><span class="r4">                                              </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Betaine&quot;</span><span class="r5">,</span><span class="r4">                                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Betaine&quot;</span><span class="r5">,</span><span class="r4">                                                  </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Phospholipids&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Phospholipids&quot;</span><span class="r5">,</span><span class="r4">                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Phosphatidylcholine&quot;</span><span class="r5">,</span><span class="r4">                                                </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Phosphatidylcholines&quot;</span><span class="r5">,</span><span class="r4">                                     </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    },</span><span class="r4">                                                                                     </span> │
+    │ <span class="r4"> </span><span class="r5">    {</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;entity_name&quot;</span><span class="r5">: </span><span class="r7">&quot;Acetylcholine&quot;</span><span class="r5">,</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;in_pubtator&quot;</span><span class="r5">: </span><span class="r8">true</span><span class="r5">,</span><span class="r4">                                                                 </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;pubtator_id&quot;</span><span class="r5">: </span><span class="r7">&quot;@CHEMICAL_Acetylcholine&quot;</span><span class="r5">,</span><span class="r4">                                            </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;from_provided_schema&quot;</span><span class="r5">: </span><span class="r8">false</span><span class="r5">,</span><span class="r4">                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">      </span><span class="r6">&quot;schema_category&quot;</span><span class="r5">: </span><span class="r7">&quot;Metabolite&quot;</span><span class="r4">                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">    }</span><span class="r4">                                                                                      </span> │
+    │ <span class="r4"> </span><span class="r5">  ],</span><span class="r4">                                                                                       </span> │
+    │ <span class="r4"> </span><span class="r5">  </span><span class="r6">&quot;comment&quot;</span><span class="r5">: </span><span class="r7">&quot;This consolidation includes entities identified across both steps, organized</span><span class="r4"> </span> │
+    │ <span class="r4"> </span><span class="r7">by specific schema categories while ensuring unique entries.&quot;</span><span class="r4">                              </span> │
+    │ <span class="r4"> </span><span class="r5">}</span><span class="r4">                                                                                          </span> │
+    │ <span class="r4">                                                                                            </span> │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+</code></pre>
+</body>
+</html>
