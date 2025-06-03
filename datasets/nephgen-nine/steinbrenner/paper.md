@@ -1,0 +1,438 @@
+<!-- image -->
+
+## Associations of Urine and Plasma Metabolites With Kidney Failure and Death in a Chronic Kidney Disease Cohort
+
+<!-- image -->
+
+Inga Steinbrenner, Ulla T. Schultheiss, Helena Bachle, Yurong Cheng, Charlotte Behning, Matthias Schmid, € Wan-Jin Yeo, Bing Yu, Morgan E. Grams, Pascal Schlosser, Helena Stockmann, Wolfram Gronwald, Peter J. Oefner, Elke Schaeffner, Kai-Uwe Eckardt, Anna Kottgen, and Peggy Sekula, on behalf of the GCKD € Investigators*
+
+Rationale &amp; Objective: Biomarkers that enable better identi /uniFB01 cation of persons with chronic kidney disease (CKD) who are at higher risk for disease progression and adverse events are needed. This study sought to identify urine and plasma metabolites associated with progression of kidney disease.
+
+Study Design: Prospective metabolome-wide association study.
+
+Setting &amp; Participants: Persons with CKD enrolled in the GCKD (German CKD) study with metabolite measurements, with external validation within the ARIC (Atherosclerosis Risk in Communities) Study.
+
+Exposures: 1,513 urine and 1,416 plasma metabolites (Metabolon Inc) measured at study entry using untargeted mass spectrometry.
+
+Outcomes: Main end points were kidney failure (KF) and a composite kidney end point (CKE) of KF, estimated glomerular /uniFB01 ltration rate &lt; 15 mL/min/ 1.73 m , or a 40 2 % decrease in estimated glomerular /uniFB01 ltration rate. Death from any cause was a secondary end point. After a median of 6.5 years of follow-up, 500 persons had experienced KF, 1,083 had experienced the CKE, and 680 had died.
+
+models in a discovery -replication design with external validation.
+
+Complete author and article information provided before references.
+
+Results: 5,088 GCKD study participants were included in analyses of urine metabolites, and 5,144 were included in analyses of plasma metabolites. Among 182 unique metabolites, 30 were signi /uniFB01 cantly associated with KF, 49 with the CKE, and 163 with death. The strongest association with KF was observed for plasma hydroxyasparagine (HR, 1.95; 95 % CI, 1.682.25). An unnamed metabolite measured in plasma and urine was signi /uniFB01 cantly associated with KF, the CKE, and death. External validation of the identi /uniFB01 ed associations of metabolites with KF or the CKE revealed directional consistency for 88 % of observed associations. Selected associations of 18 metabolites with study outcomes have not been previously reported.
+
+Limitations: Use of observational data and semiquantitative metabolite measurements at a single time point.
+
+Analytical Approach: Time-to-event analyses using multivariable proportional hazard regression
+
+Conclusions: The observed associations between metabolites and KF, the CKE, or death in persons with CKD con rmed /uniFB01 previously reported /uniFB01 ndings and also revealed several associations not previously described. These /uniFB01 ndings warrant con rmatory /uniFB01 research in other study cohorts.
+
+C hronic kidney disease (CKD) represents a global public health burden with a prevalence of &gt; 10% among adults worldwide. 1 CKD may lead to kidney failure (KF), requiring costly kidney replacement therapy. 1,2 In addition, persons with CKD are at high risk of morbidities such as cardiovascular events, as well as mortality. 1,2 As a result of heterogeneity in courses of CKD, biomarkers that enable identification of persons with CKD at higher risk for disease progression and other adverse events are required. 3,4 Although some prognostic factors for CKD progression (eg, estimated glomerular filtration rate [eGFR], urinary albumin-creatinine ratio [UACR]) are known and risk prediction models are available, 5-9 there is still a need for novel factors that further improve risk prediction and better explain the observed variability in the courses of CKD. 10-12
+
+As a result of the crucial function of the kidney in the excretion of metabolites, the evaluation of the metabolome represents a promising approach in nephrology. 10,13-16 Several association studies that evaluated metabolite levels quantified from plasma/serum or urine, but rarely from both matrices, were conducted to infer risk factors for CKD progression, with promising first results. 13,17-21 In a previous study, we studied urine metabolite levels from participants in the GCKD (German CKD) study, an ongoing prospective cohort study of persons with CKD. 22,23 By analyzing the associations of the levels of 1,487 urine metabolite with KF and death over 4 years of follow-up, we identified 55 significantly associated metabolites that contained previously unreported molecules. 23
+
+The metabolome is an active subject of research, and new metabolites are continuously identified and
+
+Correspondence to P. Sekula (peggy.sekula@ uniklinik-freiburg.de)
+
+*The complete list of investigators is provided in Item S1.
+
+Am J Kidney Dis. 84(4):469-481. Published online May 28, 2024.
+
+doi: 10.1053/ j.ajkd.2024.03.028
+
+© 2024 by the National Kidney Foundation, Inc.
+
+<!-- image -->
+
+## PLAIN-LANGUAGE SUMMARY
+
+Incomplete understanding of the variability of chronic kidney disease (CKD) progression motivated the search for new biomarkers that would help identify people at increased risk. We explored metabolites in plasma and urine for their association with unfavorable kidney outcomes or death in persons with CKD. Metabolomic analyses revealed 182 metabolites significantly associated with CKD progression or death. Many of these associations confirmed previously reported findings or were validated by analysis in an external study population. Our comprehensive screen of the metabolome serves as a valuable foundation for future investigations into biomarkers associated with CKD progression.
+
+characterized as laboratory measurement techniques are refined, 24 warranting further epidemiologic research even within the same study population. Within the GCKD study cohort, we quantified levels of the plasma metabolome. Additional follow-up data also became available, enabling the study of the first 6 years of follow-up. The extension in follow-up led to a doubling in the number of observed events for KF and deaths, thereby increasing the power of the study to detect associations of metabolites with KF or death. The general objective of this exploratory study was to identify new metabolic risk factors associated with KF and an additional composite kidney end point (CKE) as well as death. The specific aims were to (1) evaluate the robustness of previously reported results on KF and death and urine metabolites, (2) identify previously unreported urine or plasma metabolites that are associated with all 3 end points exploratively, and (3) systematically compare association results across matrices.
+
+## Methods
+
+## Study and Participants
+
+The GCKD study is an ongoing prospective cohort study of persons with CKD under nephrological care. 22 The major inclusion criteria were an eGFR (1) between 30 and 60 mL/min/1.73 m 2 or (2) &gt; 60 mL/min/1.73 m 2 in combination with overt albuminuria/proteinuria. In total, 5,217 adults were enrolled from 2010 to 2012. All participants provided informed consent. The GCKD study was approved by the local ethics committees of the participating centers (Item S1) and is registered in the German national registry for clinical studies (DRKS 00003971).
+
+A comprehensive description of available demographic and clinical data and description of the study population can be found elsewhere. 25 At baseline, biospecimens were collected and transported frozen to a central laboratory for routine clinical chemistry analyses of a core set of parameters (eg, creatinine; finished in 2013) and to a central biobank for storage in accordance with standard operating procedures. 26
+
+## Baseline Measurements and Data
+
+Baseline spot urine (3 batches, 2016-2017) and plasma (1 batch, 2020) samples were used to quantify metabolite concentrations using nontargeted mass spectrometry analysis at Metabolon Inc (Durham, NC). Details on sample preparation, identification, and quality control are provided in Item S2. Of note, urine metabolites were identified at the time of assessment in plasma again to align the metabolite identification and annotation in the continuously curated reference library. The final datasets contain semiquantitative measurements of 1,513 urine metabolites in 5,088 GCKD participants (97.5%) and 1,416 plasma metabolites in 5,144 GCKD participants (98.6%; Fig 1). Figure S1 shows heat maps of pairwise Spearman correlations of all metabolites per matrix. Creatinine at baseline measured by a routine enzymatic assay and measured by Metabolon, respectively, show an excellent correlation (Spearman correlation coefficients r of 0.93 in serum/plasma and 0.95 in urine).
+
+To adjust for confounding, additional baseline variables were selected based on an extensive literature review and biological reasoning (Item S3). Glomerular filtration rate was estimated using the CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) formula based on baseline serum creatinine. 27
+
+## Prospective Data and Outcomes
+
+In the course of follow-up, hospital discharge letters, nephrologist outpatient letters, and death certificates are obtained, based on which clinical end points are adjudicated by an expert team using a distinct end point catalogue. Although follow-up is still ongoing, follow-up data until 6.5 years after study entry are available for analysis (data freeze, March 31, 2021).
+
+Outcomes in this project are KF defined by kidney replacement therapy (dialysis or kidney transplant) or death due to untreated KF, and the CKE was defined as a composite end point of KF, an eGFR &lt; 15 mL/min/ 1.73 m 2 or eGFR decreased by 40% since baseline based on estimated eGFR slopes. For KF and the CKE, death from any cause other than related to KF or the CKE, respectively, was considered as the competing event. Death from any cause was also considered as a separate end point.
+
+## Statistical Analysis
+
+As before, 23 a discovery -replication (2:1) design using a random split was chosen to provide internally validated results (Fig 1). In the main analysis, proportional hazards models were fitted to evaluate levels of each metabolite separately with prospective end points of KF and the CKE as well as death based on the complete data requested in the respective analysis. 28 Time was defined from study entry to the respective (first) event.
+
+Figure 1. Main work /uniFB02 ow and overview of results. CKE, composite kidney end point; GCKD, German Chronic Kidney Disease; KF, kidney failure.*Overlap in participants, n = 5,023; overlap in metabolites, n = 853. Missing levels of metabolites were not imputed for the analysis in this project. y Study sets were randomly split into discovery and replication sets (2:1). Complete case analyses (ie, participants without the respective metabolite measurement or incomplete data of adjustment variables were excluded). Models were /uniFB01 tted only when at least 30 events were available in the respective analysis. z For kidney failure, 30 unique metabolites were identi /uniFB01 ed: both matrices, n = 1; urine only, n = 4; plasma only, n = 25. x For the composite kidney end point, 49 unique metabolites were identi /uniFB01 ed: both matrices, n = 4; urine only, n = 9; plasma only, n = 36. { For death, 163 unique metabolites were identi /uniFB01 ed: both matrices, n = 105; urine only, n = 17; plasma only, n = 41.
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+For death, standard proportional hazards models were fitted, and the association of the metabolite is expressed as a hazard ratio (HR). For KF and the CKE, cause-specific proportional hazards models were fitted for the event of interest and the competing event, resulting in causespecific HRs. 29 To assess indirect effects of the competing event, subdistribution hazard regression models expressed in subdistribution HRs for KF and the CKE were fitted. 30,31 As a result of the standardization of metabolite levels (mean, 0; standard deviation, 1), any HR can be uniformly interpreted per 1 standard -deviation increase. We adjusted for baseline variables age, sex, eGFR, and log-transformed UACR (basic model) and additionally for an extended set of baseline variables: smoking, body mass index, systolic blood pressure, serum albumin level, C-reactive protein level, total cholesterol level, diabetes, coronary heart disease, stroke, and intake of loop diuretic agents (extended model; Item S3).
+
+Models of metabolites with fewer than 30 observed events in the discovery datasets were not evaluated to enforce a minimum of power in the discovery to detect associations. 32 For available models, a fixed-effects inverse variance -weighted meta-analysis was conducted to obtain an estimate across both datasets. If not stated otherwise, estimates from the meta-analysis model with basic adjustment are reported.
+
+With respect to the basic model, an association was considered significant in the discovery stage if the P value of the metabolite's association was less than 0.05 divided by the number of metabolites assessed for the same matrix and end point (Fig 1). This association was then considered replicated if the metabolite's effect estimate in the replication was directionally consistent with the discovery stage and its association P value was less than 0.05 divided by the number of significant metabolites in the respective discovery analysis.
+
+Details and information on sensitivity, subgroup and further downstream analyses, and validation of findings in the ARIC (Atherosclerosis Risk in Communities) study are provided in Items S4 and S5.
+
+<!-- image -->
+
+## Results
+
+We performed an association screen of 1,513 urine and 1,416 plasma metabolite baseline levels with KF, the CKE, and death in more than 5,000 persons with CKD under nephrological care (Fig 1). The mean baseline eGFR was 49.5 mL/min/1.73 m 2 in both analysis sets of 5,088 participants with urine measurements and 5,144 participants with plasma measurements (5,023 participants overlapped), and the respective median UACRs were 50.7 mg/g and 50.8 mg/g, in line with the complete GCKD cohort (Table 1).
+
+A total of 1,023 urine (67.6%) and 1,099 plasma (77.6%) metabolites were annotated to 8 superpathways (amino acid, energy, carbohydrate, nucleotide, cofactors and vitamins, lipid, peptide, and xenobiotics) and 118 (plasma) and 92 (urine) subpathways (Tables S1 and S2). The remainder was only partially characterized or yet unnamed at the time of this project. A total of 853 metabolites were measured in both urine and plasma.
+
+In comparison with our previous project, 23 30 additional metabolites were identified and 4 yet unnamed or only partially characterized molecules were no longer reported, resulting in an overlap of 1,483 urine metabolites. The number of metabolite measurements per participant, as well as their levels, were perfectly aligned between projects except for one metabolite (metformin) for which the identification and quantification had been revised by Metabolon Inc in the mean time (Fig S2).
+
+During a median follow-up of 6.5 years (range, 0-6.5 years), 500 KF events (9.6%), 1,083 CKEs (20.8%), and 680 deaths (13%) were observed in 5,217 GCKD participants.
+
+## Associations of Metabolites With Outcomes
+
+We identified 182 unique metabolites that were significantly associated with at least one end point, of which 30 were identified for KF, 49 for CKE, and 163 for death, respectively.
+
+The replicated 30 KF metabolites were matrix-specific except for the unnamed metabolite X-12117 (urine only, n = 4; plasma only, n = 25; Tables S3 and S4). Among the 5 metabolites replicated in urine, the peptide γ -glutamylvaline showed a protective association (HR, 0.78; 95% confidence interval [CI], 0.71-0.84), whereas the 4 others showed a harmful association (HR range, 1.17-1.41; Fig 2). In plasma, the lipid tricosanoyl sphingomyelin (d18:1/ 23:0)* and the unnamed metabolite X-11372 showed a protective association (HR range, 0.72-0.78), whereas 24 metabolites exhibited a harmful one (HR range, 1.291.95), with hydroxyasparagine having the highest HR (HR, 1.95; 95% CI, 1.68-2.25). The association of the matrix-shared metabolite X-12117 was harmful in plasma and in urine.
+
+For CKE, 45 (urine only, n = 9; plasma only, n = 36) of 49 replicated metabolites were matrix-specific (Tables S5 and S6). Across matrices, 5 associations were protective
+
+(HR range, 0.77-0.83) and the others were harmful (HR range, 1.15-1.80; Fig 2). Three of 13 urine metabolites and 21 of 40 plasma metabolites associated with CKE were also associated with KF (Table S7). Although directionally consistent, the HRs for the CKE were often attenuated. Among them, plasma hydroxyasparagine had the highest HR (HR, 1.80; 95% CI, 1.63-1.98).
+
+For death, 14 of the 163 metabolites were replicated in both matrices, 30 in urine only, and 119 in plasma only (Tables S8 and S9). Of the 44 metabolites replicated in urine, 17 showed a protective association (HR range, 0.67-0.82) and 27 showed a harmful association (HR range, 1.281.84). The strongest association was observed for X-12117 (HR, 1.84; 95% CI, 1.67-2.03). In plasma, 34 showed a protective association (HR range, 0.67-0.80) and 99 a harmful one (HR range, 1.21-2.27). The 14 associations replicated in both matrices were all harmful in both matrices except for one, the amino acid N-acetylvaline, which was harmful in plasma (HR, 1.50; 95% CI, 1.37-1.64) and protective in urine (HR, 0.73; 95% CI, 0.68-0.79).
+
+Overall, one unnamed metabolite (X-12117) replicated in all 6 analyses and one (C-glycosyltryptophan) replicated in 5 of 6 (Fig 3). In total, we observed 20 plasma metabolites that replicated with all 3 end points (Table S7).
+
+Although estimated effect sizes were quite robust when adjusting for additional clinical variables (Item S2), estimated effect sizes between basic and extended adjustment models showed more differences for death than for KF, most likely because of the heterogeneity of the end point and the basic model lacking important factors for death (Fig S3). When comparing cause-specific and subdistribution HRs for KF and CKE (Fig S4), we found no evidence for indirect effects via the competing event.
+
+## Robustness of Association Results for Urine Metabolites
+
+The estimated effect sizes showed a good correlation with those for urine metabolites evaluated in our previous project 23 (Spearman correlation coefficients: KF, r = 0.85; death, r = 0.94; Fig S5). Among the 8 previously reported associations with KF and 45 associations with death, 4 and 25 associations, respectively, replicated in the present project (Table S7). The remaining associations showed directionally consistent effect estimates but failed to pass the strict significance threshold and thus replication.
+
+## Overrepresentation of Subpathways
+
+As in the previous project, 23 urine phosphatidylcholines (lipids) were significantly overrepresented among urine metabolites associated with KF ( P = 3.0 × 10 -4 ; Table S10). For CKE, urine metabolites of the phospholipid metabolism ( P = 1.6 × 10 -4 ) and plasma metabolites of the aminosugar metabolism ( P = 3.8 × 10 -4 ) were significantly overrepresented, whereas, for death, plasma sphingomyelins ( P = 3.7 × 10 -9 ) and metabolites of vitamin A metabolism ( P = 3.5 × 10 -5 ) were overrepresented.
+
+Table 1. Description of GCKD Study Population and Analysis Sets
+
+|                                             |                     | Participants With Urinary Metabolite Measurements   | Participants With Urinary Metabolite Measurements   | Participants With Urinary Metabolite Measurements   | Participants With Plasma Metabolite Measurements   | Participants With Plasma Metabolite Measurements   | Participants With Plasma Metabolite Measurements   |
+|---------------------------------------------|---------------------|-----------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
+| Variable                                    | GCKD                | Overall                                             | Discovery Set                                       | Replication Set                                     | Overall                                            | Discovery Set                                      | Replication Set                                    |
+| No. of patients                             | 5,217               | 5,088                                               | 3,392                                               | 1,696                                               | 5,144                                              | 3,429                                              | 1,715                                              |
+| Male sex                                    | 3,132 (60 % )       | 3,060 (60 % )                                       | 2,060 (61 % )                                       | 1,000 (59 % )                                       | 3,091 (60 % )                                      | 2,046 (60 % )                                      | 1,045 (61 % )                                      |
+| Age, y                                      | 60.1 ± 11.96        | 60 ± 11.98                                          | 60.1 ± 11.9                                         | 59.9 ± 12.13                                        | 60 ± 11.99                                         | 60 ± 12                                            | 60.2 ± 11.96                                       |
+| Smoking                                     |                     |                                                     |                                                     |                                                     |                                                    |                                                    |                                                    |
+| Nonsmoker                                   | 2,131 (41 % )       | 2,074 (41 % )                                       | 1,382 (41 % )                                       | 692 (41 % )                                         | 2,095 (41 % )                                      | 1,391 (41 % )                                      | 704 (41 % )                                        |
+| Ex-smoker                                   | 2,242 (43 % )       | 2,194 (43 % )                                       | 1,472 (43 % )                                       | 722 (43 % )                                         | 2,216 (43 % )                                      | 1,468 (43 % )                                      | 748 (44 % )                                        |
+| Current smoker                              | 828 (16 % )         | 805 (16 % )                                         | 530 (16 % )                                         | 275 (16 % )                                         | 817 (16 % )                                        | 556 (16 % )                                        | 261 (15 % )                                        |
+| BMI, kg/m 2                                 | 29.8 ± 5.97         | 29.8 ± 5.95                                         | 29.8 ± 6.06                                         | 29.8 ± 5.72                                         | 29.8 ± 5.95                                        | 29.8 ± 5.89                                        | 29.7 ± 6.08                                        |
+| Systolic BP, mmHg                           | 139.5 ± 20.36       | 139.5 ± 20.33                                       | 139.4 ± 20.35                                       | 139.5 ± 20.3                                        | 139.4 ± 20.31                                      | 139.3 ± 20.22                                      | 139.7 ± 20.48                                      |
+| eGFR, mL/min/1.73 m 2                       | 49.4 ± 18.25        | 49.5 ± 18.27                                        | 49.6 ± 18.39                                        | 49.1 ± 18.02                                        | 49.5 ± 18.28                                       | 49.5 ± 18.57                                       | 49.3 ± 17.68                                       |
+| Median (IQR) UACR, mg/g                     | 50.9 (9.66- 391.64) | 50.7 (9.64- 389.82)                                 | 52 (9.71- 389.12)                                   | 47.8 (9.48- 390.31)                                 | 50.8 (9.58- 391.66)                                | 52.4 (9.82- 395.06)                                | 47 (9.02- 379.56)                                  |
+| Serum albumin, g/L                          | 38.3 ± 4.29         | 38.3 ± 4.29                                         | 38.3 ± 4.29                                         | 38.3 ± 4.27                                         | 38.3 ± 4.28                                        | 38.3 ± 4.22                                        | 38.4 ± 4.39                                        |
+| Median (IQR) CRP, mg/L                      | 2.3 (1.03-5.03)     | 2.3 (1.02-4.97)                                     | 2.3 (1-5.02)                                        | 2.3 (1.04-4.88)                                     | 2.3 (1.03-5.01)                                    | 2.3 (1.03-4.98)                                    | 2.3 (1.02-5.06)                                    |
+| Cholesterol, mg/dL                          | 211.2 ± 52.84       | 211.2 ± 52.74                                       | 212 ± 53.37                                         | 209.7 ± 51.43                                       | 211.2 ± 52.82                                      | 211 ± 52.36                                        | 211.7 ± 53.74                                      |
+| Diabetes                                    | 1,868 (36 % )       | 1,802 (35 % )                                       | 1,203 (35 % )                                       | 599 (35 % )                                         | 1,828 (36 % )                                      | 1,223 (36 % )                                      | 605 (35 % )                                        |
+| CHD                                         | 1,039 (20 % )       | 1,014 (20 % )                                       | 693 (20 % )                                         | 321 (19 % )                                         | 1,021 (20 % )                                      | 679 (20 % )                                        | 342 (20 % )                                        |
+| Stroke                                      | 510 (10 % )         | 491 (10 % )                                         | 329 (10 % )                                         | 162 (10 % )                                         | 499 (10 % )                                        | 319 (9 % )                                         | 180 (11 % )                                        |
+| BP lowering drug intake                     |                     |                                                     |                                                     |                                                     |                                                    |                                                    |                                                    |
+| Any diuretics                               | 3,184 (61 % )       | 3,092 (61 % )                                       | 2,068 (61 % )                                       | 1,024 (60 % )                                       | 3,137 (61 % )                                      | 2,078 (61 % )                                      | 1,059 (62 % )                                      |
+| Loop diuretics                              | 2,014 (39 % )       | 1,955 (38 % )                                       | 1,296 (38 % )                                       | 659 (39 % )                                         | 1,979 (38 % )                                      | 1,329 (39 % )                                      | 650 (38 % )                                        |
+| Median overall follow-up time (range), days | 2,374 (0-2,374)     | 2,374 (0-2,374)                                     | 2,374 (0-2,374)                                     | 2,374 (0-2,374)                                     | 2,374 (0-2,374)                                    | 2,374 (0-2,374)                                    | 2,374 (0-2,374)                                    |
+| Outcome                                     |                     |                                                     |                                                     |                                                     |                                                    |                                                    |                                                    |
+| Death                                       | 680 (13 % ) a       | 652 (13 % )                                         | 447 (13 % )                                         | 205 (12 % )                                         | 662 (13 % )                                        | 449 (13 % )                                        | 213 (12 % )                                        |
+| Composite kidney end point                  | 1,083 (21 % ) b     | 1,056 (21 % )                                       | 701 (21 % )                                         | 355 (21 % )                                         | 1,067 (21 % )                                      | 735 (21 % )                                        | 332 (19 % )                                        |
+| Kidney failure                              | 500 (10 % ) c       | 487 (10 % )                                         | 326 (10 % )                                         | 161 (9 % )                                          | 491 (10 % )                                        | 352 (10 % )                                        | 139 (8 % )                                         |
+
+Continuous data presented as mean ± standard deviation if not stated otherwise. Numbers of missing values: smoking (n = 16), BMI (n = 54), BP (n = 34), eGFR (n = 55), UACR (n = 90), serum albumin (n = 57), CRP (n = 56), cholesterol (n = 62), CHD (n = 2), stroke (n = 2). Abbreviations: BMI, body mass index (amputation-corrected); BP, blood pressure; CHD, coronary heart disease; CRP, C-reactive protein (high-sensitivity); eGFR, estimated glomerular /uniFB01 ltration rate (creatinine-based); GCKD, German Chronic Kidney Disease; UACR, urinary albumin-creatinine ratio.
+
+- b Among 1,083 observed events of composite kidney end point, 7 of the 26 persons who died as a result of untreated kidney failure had no other composite kidney end point before death.
+- a The total of 680 observed deaths include 26 deaths due to untreated kidney failure.
+- c Among 500 observed events of kidney failure, 17 of the 26 persons who died as a result of untreated kidney failure had no kidney replacement therapy before death.
+
+<!-- image -->
+
+<!-- image -->
+
+Figure 2. Effect estimates of the 56 metabolites associated with kidney failure or the composite kidney end point. For presentation, effect estimates of hazard ratios from respective meta-analyses were used. Superpathways: 1, amino acids; 2, carbohydrates; 3, cofactors and vitamins; 4, lipids; 5, peptides; 6, nucleotides; 7 , xenobiotics; 8, unnamed. CKE, composite kidney end point; KF, kidney failure. Biochemical Name*: the standard for this metabolite has not been run, but Metabolon, Inc. is highly con /uniFB01 dent in its identity. Biochemical Name**: the standard for this metabolite has not been run, and Metabolon, Inc. is con /uniFB01 cent in its identity (but not as con /uniFB01 dent as with a *ID).
+
+<!-- image -->
+
+## Validation in the ARIC Study
+
+Of the 84 identified associations with KF or CKE (56 metabolites) in the GCKD study, 80 associations could be tested in the ARIC study (Item S5). For 70 associations (88%), the direction of the effect estimate was consistent, and, for 23 of them, the P value reached statistical significance (Table S7). 33
+
+## Follow-up of Metabolites Associated With KF and CKE
+
+The absolute values of Spearman correlation coefficients for the 54 plasma metabolites associated with KF or CKE ranged from 0.0 to 0.91 (median, 0.41), with a predominance of values greater than zero (83%; Table S11). The strongest positive pairwise correlation was observed
+
+<!-- image -->
+
+Figure 3. Intersection plot for the 182 metabolites signi /uniFB01 cant in at least 1 of the 6 analyses. For each unique metabolite (n = 182), the number of signi /uniFB01 cant associations across matrices and end points is counted irrespective of whether the metabolite could be evaluated in all 6 analyses.
+
+<!-- image -->
+
+for C-glycosyltryptophan and hydroxyasparagine (both amino acids; r = 0.91), and the strongest negative correlation was observed for mannose (carbohydrate) and glycerophosphoethanolamine (lipid; r = -0.24). Urine metabolites (n = 49) were less correlated (absolute r : median, 0.13; range, 0.0-0.89).
+
+Subgroup analyses of the 56 unique metabolites whose levels in urine or plasma were associated with KF and the CKE (Item S4) yielded HR estimates concordant with the main analysis, showing little variation (Tables S12-S15).
+
+18 metabolites were lipids (n = 4), amino acids (n = 2), peptides (n = 2), xenobiotics (n = 2), and unnamed metabolites (n = 8). They include C-glycosyltryptophan, whose levels in blood but not urine had been repeatedly reported to associate with KF or related traits. Many of them showed moderate to good correlation with eGFR or UACR, the two major markers of kidney function and kidney injury, indicating their potential to explain the disease course beyond traditional biomarkers (Table 2).
+
+The addition of these metabolites separately to a model aligned with the 4-variable KF risk equation (age, sex, eGFR, UACR) illustrates their potential to improve prediction of KF or CKE, warranting further research (Table S7). 6
+
+All 56 metabolites were subjected to a literature search. For some of them (eg, pseudouridine), we found evidence for their association between the respective metabolite levels in the same matrix with CKD progression or related traits from studies other than the GCKD study (Table S7). For some associations of 18 metabolites, however, we found no evidence or weak evidence referring to a less related trait or to studies in nonhumans (Table 2). These
+
+Exemplarily, the cumulative incidence functions for KF, CKE, and death per quartile of unnamed metabolite X12117 levels identified in all 6 analyses illustrate the positive association, regardless of whether the metabolite was measured in plasma or urine (Fig S6). Although the identity of this metabolite is still an open issue, plasma levels of this metabolite in our study correlated well with plasma nucleotide pseudouridine and the plasma amino acids C-glycosyltryptophan and hydroxyasparagine ( r &gt; 0.80). Published results indicate that this metabolite might be an amino acid. 34,35
+
+In contrast to unnamed metabolites, literature on named metabolites from different research areas partially provides potential explanations for their association with
+
+Table 2. Metabolites Associated With Kidney Failure or Composite Kidney End Point Not Reported Before (n = 18)
+
+| Metabolite Annotation                   | Metabolite Annotation   | Metabolite Annotation   | Outcome: KF/Matrix: Urine   | Outcome: KF/Matrix: Urine   | Outcome: KF/Matrix: Plasma   | Outcome: KF/Matrix: Plasma   |
+|-----------------------------------------|-------------------------|-------------------------|-----------------------------|-----------------------------|------------------------------|------------------------------|
+| Biochemical                             | Superpathway            | Subpathway              | GCKD b                      | Validated c                 | GCKD b                       | Validated c                  |
+| 1-Palmitoyl-2-linoleoyl-GPC (16:0/18:2) | Lipid                   | PC                      | 1.38 (1.24-1.55) d          | 0                           | 0.91 (0.83-0.99)             | NA                           |
+| 1-Palmitoyl-2-oleoyl-GPC (16:0/18:1)    | Lipid                   | PC                      | 1.41 (1.27-1.57) d          | 0                           | 1.04 (0.96-1.14)             | NA                           |
+| C-glycosyl-tryptophan                   | Amino acid              | Tryptophan metabolism   | 1.3 (1.2-1.42)              | NA                          | 1.93 (1.69-2.21) d           | 1                            |
+| Choline phosphate                       | Lipid                   | Phospholipid metabolism | 1.28 (1.14-1.44)            | NA                          | 0.9 (0.83-0.98)              | NA                           |
+| γ -glutamylvaline                       | Peptide                 | γ -Glutamyl amino acid  | 0.78 (0.71-0.84) d          | 1                           | 0.89 (0.8-1)                 | NA                           |
+| Glycerophosphoethanolamine              | Lipid                   | Phospholipid metabolism | 1.21 (1.1-1.33)             | NA                          | 0.91 (0.83-1)                | NA                           |
+| Paraxanthine                            | Xenobiotics             | Xanthine metabolism     | 0.82 (0.74-0.91)            | NA                          | 0.85 (0.77-0.92)             | NA                           |
+| Phenylalanyl-hydroxyproline* e          | Peptide                 | Dipeptide               | 0.75 (0.66-0.85)            | NA                          | NA                           | NA                           |
+| Picolinate                              | Amino acid              | Tryptophan metabolism   | 0.84 (0.76-0.91)            | NA                          | 0.98 (0.89-1.07)             | NA                           |
+| Triacetate lactone                      | Xenobiotics             | Bacterial/fungal        | 0.88 (0.79-0.97)            | NA                          | NA                           | NA                           |
+| X-11372                                 | Unnamed                 | Unnamed                 | NA                          | NA                          | 0.72 (0.65-0.79) d           | 1                            |
+| X-12117                                 | Unnamed                 | Unnamed                 | 1.41 (1.26-1.58) d          | 1                           | 1.8 (1.57-2.07) d            | 1                            |
+| X-12689                                 | Unnamed                 | Unnamed                 | NA                          | NA                          | 1.17 (1.05-1.3)              | NA                           |
+| X-24411                                 | Unnamed                 | Unnamed                 | 1.12 (1.02-1.23)            | NA                          | 1.38 (1.25-1.51) d           | 1                            |
+| X-24518                                 | Unnamed                 | Unnamed                 | 1.29 (1.17-1.43)            | NA                          | 1.49 (1.34-1.66) d           | 1                            |
+| X-25422                                 | Unnamed                 | Unnamed                 | NA                          | NA                          | 1.77 (1.58-1.99) d           | 1                            |
+| X-25790                                 | Unnamed                 | Unnamed                 | NA                          | NA                          | 1.55 (1.38-1.75) d           | 1                            |
+| X-26054                                 | Unnamed                 | Unnamed                 | NA                          | NA                          | 1.22 (1.09-1.36)             | NA                           |
+
+(Continued)
+
+<!-- image -->
+
+Table 2 (Cont'd). Metabolites Associated With Kidney Failure or Composite Kidney End Point Not Reported Before (n = 18)
+
+| Outcome: CKE/Matrix: Urine   | Outcome: CKE/Matrix: Urine   | Outcome: CKE/Matrix: Plasma   | Outcome: CKE/Matrix: Plasma   | Correlation With Urine Metabolite a   | Correlation With Urine Metabolite a   | Correlation With Plasma Metabolite a   | Correlation With Plasma Metabolite a   |
+|------------------------------|------------------------------|-------------------------------|-------------------------------|---------------------------------------|---------------------------------------|----------------------------------------|----------------------------------------|
+| GCKD b                       | Validated c                  | GCKD b                        | Validated c                   | eGFR                                  | UACR                                  | eGFR                                   | UACR                                   |
+| 1.23 (1.14-1.33)             | NA                           | 0.93 (0.88-0.99)              | NA                            | - 0.13                                | 0.51                                  | 0.07                                   | 0.08                                   |
+| 1.25 (1.16-1.35) d           | 0                            | 1 (0.94-1.07)                 | NA                            | - 0.17                                | 0.49                                  | 0.02                                   | 0.06                                   |
+| 1.23 (1.16-1.31) d           | 1                            | 1.78 (1.63-1.95) d            | 2 d                           | - 0.21                                | - 0.04                                | - 0.75                                 | 0.12                                   |
+| 1.26 (1.17-1.35) d           | 1                            | 0.93 (0.88-0.99)              | NA                            | - 0.31                                | 0.31                                  | 0.00                                   | 0.02                                   |
+| 0.88 (0.83-0.94)             | NA                           | 1.06 (0.99-1.15)              | NA                            | 0.27                                  | - 0.13                                | - 0.46                                 | 0.00                                   |
+| 1.25 (1.17-1.33) d           | 2 d                          | 0.9 (0.84-0.95)               | NA                            | - 0.30                                | 0.27                                  | 0.11                                   | 0.04                                   |
+| 0.8 (0.75-0.85) d            | 0                            | 0.83 (0.78-0.88) d            | 0                             | 0.17                                  | - 0.02                                | - 0.02                                 | 0.00                                   |
+| 0.77 (0.71-0.84) d           | 1                            | NA                            | NA                            | 0.33                                  | - 0.15                                | NA                                     | NA                                     |
+| 0.81 (0.77-0.87) d           | 1                            | 0.91 (0.85-0.97)              | NA                            | 0.19                                  | - 0.12                                | - 0.15                                 | - 0.03                                 |
+| 0.83 (0.78-0.89) d           | 0                            | NA                            | NA                            | 0.35                                  | - 0.16                                | NA                                     | NA                                     |
+| NA                           | NA                           | 0.81 (0.76-0.87)              | NA                            | NA                                    | NA                                    | 0.09                                   | - 0.50                                 |
+| 1.31 (1.22-1.41) d           | 2 d                          | 1.72 (1.57-1.88) d            | 2 d                           | - 0.50                                | 0.11                                  | - 0.73                                 | 0.10                                   |
+| NA                           | NA                           | 1.23 (1.14-1.32) d            | NA                            | NA                                    | NA                                    | - 0.41                                 | - 0.01                                 |
+| 1.04 (0.98-1.1)              | NA                           | 1.22 (1.14-1.3) d             | 1                             | 0.06                                  | 0.04                                  | - 0.27                                 | 0.07                                   |
+| 1.19 (1.12-1.28)             | NA                           | 1.39 (1.29-1.5) d             | 1                             | - 0.24                                | 0.02                                  | - 0.50                                 | 0.08                                   |
+| NA                           | NA                           | 1.58 (1.46-1.71) d            | 2 d                           | NA                                    | NA                                    | - 0.66                                 | 0.19                                   |
+| NA                           | NA                           | 1.39 (1.28-1.51) d            | 1                             | NA                                    | NA                                    | - 0.64                                 | 0.15                                   |
+| NA                           | NA                           | 1.26 (1.17-1.36) d            | NA                            | NA                                    | NA                                    | - 0.50                                 | 0.11                                   |
+
+Abbreviations: CKE, composite kidney end point; eGFR, estimated glomerular /uniFB01 ltration rate; GCKD, German Chronic Kidney Disease; KF, kidney failure; NA, not applicable; PC, phosphatidylcholine; UACR, urinary albumin-creatinine ratio.
+
+- b Reported associations (GCKD, hazard ratio, 95 % con dence interval) were obtained from meta-analysis of the discovery and replication results, with basic adjustment (age, sex, eGFR, log[UACR]). /uniFB01
+- a Spearman correlation coef /uniFB01 cient of matrix-speci /uniFB01 c metabolite with eGFR and UACR.
+- c Validation status of replicated GCKD associations in the ARIC (Atherosclerosis Risk in Communities) study (1, direction-consistent; 2, direction-consistent and signi /uniFB01 cant; 0, neither).
+- e The standard for this metabolite has not been run, but Metabolon Inc is highly con /uniFB01 dent in its identity.
+- d Replicated and/or validated result.
+
+<!-- image -->
+
+<!-- image -->
+
+KF. The protective associations of γ -glutamylvaline levels in urine and plasma with KF, for example, is supported by its link to γ -glutamyltransferase (GGT1), an ectoenzyme that is highly expressed in the proximal tubule, and therefore the metabolite levels may represent a readout for its activity. 34,36
+
+In summary, this screen gives a comprehensive overview of the connection of the human metabolome and KF, replicating previously known associations and identifying new promising candidates for follow-up studies to, for example, identify unnamed metabolites or address underlying (patho)physiologic mechanisms.
+
+## Discussion
+
+In this comprehensive metabolome-wide association study of plasma and urine metabolites in a cohort of persons with CKD, we explored associations of their levels with KF, a CKE, and death to validate existing findings but also to detect novel ones. In total, we identified 182 unique metabolites associated with KF (n = 30), the CKE (n = 49), or death (n = 163). Despite a large overlap of metabolites measured in both matrices, the levels of only a few metabolites showed significant associations with the same end point in both matrices (Fig 3). This illustrates the usefulness of assessing metabolites from both urine and plasma to obtain a more comprehensive image of the connection between the metabolome and clinical outcomes. The absence of associations in one or the other matrix may give additional hints on the underlying mechanism, ie, metabolites solely identified in urine may provide a readout specific for kidney tubule function, and metabolites identified in only plasma may represent predominantly metabolites such as protein-bound lipids that do not pass the glomerular filter.
+
+Comparing the present results with those of our previous project, 23 the gain in power to detect associations of metabolites with KF or death due to the increased number of observed events in the prolonged follow-up is obvious. Of the previously identified associations, &gt; 50% could be confirmed. Some associations were no longer statistically significant in the present project, possibly because these metabolites have only a short-term effect, in combination with the longer follow-up available in this project. The less pronounced but still directionally consistent effect sizes did not reach statistical significance when applying a strict replication threshold (Fig S5). In addition, we identified a series of associations within urine metabolites that had not been detected previously.
+
+In light of the published literature, our results confirm reported associations but also uncover previously unreported findings. Among the previously reported metabolites associated with KF, some are known uremic solutes such as C-glycosyltryptophan or pseudouridine (Table S7). 37 The observed harmful associations of higher plasma levels of these metabolites with KF is therefore plausible. We observed the most harmful associations with
+
+KF and the CKE for plasma hydroxyasparagine, in line with previous reports. 38-40
+
+In contrast, some associations with KF or the CKE for the 18 metabolites listed in Table 2 have not been reported in the literature to date. Still, available literature can hint at a potential link to CKD, as is the case for γ -glutamylvaline and its potential to represent a readout of the activity of the ectoenzyme GGT1. 34,36 Regarding lipid associations not reported before, there is literature discussing dysregulation of lipids and its connection with kidney function and disease. 41,42 For those metabolites of unknown identity, we cannot exclude that they might be identical to metabolites already reported to associate with CKD progression under a different name. The unnamed metabolite X12117, identified in all of our association analyses, likely is an amino acid. 34,35 Because of its high correlation with, for example, C-glycosyltryptophan in our data, it might represent a metabolite belonging to the tryptophan pathway, whose metabolites were repeatedly reported to be associated with CKD or CKD progression. 43
+
+Overall, the majority of metabolites associated with multiple end points or in both matrices showed consistent harmful associations (Fig 2). One exception is N-acetylvaline, which showed a harmful association with death and CKE in plasma and a protective one with death in urine. In line with our results, higher serum levels of N-acetylvaline have been reported to be associated with death. 44 For CKD progression, Luo et al. reported on the associations of selected N-acetylated amino acids. 45 Although N-acetylvaline was not included in their analysis, the observed associations of higher serum levels of N-acetyl amino acids with an increased risk for CKD progression indirectly support our results. Furthermore, the presumed role of N-acetylation in detoxification through improvement of the water-solubility of molecules, facilitating their secretion/excretion via the liver or kidney, also supports our finding of higher levels in urine and reduced risk of death. 46
+
+The present project has several strengths, including the use of data obtained from a large cohort of wellcharacterized persons with CKD under nephrological care. In addition to the detailed characteristics from each GCKD participant and long follow-up data, metabolite measurements from plasma and urine using the same measurement technique were available for simultaneous assessment. Identified, internally validated associations could be externally evaluated in the ARIC study to a reasonable extent. Limitations of this project include the inherent issues of any observational study, especially in regard to confounding bias, and metabolite measurements of a semiquantitative nature (ie, no absolute quantification of levels, limiting comparison across studies) and their measurements at a single time point. Metabolite measurements therefore represent only a one-time snapshot of the metabolome, which otherwise may change over time. Although the measurement technique used provides comprehensive coverage of the metabolomes of plasma and urine, some mass spectrometric features still await
+
+metabolic assignment, which is required to yield biologic insight. External validation in the ARIC study was limited because of differences in study design (eg, populationbased vs diseased cohort) and sample size.
+
+In summary, the present study provides a comprehensive screen of associations between metabolite levels and KF, a CKE, or death in persons with CKD. It confirmed previously reported associations but also reported several findings not known before that warrant further research, eg, the identification of unnamed metabolites or an evaluation of causality. It further supports the reanalysis of existing study populations as more comprehensive readouts of the human metabolome become available.
+
+## Supplementary Material
+
+## Supplementary File 1 (PDF)
+
+Figure S1: Matrix-speci /uniFB01 c heat maps for all evaluated metabolites in the GCKD study.
+
+Figure S2: Comparison of the number and median levels of measurements per urine metabolite available in previous and current analyses.
+
+Figure S3: Comparison of estimated effect sizes after basic and extended adjustment per matrix and event of interest.
+
+Figure S4: Comparison of estimated effect sizes obtained in the analyses of kidney failure using cause-speci /uniFB01 c and subdistribution hazard regression.
+
+Figure S5: Comparison of estimated effect sizes obtained in respective analyses of the previous and current projects.
+
+Figure S6: Cumulative incidence function for kidney failure, composite kidney end point, and death per quartile of X-12117 levels in urine and plasma.
+
+Item S1: List of GCKD study participating institutions and investigators
+
+Item S2: Urine and plasma metabolite measurements in the GCKD study
+
+Item S3: List and de nitions /uniFB01 of baseline variables in the GCKD study
+
+Item S4: Additional analyses of GCKD data
+
+Item S5: Validation of /uniFB01 ndings in the ARIC (Atherosclerosis Risk in Communities) study
+
+## Supplementary File 2 (xlsx)
+
+Table S1: Annotation of evaluated urine metabolites
+
+Table S2: Annotation of evaluated plasma metabolites
+
+Table S3: Association results of metabolite levels in urine with kidney failure: basic model
+
+Table S4: Association results of metabolite levels in plasma with kidney failure: basic model
+
+Table S5: Association results of metabolite levels in urine with composite kidney end point: basic model
+
+Table S6: Association results of metabolite levels in plasma with composite kidney end point: basic model
+
+Table S7: Replicated association results of metabolite levels in urine or plasma with kidney failure and composite kidney end point
+
+Table S8: Association results of metabolite levels in urine with death: basic model
+
+<!-- image -->
+
+Table S9: Association results of metabolite levels in plasma with death: basic model
+
+Table S10: Results of overrepresentation test
+
+Table S11: Matrix-speci /uniFB01 c Spearman correlation matrices for the metabolites associated with kidney failure or composite kidney end point
+
+Table S12: Subgroup analysis: association results of meta-analysis of metabolite levels in urine with kidney failure (basic model)
+
+Table S13: Subgroup analysis: association results of meta-analysis of metabolite levels in plasma with kidney failure (basic model)
+
+Table S14: Subgroup analysis: association results of meta-analysis of metabolite levels in urine with composite kidney end point (basic model)
+
+Table S15: Subgroup analysis: association results of meta-analysis of metabolite levels in plasma with composite kidney end point (basic model)
+
+Table S16: Association results of metabolite levels in urine with kidney failure: extended model
+
+Table S17: Association results of metabolite levels in plasma with kidney failure: extended model
+
+Table S18: Association results of metabolite levels in urine with composite kidney end point: extended model
+
+Table S19: Association results of metabolite levels in plasma with composite kidney end point: extended model
+
+Table S20: Association results of metabolite levels in urine with death: extended model
+
+Table S21: Association results of metabolite levels in plasma with death: extended model
+
+## Article Information
+
+Authors ' Full Names and Academic Degrees: Inga Steinbrenner, MSc, Ulla T. Schultheiss, MD, Helena Bachle, MD, Yurong Cheng, € PhD, Charlotte Behning, MSc, Matthias Schmid, PhD, Wan-Jin Yeo, PhD, Bing Yu, PhD, Morgan E. Grams, MD, PhD, Pascal Schlosser, PhD, Helena Stockmann, MD, Wolfram Gronwald, PhD, Peter J. Oefner, MD, PhD, Elke Schaeffner, MD, MSc, Kai-Uwe Eckardt, MD, Anna Kottgen, MD, MPH, and Peggy Sekula, PhD. €
+
+Author s Af ' /uniFB01 liation: Institute of Genetic Epidemiology (IS, UTS, HB, YC, PSchlosser, AK, PSekula), Department of Medicine IV -Nephrology and Primary Care (UTS), and Department of Neurology and Neurophysiology (HB), Medical Center -University of Freiburg, Faculty of Medicine, University of Freiburg, Freiburg, Germany; Centre for Integrative Biological Signalling Studies (CIBSS), University of Freiburg, Freiburg, Germany (PSchlosser, AK); Institute for Medical Biometry, Informatics and Epidemiology, University Hospital Bonn, Bonn, Germany (CB, MS); Division of Precision Medicine, Department of Medicine, NYU Langone Health, New York, New York, USA (W-JY, MEG); Department of Epidemiology, School of Public Health, University of Texas Health Science Center at Houston, Houston, Texas, USA (BY); Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, USA (MEG, PSchlosser, AK); Department of Nephrology and Medical Intensive Care, Charite/C19 Universitatsmedizin € Berlin, corporate member of Freie Universitat € Berlin, Humboldt Universitat € zu Berlin, Berlin Institute of Health, Charite-Universitatsmedizin /C19 € Berlin, Berlin, Germany (HS); Department of Nephrology, University Medical Center Regensburg, Regensburg, Germany (HS); Institute of Functional Genomics, University of Regensburg, Regensburg, Germany (WG, PJO); Institute of Public Health, Charite-Universitatsmedizin Berlin, Berlin, /C19 € Germany (ES); Department of Nephrology and Medical Intensive Care, Charite-Universitatsmedizin /C19 € Berlin, Berlin, Germany (K-UE);
+
+<!-- image -->
+
+and Department of Nephrology and Hypertension, FriedrichAlexander Universitat € Erlangen-Nürnberg, Erlangen, Germany (KUE).
+
+Address for Correspondence: Peggy Sekula, PhD, Institute of Genetic Epidemiology, Medical Center, University of Freiburg, Hugstetter Str 49, 79106 Freiburg, Germany. Email: peggy. sekula@uniklinik-freiburg.de
+
+Authors Contributions: ' Research idea and study design: KUE, AK, PSekula, PSchlosser; data acquisition: IS, UTS, MS, HB, HS, KUE, AK, MEG, BY; statistical analysis: IS, CB, PSekula, WJY, PSchlosser; data interpretation: IS, UTS, HB, YC, CB, MS, HS, WG, PJO, ES, KUE, AK, PSekula, PSchlosser. Each author contributed important intellectual content during manuscript drafting or revision and agrees to be personally accountable for the individual s ' own contributions and to ensure that questions pertaining to the accuracy or integrity of any portion of the work, even one in which the author was not directly involved, are appropriately investigated and resolved, including with documentation in the literature if appropriate.
+
+Support: The GCKD study is supported by the German Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung), the KfH Foundation for Preventive Medicine. Unregistered grants to support the study were provided by corporate sponsors (listed at gckd.org). Urine metabolomics were supported by Bayer Pharma AG. This project has received funding from the Innovative Medicines Initiative 2 Joint Undertaking (JU) under grant agreement No 115974. The JU receives support from the European Union s Horizon 2020 research and innovation ' program and EFPIA and JDRF. The Atherosclerosis Risk in Communities study has been funded in whole or in part with Federal funds from the National Heart, Lung, and Blood Institute, National Institutes of Health, Department of Health and Human Services, under contract nos. 75N92022D00001, 75N92022D00002, 75N92022D00003, 75N92022D00004, and 75N92022D00005. Urine metabolomic pro /uniFB01 ling was partially supported by the Chronic Kidney Disease Biomarker Consortium funded by National Institute of Diabetes and Digestive and Kidney Diseases grant U01DK085689. Serum metabolomic pro ling was /uniFB01 supported by R01HL141824 (principal investigator: BY). Dr Schultheiss was supported by the German Federal Ministry of Education and Research within the framework of the e:Med research and funding concept (grant 01ZX1912B). Dr Cheng was supported by the German Research Foundation (DFG) Project ID 441891347-S1-SFB 1479. Dr Kottgen € was supported by the DFG KO 3598/4-2. Drs Kottgen and Schlosser were supported € by Germany s Excellence Strategy (CIBSS EXC-2189 project ID ' 390939984). Drs Sekula, Schlosser, and Kottgen were supported € by DFG Project ID 431984000-SFB 1453. Dr Sekula was supported by DFG SE 2407/3-1. Dr Grams was supported by National Institutes of Health grants R01DK124399 and K24HL155861. Dr Schlosser was supported by DFG project ID 530592017 (SCHL 2292/3-1). The authors declare that neither funders nor af /uniFB01 liated institutions had any in /uniFB02 uence in the design, conduct, analysis, interpretation and publication of this project.
+
+Financial Disclosure: Dr Schaeffner has received a grant from Bayer unrelated to this topic. The remaining authors declare that they have no relevant /uniFB01 nancial interests.
+
+Acknowledgements: We are grateful for the willingness of the patients to participate in the GCKD study. The enormous effort of the study personnel of the various regional centers is highly appreciated. We thank the large number of nephrologists who provide routine care for the patients and collaborate with the GCKD study. We thank the staff and participants of the ARIC (Atherosclerosis Risk in Communities) study for their important contributions.
+
+Disclaimer: The ARIC data reported here have been supplied by the United States Renal Data System (USRDS). The interpretation and reporting of these data are the responsibility of the author(s) and in no way should be seen as an of /uniFB01 cial policy or interpretation of the US government. USRDS data is reported in Table S7. Any dissemination of results re /uniFB02 ects only the author s ' view; the JU is not responsible for any use that may be made of the information it contains.
+
+Peer Review: Received March 6, 2023. Evaluated by 3 external peer reviewers and a statistician, with editorial input from an Acting Editor-in-Chief (Editorial Board Member Natasha N. Dave, MD). Accepted in revised form March 12, 2024. The involvement of an Acting Editor-in-Chief to handle the peer-review and decisionmaking processes was to comply with AJKD ' s procedures for potential con icts /uniFB02 of interest for editors, described in the Information for Authors &amp; Journal Policies.
+
+## References
+
+- 1. Eckardt KU, Coresh J, Devuyst O, et al. Evolving importance of kidney disease: from subspecialty to global health burden. Lancet . 2013;382(9887):158-169. doi:10.1016/S01406736(13)60439-0
+- 2. Jha V, Garcia-Garcia G, Iseki K, et al. Chronic kidney disease: global dimension and perspectives. Lancet . 2013;382(9888): 260-272. doi:10.1016/S0140-6736(13)60687-X
+- 3. Pena MJ, Stenvinkel P, Kretzler M, et al. Strategies to improve monitoring disease progression, assessing cardiovascular risk, and de ning prognostic biomarkers in chronic kidney disease. /uniFB01 Kidney Int Suppl (2011) . 2017;7(2):107-113. doi:10.1016/j. kisu.2017.07.005
+- 4. Luo S, Grams ME. Epidemiology research to foster improvement in chronic kidney disease care. Kidney Int . 2020;97(3): 477-486. doi:10.1016/j.kint.2019.11.010
+- 5. Gansevoort RT, Matsushita K, van der Velde M, et al. Lower estimated GFR and higher albuminuria are associated with adverse kidney outcomes. A collaborative meta-analysis of general and high-risk population cohorts. Kidney Int . 2011;80(1):93-104. doi:10.1038/ki.2010.531
+- 6. Tangri N, Stevens LA, Grif /uniFB01 th J, et al. A predictive model for progression of chronic kidney disease to kidney failure. JAMA . 2011;305(15):1553-1559. doi:10.1001/jama.2011.451
+- 7. Provenzano M, Chiodini P, Minutolo R, et al. Reclassi /uniFB01 cation of chronic kidney disease patients for end-stage renal disease risk by proteinuria indexed to estimated glomerular /uniFB01 ltration rate: multicentre prospective study in nephrology clinics. Nephrol Dial Transplant . 2020;35(1):138-147. doi:10.1093/ndt/gfy217
+- 8. Ramspek CL, Evans M, Wanner C, et al. Kidney failure prediction models: a comprehensive external validation study in patients with advanced CKD. J Am Soc Nephrol . 2021;32(5): 1174-1186. doi:10.1681/ASN.2020071077
+- 9. Zacharias HU, Altenbuchinger M, Schultheiss UT, et al. A predictive model for progression of CKD to kidney failure based on routine laboratory tests. Am J Kidney Dis . 2022;79(2):217-230.e1. doi:10.1053/j.ajkd.2021.05.018
+- 10. Hocher B, Adamski J. Metabolomics for clinical use and research in chronic kidney disease. Nat Rev Nephrol . 2017;13(5):269-284. doi:10.1038/nrneph.2017.30
+- 11. Eckardt KU, Bansal N, Coresh J, et al. Improving the prognosis of patients with severely decreased glomerular /uniFB01 ltration rate (CKD G4 ): conclusions from a Kidney + Disease: Improving Global Outcomes (KDIGO) controversies conference. Kidney Int . 2018;93(6):1281-1292. doi:10.1016/j.kint.2018.02.006
+
+- 12. Lousa I, Reis F, Beirao I, Alves R, Belo L, Santos-Silva A. New ~ potential biomarkers for chronic kidney disease management-a review of the literature. Int J Mol Sci . 2020;22(1):43. doi:10. 3390/ijms22010043
+- 13. Rhee EP. Metabolomics and renal disease. Curr Opin Nephrol Hypertens . 2015;24(4):371-379. doi:10.1097/MNH. 0000000000000136
+- 14. Kalim S, Rhee EP. An overview of renal metabolomics. Kidney Int . 2017;91(1):61-69. doi:10.1016/j.kint.2016.08.021
+- 15. Rhee EP. A systems-level view of renal metabolomics. Semin Nephrol . 2018;38(2):142-150. doi:10.1016/j.semnephrol. 2018.01.005
+- 16. Zacharias HU, Altenbuchinger M, Schultheiss UT, et al. A novel metabolic signature to predict the requirement of dialysis or renal transplantation in patients with chronic kidney disease. J Proteome Res . 2019;18(4):1796-1805. doi:10.1021/acs. jproteome.8b00983
+- 17. Davies R. The metabolomic quest for a biomarker in chronic kidney disease. Clin Kidney J . 2018;11(5):694-703. doi:10. 1093/ckj/sfy037
+- 18. Kalantari S, Nafar M. An update of urine and blood metabolomics in chronic kidney disease. Biomark Med . 2019;13(7): 577-597. doi:10.2217/bmm-2019-0008
+- 19. Taherkhani A, Farrokhi Yekta R, Mohseni M, Saidijam M, Are /uniFB01 Oskouie A. Chronic kidney disease: a review of proteomic and metabolomic approaches to membranous glomerulonephritis, focal segmental glomerulosclerosis, and IgA nephropathy biomarkers. Proteome Sci . 2019;17(1):7 . doi:10.1186/s12953-019-0155-y
+- 20. Schultheiss UT, Kosch R, Kotsis F, Altenbuchinger M, Zacharias HU. Chronic kidney disease cohort studies: a guide to metabolome analyses. Metabolites . 2021;11(7):460. doi:10. 3390/metabo11070460
+- 21. Sandokji I, Xu Y, Denburg M, Furth S, Abraham AG, Greenberg JH. Current and novel biomarkers of progression risk in children with chronic kidney disease. Nephron . 2024;148(1):1-10. doi:10.1159/000530918
+- 22. Eckardt KU, Barthlein B, Baid-Agrawal S, et al. The German € Chronic Kidney Disease (GCKD) study: design and methods. Nephrol Dial Transplant . 2012;27(4):1454-1460. doi:10. 1093/ndt/gfr456
+- 23. Steinbrenner I, Schultheiss UT, Kotsis F, et al. Urine metabolite levels, adverse kidney outcomes, and mortality in CKD patients: a metabolome-wide association study. Am J Kidney Dis . 2021;78(5):669-677.e1. doi:10.1053/j.ajkd.2021.01.018
+- 24. Wishart DS, Guo A, Oler E, et al. HMDB 5.0: the Human Metabolome Database for 2022. Nucleic Acids Res . 2022;50(D1):D622-D631. doi:10.1093/nar/gkab1062
+- 25. Titze S, Schmid M, Kottgen A, et al. Disease burden and risk € pro /uniFB01 le in referred patients with moderate chronic kidney disease: composition of the German Chronic Kidney Disease (GCKD) cohort. Nephrol Dial Transplant . 2015;30(3):441451. doi:10.1093/ndt/gfu294
+- 26. Prokosch HU, Mate S, Christoph J, et al. Designing and implementing a biobanking IT framework for multiple research scenarios. Stud Health Technol Inform . 2012;180:559-563.
+- 27. Levey AS, Stevens LA, Schmid CH, et al. A new equation to estimate glomerular /uniFB01 ltration rate. Ann Intern Med . 2009;150(9):604-612. doi:10.7326/0003-4819-150-9200905050-00006
+- 28. Therneau TM, Grambsch PM. Modeling Survival Data: Extending the Cox Model . Springer; 2000.
+- 29. Hsu JY, Roy JA, Xie D, et al. statistical methods for cohort studies of CKD: survival analysis in the setting of competing risks. Clin J Am Soc Nephrol . 2017;12(7):1181-1189. doi:10. 2215/CJN.10301016
+- 30. Fine JP, Gray RJ. A proportional hazards model for the subdistribution of a competing risk. J Am Stat Assoc . 1999;94(446):496-509. doi:10.1080/01621459.1999. 10474144
+- 31. Latouche A, Allignol A, Beyersmann J, Labopin M, Fine JP. A competing risks analysis should report results on all causespeci /uniFB01 c hazards and cumulative incidence functions. J Clin Epidemiol . 2013;66(6):648-653. doi:10.1016/j.jclinepi.2012. 09.017
+- 32. Gail MH, Altman DG, Cadarette SM, et al. Design choices for observational studies of the effect of exposure on disease incidence. BMJ Open . 2019;9(12):e031031. doi:10.1136/ bmjopen-2019-031031
+- 33. Johansen KL, Chertow GM, Gilbertson DT, et al. US Renal Data System 2021 Annual Data Report: epidemiology of kidney disease in the United States. Am J Kidney Dis . 2022;79(4)(suppl 1):A8-A12. doi:10.1053/j.ajkd.2022.02.001
+- 34. Schlosser P, Scherer N, Grundner-Culemann F, et al. Genetic studies of paired metabolomes reveal enzymatic and transport processes at the interface of plasma and urine. Nat Genet . 2023;55(6):995-1008. doi:10.1038/s41588-02301409-8
+- 35. Quell JDB. Automated Annotation of Structurally Uncharacterized Metabolites in Human Metabolomics Studies by Systems Biology Models . Technische Universitat München; 2019. €
+- 36. Heisterkamp N, Groffen J, Warburton D, Sneddon TP. The human gamma-glutamyltransferase gene family. Hum Genet . 2008;123(4):321-332. doi:10.1007/s00439-008-0487-7
+- 37. Tanaka H, Sirich TL, Plummer NS, Weaver DS, Meyer TW. An enlarged pro /uniFB01 le of uremic solutes. PLoS One . 2015;10(8): e0135657. doi:10.1371/journal.pone.0135657
+- 38. Denburg MR, Xu Y, Abraham AG, et al. Metabolite biomarkers of CKD progression in children. Clin J Am Soc Nephrol . 2021;16(8):1178-1189. doi:10.2215/CJN.00220121
+- 39. Peng H, Liu X, Aoieong C, et al. Identi /uniFB01 cation of metabolite markers associated with kidney function. J Immunol Res . 2022;2022:6190333. doi:10.1155/2022/6190333
+- 40. Peng H, Liu X, Ieong CA, et al. A metabolomics study of metabolites associated with the glomerular /uniFB01 ltration rate. BMC Nephrol . 2023;24(1):105. doi:10.1186/s12882-023-03147-9
+- 41. Bobulescu IA. Renal lipid metabolism and lipotoxicity. Curr Opin Nephrol Hypertens . 2010;19(4):393-402. doi:10.1097/ MNH.0b013e32833aa4ac
+- 42. Mitrofanova A, Merscher S, Fornoni A. Kidney lipid dysmetabolism and lipid droplet accumulation in chronic kidney disease. Nat Rev Nephrol . 2023;19(10):629-645. doi:10.1038/ s41581-023-00741-w
+- 43. Cheng Y, Li Y, Benkowitz P, Lamina C, Kottgen A, Sekula P. The € relationship between blood metabolites of the tryptophan pathway and kidney function: a bidirectional Mendelian randomization analysis. Sci Rep . 2020;10(1):12675. doi:10. 1038/s41598-020-69559-x
+- 44. Huang J, Weinstein SJ, Moore SC, et al. Serum metabolomic pro /uniFB01 ling of all-cause mortality: a prospective analysis in the Alpha-Tocopherol, Beta-Carotene Cancer Prevention (ATBC) study cohort. Am J Epidemiol . 2018;187(8):1721-1732. doi: 10.1093/aje/kwy017
+- 45. Luo S, Surapaneni A, Zheng Z, et al. NAT8 variants, n-acetylated amino acids, and progression of CKD. Clin J Am Soc Nephrol . 2020;16(1):37-47. doi:10.2215/CJN.08600520
+- 46. Veiga-da-Cunha M, Tyteca D, Stroobant V, Courtoy PJ, Opperdoes FR, Van Schaftingen E. Molecular identi /uniFB01 cation of NAT8 as the enzyme that acetylates cysteine S-conjugates to mercapturic acids. J Biol Chem . 2010;285(24):18888-18898. doi:10.1074/jbc.M110.110924
+
+<!-- image -->

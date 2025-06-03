@@ -1,0 +1,300 @@
+1234567890():,;
+
+1234567890():,;
+
+## SLC17A1/3 transporters mediate renal excretion of Lac-Phe in mice and humans
+
+Received: 13 November 2023
+
+Accepted: 1 August 2024
+
+Check for updates
+
+Veronica L. Li 1,2,3,4 , Shuke Xiao 1,3,4 , Pascal Schlosser 5,6,7 , Nora Scherer 5,8 , Amanda L. Wiggenhorn 1,2,3,4 , Jan Spaas 1,3,4 , Alan Sheng-Hwa Tung 1,3,4 , Edward D. Karoly , Anna Köttgen 9 5,6,7 &amp; Jonathan Z. Long 1,3,4,10,11
+
+<!-- image -->
+
+N-lactoyl-phenylalanine (Lac-Phe) is a lactate-derived metabolite that suppresses food intake and body weight. Little is known about the mechanisms that mediate Lac-Phe transport across cell membranes. Here we identify SLC17A1 and SLC17A3, two kidney-restricted plasma membrane-localized solute carriers, as physiologic urine Lac-Phe transporters. In cell culture, SLC17A1/3 exhibit high Lac-Phe ef /uniFB02 ux activity. In humans, levels of Lac-Phe in urine exhibit a strong genetic association with the SLC17A1-4 locus. Urine LacPhe levels are increased following a Wingate sprint test. In mice, genetic ablation of either SLC17A1 or SLC17A3 reduces urine Lac-Phe levels. Despite these differences, both knockout strains have normal blood Lac-Phe and body weights, demonstrating SLC17A1/3-dependent de-coupling of urine and plasma Lac-Phe pools. Together, these data establish SLC17A1/3 family members as the physiologic urine Lac-Phe transporters and uncover a biochemical pathway for the renal excretion of this signaling metabolite.
+
+Lactate is a fundamental metabolite that has attracted signi /uniFB01 cant biochemical and physiologic attention for over a century 1,2 . Classically, lactate is produced when energy demands are high, such as in muscle during exercise, and can reach millimolar concentrations in the circulation 3,4 . Once produced, lactate exerts pleotropic functions in systemic energy metabolism. These include serving as a metabolic fuel, tissue redox shuttling, signaling via cell surface receptors, and in the post-translational modi /uniFB01 cation of proteins 5 -8 .
+
+Recently, we showed that the metabolic functions of lactate also extend to lactate-derived metabolites. Speci /uniFB01 cally, we identi /uniFB01 ed Nlactoyl-phenylalanine (Lac-Phe) as an exercise- and metformin-inducible signaling molecule that regulates food intake and energy balance 9 11 -. Lac-Phe biosynthesis is mediated by CNDP2, a cytosolic enzyme that catalyzes the direct condensation of lactate and phenylalanine 12 . Genetic ablation of CNDP2 in mice reduces circulating basal and stimulated Lac-Phe levels. CNDP2-KO mice are hyperphagic and obese after exercise training and high fat diet feeding , establishing that Lac9 Phe is necessary for the suppression of feeding after exercise training. CNDP2-KOmicearealso resistant to the anorexigenic and body weightlowering effects of metformin therapy 10 , a pharmacological stimulus that increases glycolysis and lactate /uniFB02 ux and lowers body weight. Conversely, pharmacological administration of Lac-Phe is suf /uniFB01 cient to suppress feeding and obesity without affecting energy expenditure. In humans, higher post-exercise Lac-Phe levels are associated with greater reduction of adiposity following exercise training 13 , demonstrating conservation of this metabolite across multiple mammalian species.
+
+Three lines of evidence point to the existence of speci /uniFB01 c transporters that mediates active Lac-Phe ef /uniFB02 ux from cells. First, CNDP2 is an intracellular, cytosolic enzyme, yet Lac-Phe is enriched in the conditioned medium of cultured cells . This intracellular versus extra9 cellular distribution of CNDP2 and Lac-Phe, respectively, suggest active processes mediate ef /uniFB02 ux of Lac-Phe away from its site of production. Second, Lac-Phe is a polar metabolite and thus would not be expected to simply diffuse across lipid bilayers. Third, Lac-Phe can be actively translocated across the plasma membrane by transporters in cell culture. For instance, overexpression of ABCC5, one member of the ABC transporter family, increases Lac-Phe levels in conditioned media of cells 12 . However, there is no evidence that Lac-Phe levels are altered in ABCC5-KO mice 9 , suggesting that other, as of yet unidenti /uniFB01 ed plasma membrane carriers are the physiologically relevant transporters for Lac-Phe in vivo.
+
+Here we combine human metabolite-genome association data with biochemical studies in vitro and genetic studies in mice to demonstrate that Lac-Phe is an endogenous transport substrate for the SLC17 family of solute carriers. SLC17A1/3 are robust ef /uniFB02 uxers of LacPhe in cell culture and highly expressed in renal epithelial cells in mice and humans. Genetic individual ablation of SLC17A1 or SLC17A3 in mice results in reduced urine levels of Lac-Phe. Finally, we show that both SLC17A1- and SLC17A3-KO mice have normal levels of Lac-Phe in bloodandnormalbodyweights,providingevidenceforde-couplingof urine and plasma Lac-Phe pools and the presence of yet additional transporters that mediate Lac-Phe ef /uniFB02 ux into blood plasma.
+
+## Results
+
+## Re-assignment and genetic association of Lac-Phe with the SLC17A1-4 locus in human urine
+
+In a 2020 metabolite genome-wide association study 14 , we noted the detection of a urine metabolite which was reported by Metabolon as both ' X-15497 ' and also ' X-15497retired for 1carboxyethylphenylalanine . In a subsequent 2023 study from the ' same group 15 , this X-15497/1-carboxyethylphenylalanine metabolite was re-assigned by Metabolon to a different chemical structure, N-lactoyl-phenylalanine (Lac-Phe). In both studies, urine levels of the X-15497/1-carboxyethylphenylalanine/Lac-Phe metabolite exhibited a strong genetic association with the human SLC17A1-4 locus (Fig. 1a-c). While 1-carboxyethylphenylalanine and Lac-Phe have identical molecular formulas and mass-tocharge ratios (C12H15NO4, m/z = 236.0928), these two molecules are in fact two distinct chemical entities. Until now, raw chromatographic or tandem mass spectrometry data were not available in either the 2020 or 2023 studies. Consequently, the precise chemical structure of this X-15497/1-carboxyethylphenylalanine/ Lac-Phe metabolite, and the signi /uniFB01 cance of its association with the SLC17A1-4 locus, remained unde /uniFB01 ned.
+
+We /uniFB01 rst sought to de /uniFB01 nitively determine the chemical structure of the X-15497/1-carboxyethylphenylalanine/Lac-Phe metabolite. First, we compared tandem mass spectrometry (MS/MS) spectra of authentic standards for Lac-Phe and 1-carboxyethylphenylalanine. Both exhibited a major daughter ion of m/z =88 corresponding to fragmentation of the amide N-C α bond (Fig. 1e). In addition, the 1-carboxyethylphenylalanine standard produced a minor daughter ion of m/z =192whichwasabsentintheLac-Phestandard;wepresumethis m/z =192 daughter ion likely corresponds to decarboxylation of the 1-carboxyethyl portion of the molecule (Fig. 1e). The experimental MS/ MSforX-15497, which was obtained from Metabolon, also showed the major m/z =88 and no evidence for the m/z =192 daughter ion. These data demonstrate that the fragmentation pattern for the metabolite X-15497 is more alike to Lac-Phe than it is to 1-carboxyethylphenylalanine (Fig. 1e).
+
+We also compared the retention time for the endogenous m/z =236.0928 peak from blood plasma and authentic samples of Lac-
+
+Phe and 1-carboxyethylphenylalanine standards by liquid chromatography-mass spectrometry (LC-MS). As shown in Fig. 1f, in mouse, human, and racehorse plasma, we detected a m/z =236.0928 peakeluting at ~12 min, which was an identical retention time to that of the Lac-Phe standard. By contrast, 1-carboxyethylphenylalanine eluted 5 min later at ~17 min. In fact, no endogenous peak at m/z =236.0928 and a 17 min retention time could be observed. On the basis of both MS/MS fragmentation and retention time, we conclude that the identity of the X-15497/1-carboxyethylphenylalanine/Lac-Phe metabolite is indeed Lac-Phe, and not 1-carboxyethylphenylalnine. In addition, our data demonstrate that 1-carboxyethylphenylalanine is not an endogenous metabolite.
+
+## SLC17 transporters ef /uniFB02 ux Lac-Phe in vitro
+
+Having con rmed /uniFB01 the chemical structure for X-15497/1-carboxyethylphenylalanine as Lac-Phe, we next turned to the observed genetic association of urine Lac-Phe with the SLC17A1-4 locus. The lead single nucleotide polymorphism (SNP), rs9461218, is located in an intronic region of the SLC17A1 geneandisassociated with a decrease in urine Lac-Phe levels ( β =-0.242 + /- 0.023, P = 9.9e-26, non-effect allele G, effect allele A, effect allele frequency 0.22) 15 . However, the genetic association signal maps into an extended linkage disequilibrium block and encompasses the adjacent genes SLC17A2 , SLC17A3 , and SLC17A4 (Fig. 1c). No genetic association signal was detected between Lac-Phe levels in blood and the SLC17A1-4 locus 15 . A signi /uniFB01 cant correlation was detected between urine and plasmaLac-Phe levels (r = 0.54, P &lt; 2.2e-16, Supplementary Fig. 1). In the Type 2 Diabetes Knowledge Portal (T2D-KP), the SLC17A1-4 locus is signi /uniFB01 cantly associated with multiple cardiometabolic traits (Supplementary Fig. 2).
+
+The SLC17A1-4 genes encode for four plasma membrane solute carriers, which are also called NPT1-4. SLC17A1-4 transporters were originally shown to be co-transporters of sodium and phosphate in vitro. Other additional in vitro transport substrates include urate and synthetic organic anions such as p-aminohippuric acid 16 -18 . Moreover, human genetic screens of entire plasma and urine metabolomes point towards dozens of putative additional physiological and xenobiotic substrates 15 . A biochemical interpretation of the genetic association between Lac-Phe and the SLC17A1-4 locus is that Lac-Phe is an endogenous substrate transported by SLC17 family members. To test this prediction, we obtained mammalian expression plasmids for each SLC17A1-4 and cDNAs were individually transfected into HEK293T cells. As an additional positive control, we also transfected ABCC5, a previously reported in vitro Lac-Phe transporter 12 . One day after transfection, cells were changed to serum free media and incubated for an additional 24 h. Media Lac-Phe levels were then measured by LC-MS (Fig. 2a). Compared to GFP-transfected controls, we observed a 2-fold and 5-fold increase in extracellular Lac-Phe in cells transfected with SLC17A1 and SLC17A3, respectively (Fig. 2b). By contrast, cells transfected with SLC17A2 and SLC17A4 did not exhibit any signi /uniFB01 cant increase in media Lac-Phe levels. ABCC5-tranfected cells also exhibited a ~ 2-fold increase in Lac-Phe. The mRNA expression for eachSLC17A1-4wascomparableasmeasuredbyqPCR(Supplementary Fig. 3a). Western blotting of transfected lysates with an anti/uniFB02 ag antibody con /uniFB01 rmed protein expression of SLC17A2-4, while protein levels of SLC17A1 were below the limit of detection (Supplementary Fig. 3b). We conclude that overexpression of SLC17A3, and to a lesser extent SLC17A1, is suf /uniFB01 cient to drive Lac-Phe ef /uniFB02 ux from cells.
+
+Next, we performed untargeted metabolomic comparisons of conditioned media from SLC17A1-transfected or SLC17A3-transfected cells compared to GFP controls. Using XCMS software 19 , we identi /uniFB01 eda total of N =13 and N =20 features that were signi /uniFB01 cantly increased ( P &lt;0.05) upon SLC17A1 or SLC17A3 transfection, respectively, compared to GFP control (Supplementary Data 1 and Fig. 2c, d). Notably, Lac-Phe was the top most increased metabolite in SLC17A1-transfected media, and it was the second most increased metabolite in SLC17A3-
+
+<!-- image -->
+
+b
+
+<!-- image -->
+
+<!-- image -->
+
+10
+
+<!-- image -->
+
+<!-- image -->
+
+1-carboxyethylphenylalanine
+
+C 12
+
+H 15
+
+NO4
+
+-
+
+m/z
+
+= 236.0928
+
+<!-- image -->
+
+f
+
+m/z
+
+Fig. 1 | Structural assignment and association of X-15497/1-carboxyethylphenylalanine/Lac-Phe with the SLC17A1-4 locus in humans. a -c Manhattan plot displaying the -log10 (P-values) by chromosomal position ( a ), QQ plot displaying the expected -log10 (P-values) under the null vs. observed -log10 (P-values) ( b ), and regional association plot of the SLC17A1-4 locus on chromosome 6 ( c ) of the genetic association of the urine metabolite, X-15497/1-carboxyethylphenylalanine/N-lactoyl-phenylalanine (Lac-Phe). d Chemical structure of Lac-Phe (left) and 1-carboxyethylphenylalanine (right). e Tandem mass spectrometry fragmentation of an authentic Lac-Phe standard (top), an authentic
+
+<!-- image -->
+
+transfected media(Fig. 2c, d). These data demonstrate that amongst all detected metabolites, Lac-Phe is a principal transport substrate for SLC17A1 and SLC17A3.
+
+If SLC17 transporters mediate ef /uniFB02 ux of Lac-Phe, then overexpression of both CNDP2 and SLC17 transporters should result in
+
+even greater levels of extracellular Lac-Phe because now both intracellular biosynthesis and plasma membrane ef /uniFB02 ux are increased. We therefore transfected CNDP2 alone or co-transfected CNDP2 with each individual SLC17 transporter. CNDP2 overexpression was con /uniFB01 rmedby Western blot (Supplementary Fig. 3c). Overexpression of CNDP2 alone
+
+<!-- image -->
+
+CNDP2
+
+did not alter media Lac-Phe levels, establishing that driving intracellular biosynthesis alone is not suf /uniFB01 cient to increase extracellular LacPhe levels. However, when CNDP2 was overexpressed with SLC17A1 or SLC17A3, we observed a dramatic 3-fold and 40-fold increase in extracellular Lac-Phe levels, respectively (Fig. 2e). We also observed a synergistic effect of overexpression of CNDP2 and SLC17A4: in this case, media Lac-Phe levels were increased by 6-fold, whereas no changes were observed with CNDP2 or SLC17A4 overexpression alone. Lastly, no increase in media Lac-Phe could be observed with SLC17A2. Quanti /uniFB01 cation of intracellular levels of phenylalanine and Lac-Phe did not reveal any major differences upon transfection by individual SLC17 family members alone or in combination with CNDP2; intracellular lactate was below the limit of detection of our method (Supplementary Fig. 3d -i). We also did not observe any evidence for Lac-Phe accumulating intracellularly upon CNDP2 overexpression alone, which potentially re /uniFB02 ects alternative pathways of intracellular Lac-Phe metabolism (Supplementary Fig. 3d -i). These data show that CNDP2 and SLC17 family members can cooperatively increase extracellular Lac-Phe levels.
+
+To determine the generality of SLC17-mediated Lac-Phe ef /uniFB02 ux in non-renal cells, we also measured Lac-Phe levels in media after transfection of the mouse macrophage cell line RAW264.7. Overexpression of SLC17A2 and SLC17A3, but not SLC17A1 or SLC17A4, in RAW264.7 macrophages increased media Lac-Phe levels by ~50% (Supplementary Fig. 4a). Therefore, the magnitude of SLC17-mediated Lac-Phe ef /uniFB02 ux in cell culture is dependent both on the speci /uniFB01 c transporter and also the cell type.
+
+We used cellular knockout studies to determine whether genetic ablation of SLC17 family members would reduce Lac-Phe ef /uniFB02 uxinvitro. HEK293Tcellsdo not express SLC17A proteins (Supplementary Fig. 3a, Ct &gt;30). We therefore turned to the mouse kidney epithelial TKPTS
+
+cells. By mRNA levels, only Slc17a1 was robustly expressed in this cell line while mRNA levels for Slc17a2 , Slc17a3 , and Slc17a4 were not detected (Supplementary Fig. 4b). In SLC17A1-KO TKPTS cells, media Lac-Phe levels were reduced by 40% compared to control TKPTS cells (Supplementary Fig. 4c), demonstrating that SLC17 family members are physiologic contributors to Lac-Phe ef /uniFB02 ux in vitro.
+
+## Urine Lac-Phe levels after sprint exercise
+
+Next, we examined the tissue mRNA expression pattern for SLC17A1-4 in both mice (using qPCR analysis of a tissue panel) and humans (using GTEx) 20 . In both species, SLC17A1/3, the two transporters with greatest cellular Lac-Phe ef /uniFB02 ux activities, were highly expressed in the kidney (Fig. 3a, b and Supplementary Fig. 5). On the other hand, human SLC17A2 was liver-speci /uniFB01 c and human SLC17A4 exhibited a broader tissue expression pattern (Supplementary Fig. 5). The public mouse gene expression portal BioGPS 21 also con /uniFB01 rmed restricted expression of Slc17a1/3 to the kidney (Supplementary Fig. 6). Lastly, within the kidney, the mouse single cell RNAseq dataset Tabula Muris showed high enrichment of Slc17a1/3 in epithelial cells of the proximal tubule, which, coincidentally, was also where high expression of Cndp2 mRNA was found (Supplementary Fig. 7). These expression data suggest that SLC17A1/3-dependent ef /uniFB02 ux of Lac-Phe may be most relevant for regulating urine levels of Lac-Phe.
+
+To determine if urine Lac-Phe levels are dynamically regulated by exercise, we measured Lac-Phe beforeand after a Wingate sprint test in humans. In our previous Wingate test study , urine was not collected. 9 We therefore performed a new Wingate test in N =10 healthy volunteers and collected urine before and at 1 and 2 h after the test (Fig. 3c). This Wingate test consisted of three sets of sprinting (30 s each sprint) on a bicycle ergometer. We observed a wide range of basal urine LacPhe concentrations in humans (range: 0.5 -17 μ M, average 4 μ M). One
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+Fig. 3 | Lac-Phe levels increase in human urine after sprint exercise. mRNA expression levels of SLC17 family members across mouse ( a ) and human( b ) tissues. Mouse data were obtained from bioGPS; human data from GTEx. c Schematic of human sprint exercise study design. Average ( d f , , h ) and individual ( e g i , , ) urine levels of the indicated metabolite before (pre) or at the indicated time point after
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+hour after the sprint exercise, urine Lac-Phe levels were increased by 2-fold and returned back to baseline by 2 h post-exercise (Fig. 3d, e). In addition to Lac-Phe, we also measured urine levels of both lactate and urate. Urine lactate also exhibited similar kinetics to Lac-Phe, being dramatically induced by 1 h post-exercise and returning to baseline at the 2 h time point (Fig. 3f, g). Urine urate levels were unchanged throughout the protocol (Fig. 3h, i). We conclude that urine Lac-Phe levels exhibit dynamic regulation following sprint exercise.
+
+## Genetic ablation of SLC17A1/3 transporters reduces urine Lac-Phe levels
+
+To directly test the in vivo contribution of SLC17 transporters to renal ef /uniFB02 ux of Lac-Phe in mice, we obtained knockout mice that are genetically de /uniFB01 cient in either SLC17A1 or SLC17A3. SLC17A1 and A3 were selected because these two transporters exhibited the most robust Lac-Phe ef /uniFB02 ux activity in cells (Fig. 2b) and also high expression in the kidney (Fig. 3a). While both SLC17A1-KO and SLC17A3-KO mice
+
+exercise. For d i -, subjects were 6 male, 4 female, age 28.3 ± 5.3 (mean ± SD), N =10 biological replicates per group. Data are shown as mean ± SD. P -values in d i -were calculated by one-way ANOVA with Dunnett T3 post-hoc tests. Source Data are provided as a Source Data File.
+
+<!-- image -->
+
+<!-- image -->
+
+were generated as part of the Knockout Mouse Project (KOMP) 22 , the biochemical, molecular, and physiologic phenotypes of these animals have not been previously reported.
+
+The Slc17a1/3 genes are localized in very close proximity (&lt;20 kb) on mouse chromosome 13 (Fig. 4a). First, we characterized SLC17A1-KO mice, which were produced via CRISPR-Cas9 deletion of exon 3 (Fig. 4a). Complete loss of Slc17a1 mRNAwasobserved from kidneys of SLC17A1KO mice (Fig. 4b). The mRNA levels of Slc17a3 were not different, establishing speci /uniFB01 c deletion of only SLC17A1 in this genetic model (Fig. 4b). We were unable to robustly detect SLC17A1 protein by shotgun proteomics of whole kidney (Supplementary Data 2). In SLC17A1-KO mice, a ~30% reduction of urine Lac-Phe levels compared to WT littermates was observed (Fig. 4c); by contrast, the levels of other urine solutes, such as urate, were unchanged (Fig. 4d). In a separate cohort of mice, baseline plasma Lac-Phe were also unaltered in SLC17A1-KO mice (Fig. 4e). To determine if the baseline differences in urine Lac-Phe levels persisted upon exogenous Lac-Phe treatment, we administered Lac-Phe
+
+Fig. 4 | Reduced urine Lac-Phe levels in SLC17A1- and SLC17A3-KO mice.
+
+<!-- image -->
+
+a Schematic of the Slc17a1 and Slc17a3 genes on mouse chromosome 13 and the genetic modi /uniFB01 cations resulting in the SLC17A1-KO or SLC17A3-KO mouse. b mRNA levels of the indicated genes from kidneys of WT or SLC17A1-KO mice, N =4 biological replicates per group. Urine Lac-Phe ( c ) or urate ( d ) levels from male 3 to 5 month old WT or SLC17A1-KO mice. N =8 biological replicates in the WT group and N =7 biological replicates in the SLC17A1-KO group. e Plasma Lac-Phe levels from 3 to 7 month old male and female WT or SLC17A1-KO mice, N =7 biological replicates in the WT group and N =6biological replicates in the SLC17A1-KO group. f Urine Lac-Phe levels 30 min after a single administration of Lac-Phe (50 mg/kg, IP) to 6 -9 month old male and female WT or SLC17A1-KO mice. N =7 biological replicates in the WT group and N =6biological replicates in the SLC17A1-KO group. g mRNA levels of the indicated genes from kidneys of WT or SLC17A3-KO mice,
+
+(50 mg/kg, IP) to WT and SLC17A1-KO mice. Under these conditions, urine Lac-Phe levels were dramatically elevated following the treatment but were not different in SLC17A1-KO mice (Fig. 4f).
+
+Next, we examined SLC17A3-KO mice. These animals harbor the so called tm2a KO /uniFB01 rst allele in which a splice acceptor and polyadenylation sequence are inserted in between exons 2 and 3. In kidneys from the SLC17A3-KO mice, Slc17a3 mRNA was completely absent (Fig. 4g). We also observed a ~60% partial reduction of Slc17a1 mRNA (Fig. 4g). Shotgun proteomics revealed complete loss of SLC17A3 protein in knockout mice (Supplementary Data 3). The partial reduction of Slc17a1 mRNA may re ect complex and long-range interactions of the tm2a /uniFB02 allele modi cation in the /uniFB01 Slc17a3 gene. In urine, Lac-Phe levels were reduced by 40% in SLC17A3-KO mice compared to WT controls (Fig. 4h) without any changes in urine urate levels (Fig. 4i). In a separate cohort of SLC17A3-KOmice,baseline plasma Lac-Phe levels were also not different (Fig. 4j). In addition, the lower Lac-Phe excretion of SLC17A3-KO mice persisted even with exogenous Lac-Phe administration (50 mg/kg, IP, Fig. 4k). Our efforts to obtain double SLC17A1/3-KO mice via breeding were unsuccessful, which likely re /uniFB02 ects the close physical proximity of these two alleles and consequently lack of independent recombination. Weconclude that both SLC17A1 and SLC17A3 are physiologic regulators of urine, but not plasma Lac-Phe levels. In addition, SLC17A1 and SLC17A3 appears to have differential contributions to the urine Lac-Phe pool, with SLC17A3 being the more dominant transporter, under conditions of elevated circulating Lac-Phe.
+
+After a single bout of treadmill exercise, mRNA levels of Slc17a1 and Slc17a3 were unchanged (Supplementary Fig. 8a). We were unable to collect urine after treadmill exercise in mice, likely because the mice had already voided their bladders during the treadmill activity. Immediately after a single bout of exhaustive treadmill exercise, plasma Lac-Phe levels were still not different in either SLC17A1-KO or SLC17A3-KO mice (Supplementary Fig. 8b, c).
+
+Both SLC17A1-KO and SLC17A3-KO mice had normal kidney histology as assessed by hematoxylin and eosin (H&amp;E) staining (Supplementary Fig. 9a, b). In addition, plasma markers of renal function were unchanged in both genotypes (Supplementary Data 4 and Supplementary Data 5). A blood metabolic panel also did not reveal any differences in either SLC17A1-KO and SLC17A3-KO mice (Supplementary Data 4 and Supplementary Data 5). Body weights and food intake were also not different in SLC17A1-KO and SLC17A3-KO mice compared to WT controls on high fat diet (Supplementary Fig. 9c, d), consistent with an absence of changes in circulating Lac-Phe levels in these animals. Lastly, we subjected a cohort of SLC17A3-KO and WT mice to a combined high fat diet/treadmill exercise protocol, but also did not detect any genotype-dependent effects on body weight or food intake (Supplementary Fig. 9e).
+
+We did not detect any differences in urine Lac-Phe in WT versus CNDP2-KO mice (Supplementary Fig. 10b).
+
+## Discussion
+
+Here we provide several independent lines of evidence to show that SLC17 family members are physiologic urine Lac-Phe transporters : 1 overexpression of SLC17A1 and SLC17A3 dramatically increases LacPhe levels in conditioned media of cultured cells, a biochemical effect that is synergistic with the Lac-Phe biosynthetic enzyme CNDP2 2 ; individual genetic ablation of SLC17A1 or SLC17A3 in mice reduces urine Lac-Phe levels; and 3 urine Lac-Phe levels exhibit strong genetic associations with the SLC17A1-4 locus in humans. These data establish physiologic plasma membrane transporters for Lac-Phe in vivo and uncover a molecular mechanism involved in the renal excretion of this signaling metabolite.
+
+Previously, SLC17A1-4 family members have been characterized to be plasma membrane transporters involved in renal excretion of urate. Supporting this hypothesis, SLC17A1-4 transporters exhibit urate transport activity in vitro 18 and polymorphisms in the SLC17A1-4 locus are genetically associated with plasma urate levels in humans 23 . Our studies further build on these observations by demonstrating that LacPhe is also a physiologic substrate of SLC17A1/3 transporters. In addition, our untargeted metabolomics of cells transfected with SLC17A1-4 family members, as well as recent genome-wide association studies in humans, would also suggest that there are potentially many more physiologic SLC17A1-4 substrates beyond these alone 15 . The ability to form anions, which is a characteristic present in both Lac-Phe and other annotated SLC17A1-4 substrates (e.g., urate, p-aminohippuric acid, acetylsalicylic acid), appears to be a common feature shared amongstSLC17A1-4substrates.However, we note that one limitation in this study is that we have not provided direct evidence that Lac-Phe can be transported by SLC17A1/3 using reconstituted transport assays with puri /uniFB01 ed components. In the future, such studies would provide more de /uniFB01 nitive in vitro evidence for SLC17A1/3-mediated transport of the Lac-Phe metabolite.
+
+Our mouse knockout studies demonstrate that each SLC17A1 and SLC17A3 contribute to renal excretion of Lac-Phe. Notably, that only partial de /uniFB01 ciency of urine Lac-Phe is observed in each SLC17A1and SLC17A3-KO mice is consistent with functional redundancy between these two solute carriers. We did not observe changes in urine urate levels with individual genetic ablation of SLC17A1/3 which may be due to a contribution of ABCG2 as a urate transporter 24 and/ or the presence of uricase in mice which could catabolize excess urate to allantoin 25 . In the future, the generation of double SLC17A1/ 3-KO mice, or potentially mice de /uniFB01 cient in all four SLC17 transporters, may clarify whether there are additional, non-SLC17-dependent mechanisms for regulating urine Lac-Phe levels. In addition, kidneyspeci /uniFB01 c SLC17A1 or SLC17A3 knockout mice, once available, could also help to further re /uniFB01 ne the importance of the renal expression of these transporters. Selective and in vivo-active SLC17A1/3 inhibitors, once developed, may also enable pharmacological interrogation of this pathway. Beyond Lac-Phe, in humans many additional urine metabolites have been associated with the SLC17A1-4 locus, suggesting that these transporters have a large number of endogenous physiologic substrates.
+
+The key insight that enabled identi /uniFB01 cation of SLC17 carriers as LacPhe transporters originated from correct determination of the chemical structure of ' X-15497/1-carboxyethylphenylalanine. ' The similarity in MS/MS between Lac-Phe and 1-carboxyethylphenylalanine, especially in the m/z = 88 daughter ion, likely contributed to the initially incorrect structure. This correction underscores the importance of generating chemical standards and using differential retention time for high con/uniFB01 dence structural assignment of metabolites. Our studies also enable the correct reinterpretation of ' 1-carboxyethylphenylalanine ' in other public metabolomic datasets as Lac-Phe 26 .
+
+While SLC17A1 and SLC17A3 transporters clearly mediated LacPhe excretion to urine, we were unable to detect changes in plasma Lac-Phe levels in the SLC17A1or SLC17A3-KO mice. Therefore, SLC17A1/3 transporters do not appear to substantially contribute to clearance of plasma Lac-Phe levels. One explanation for this observation is that SLC17A1/3 transporters are localized to the apical plasma membrane and face the urine, and consequently only in /uniFB02 uence LacPhe levels in this matrix 27,28 . Another possibility is that the Lac-Phe excreted in urine represents a small fraction of total Lac-Phe /uniFB02 ux in the circulation. Future work will be required to uncover the molecular identity of the Lac-Phe transporter that mediates its ef /uniFB02 uxfromitssites of production (e.g., CNDP2+ cells) to blood plasma. It seems plausible that different cell types might use different Lac-Phe transporters to ef /uniFB02 ux Lac-Phe into different body /uniFB02 uids. For instance, while ABCC5-KO mice do not have any differences in plasma Lac-Phe levels , it may be 9 possible that ABCC5 physiologically contributes to Lac-Phe ef /uniFB02 ux in another /uniFB02 uid (e.g., urine, cerebral spinal /uniFB02 uid). Whether Lac-Phe can be transported in or out of cells lacking CNDP2 and/or SLC17A1/3 also remains an important question for the future.
+
+## Methods
+
+## Cell line culture
+
+All cell lines were obtained from the American Type Culture Collection (ATCC) and grown in an incubator at 37 °C with 5% CO2. HEK293T and RAW264.7 cells were maintained in DMEM with 10% FBS and 2% penicillin-streptomycin. TKPTS cells were maintained in DMEM F-12 with 10% FBS and 2% penicillin-streptomycin.
+
+## General animal information
+
+Animal experiments were conducted according to the Stanford University Administrative Panel on Laboratory Animal Care approved protocols. Mice were maintained in 12-h light-dark cycles at 22 °C and 50% relative humidity. Unless otherwise indicated, mice were fed a standard irradiated rodent chow diet. The high-fat diet used was from Research Diets (D12492, 60% kcal from fat). SLC17A1 animals were obtained from the International Mouse Phenotyping Consortium (IMPC, C57BL/6NJSlc17a1em1(IMPC)J/Mmjax) and SLC17A3 animals were obtained from the Knockout Mouse Project (KOMP, C57BL/6N-Slc17a3tm2a(KOMP) Wtsi/HMmucd, 049670-UCD). Sample sizes were determined on the basis of previous experiments using similar methodologies.
+
+## Chemicals
+
+N-Lactoyl Phenylalanine (catalogue # 318943) was purchased from NovoProLabsand1-Carboxyethylphenylalanine (ENAH95E73EBB) was purchased from Sigma Aldrich.
+
+## In vitro transporter assays
+
+HEK293T cells were plated in 10 cm plates at 5 million cells/plate and the next day transiently transfected with the indicated plasmids using PolyFect (Qiagen 301105) according to the manufacturer s instructions. RAW ' 264.7 cells were transfected with Lipofectamine LTX reagent with PLUS reagent according to manufacturer s instructions. One-day post-trans-' fection, cells were re-plated into 12-well plates at 70 -80%con uence.The /uniFB02 next day cells were put into 0.5 ml of serum free media. After overnight incubation, 400 μ l of media was removed and 20 μ l of 1 M hydrochloride addedtoacidifythemediaandprotonateLac-Phe.400 μ l of ethyl acetate wasaddedintoeachsampleandvortexedfor30stoextractLac-Pheinto the organic layer. 300 μ l from the top layer was transferred to a new Eppendorf tube and dried down under a stream of nitrogen. The residue wasre-suspendedin100ulofan80:20mixtureofacetonitrile/water.The mixture was centrifuged at 4 °C for 10 min at 21,000 × g and the supernatant was transferred to a LC-MS vial. For collection of intracellular metabolites, cells were wash 2 times with PBS and lysed in 150 ul of a 2:1:1 acetonitrile:methanol:water mixture. The cells were scraped from the well and both cell lysate and supernatant were transferred to an Eppendorf tube. The samples were then centrifuged at 4 °C for 10 min at 21,000× g and the supernatant was transferred to LC-MS vials.
+
+## Untargeted measurements of metabolites by LC-MS
+
+Untargeted metabolomics measurements were performed on an Agilent 6520 Quadrupole Time-of-Flight (Q-TOF) LC/MS. Mass spectrometry analysis was performed using electrospray ionization (ESI) in negative mode. The dual ESI source parameters were set as follows, the gas temperaturewasset at 250 °C with a drying gas /uniFB02 owof12l/minand the nebulizer pressure at 20 psi. The capillary voltage was set to 3500 V and the fragmentor voltage set to 100 V. Separation of polar metabolites was conducted on a Luna 5 μ mNH2 100Å LC column (Phenomenex 00B4378-E0) with normal phase chromatography. Mobile phases were as follows: Buffer A, 95:5 water/acetonitrile with 0.2% ammonium hydroxide and 10 mM ammonium acetate. Buffer B, acetonitrile. The LC gradient started at 100% B with a /uniFB02 ow rate of 0.2 ml/min from 0 to 2 min. The gradient was then increased linearly to 50% A/50% B at a /uniFB02 ow rate of 0.7 ml/min from 2 to 20 min. From 20 to 25 min the gradient was maintained at 50% A/50% B at a /uniFB02 ow rate of 0.7 ml/min. The number of biological replicates analyzed is indicated in the /uniFB01 gure legends and all samples were ran with one technical replicate. Data was analyzed using Agilent Qualitative Analysis (version B.07.00) by extracting for the indicated compounds at the exact mass +/ -20 ppm. XCMS analysis was performed by XCMS online.
+
+## Targeted measurements of Lac-Phe by LC-MS
+
+Targeted measurements were performed on an Agilent 6470 Triple Quadrupole (QQQ) LC/MS. Mass spectrometry analysis was performed using electrospray ionization (ESI) in negative mode. The AJS ESI source parameters were set as follows, the gas temperature was set at 250 °C with a gas /uniFB02 ow of 12l/min and the nebulizer pressure at 25 psi. The sheath gas temperature was set to 300 °C with the sheath gas /uniFB02 owset at 12 l/min. The capillary voltage was set to 3500 V. Separation of Lac-Phe was performed as described above in the untargeted metabolomics section. Multiple reaction monitoring (MRM) was performed for Lac-Phe by looking at the precursor ion [ m/z ] -=236.1 transition to [ m/z ] -=88 product ion (unit mass). Dwell time was set to 50, fragmentor voltage wasset as 135 V, with collision energy of 10 V and cell accelerator voltage of 5 V. The number of biological replicates analyzed is indicated in the /uniFB01 gurelegendsandallsampleswereranwithonetechnicalreplicate.Data was analyzed using Agilent Qualitative Analysis (version B.07.00).
+
+## Generation of SLC17A1 KO TKPTS Cells
+
+The plentiCRISPRv2 system developed by the Zhang lab was used to generate the SLC17A1-KO TKPTS cell line. The sgRNA used was 5 -' TGGGCACCTCCCTTAGAACG-3. Following Zhang lab protocols, oli-' gonucleotides for the sgRNA and reverse complement sequences were synthesized and cloned into the plentiCRISPRv2 vector. Lentivirus particles were generated in the HEK293T cell line using PEI for the cotransfection of the cloned plentiCRISPRv2 plasmid with the viral packing psPAX2 plasmid, and viral envelope pMD2.G plasmid. A noncutting plentiCRISPRv2 plasmid was used as a control. The lentivirus was harvested after 48 h and /uniFB01 ltered through a 0.45 uM /uniFB01 lter. The supernatant was then mixed in a 1 to 1 ratio with polybrene to a /uniFB01 nal concentration of 8 ug/ml polybrene. This mixture was added to TKPTS cells for transduction. Two days later, the cells were split into a 10 cm plate and underwent selection with 5 ug/ml puromycin for 3 -6 days.
+
+## Human exercise study
+
+10 healthy individuals, 6 male, 4 female, age 28 ± 5 (mean ± SD), were enrolled and consented to participate in the exercise study approved by the Stanford University Institutional Review Board (IRB-65281). Participants arrived at the test facility and urine collected prior to exercise training. The participants then underwent a sprint exercise Wingate test. The Wingate test was conducted on an ergometer bike in which there was a 5 min warm-up followed by three bouts of 30 s alloutsprint interspersed by 4 min of active recovery. Urine samples were collected before and 1 and 2 h post-exercise for LC-MS analysis.
+
+## Mouse running protocols
+
+For mouse running studies a 6 lane Columbus Instruments animal treadmill (product 1055-SRM-D65) was used. Mice were /uniFB01 rst acclimated to the treadmill for 5 min before the running protocol began. For acute, intense running experiments, the treadmill speed begun at 7.5 m/min at a 4°incline. Every 3 min, the speed and incline were increased by 2.5 m/min and 2°, respectively until a maximum speed of 40 m/min and incline of 30° was reached. Mice were run on the treadmill until exhaustion which was de /uniFB01 ned as when mice remained on the shocker at the end of the treadmill for longer than 5 s. For chronic running experiments, mice were exercised 5 days/week (Monday-Friday). The mice were also kept on high fat diet (60% kcal from fat). The treadmill running was performed at a constant 5° incline and began at a speed of 6 m/min. Speed was increased by 2 m/min every 5 min until a maximum speed of 30 m/min. Mice were once again stopped upon reaching exhaustion and run times were normalized between the two genotypes.
+
+## Preparation of plasma and urine samples for LC-MS analysis
+
+Plasma was collected from mice via a submandibular bleed into lithium heparin tubes (BD, 365985) and kept on ice. The blood was centrifuged at 4 °C at 2200 × g . for 5 min to separate out the top plasma layer which can be frozen at -80°C. To collect urine, mice were scruffed over an eppendorf tube and gently stroked until they urinated; samples were also stored at -80°C. To extract polar metabolites for LC-MS analysis, 150 ul of a 2:1 mixture of acetonitrile:methanol was added to 50 ul of either plasma or urine. The mixture was centrifuged at 4 °C at 21,000 × g for 10 min and the supernatant was transferred to a LC-MS vial.
+
+## Breeding and genotyping of SLC17A1 and SLC17A3 KO mice
+
+SLC17A1-KO and WT animals as well as SLC17A3-KO and WT animals were generated by heterozygous breeding crosses. Genotyping was performed as follows: Tail clippings were obtained from littermates and boiled for 30 min at 95 °C in 100 μ l of 50 mM NaOH to extract genomic DNA. The solution was neutralized by adding 21 μ l of 0.5 M Tris (pH 7.2). For SLC17A1 animals, PCR reactions were performed by using primers for either the Slc17a1 WT allele (forward, 5 -CAGTTC-' CAGGGTTCTGTTCC-3; reverse, 5 -GGTGACCCTGTGTTGTTCAC-3 ) or ' ' ' Slc17a1 mutant allele (forward, 5 -TGTGCAACTGTCAACCAGAGT-3 ; ' ' reverse, 5 -CCAGTCTAGTGAGTGCTGTCGTC-3 ). The Promega GoTaq ' ' master mix was used for the PCR reaction. Each 25 μ l reaction consisted of 12.5 μ l of the promega master mix (M7122), 2.5 μ l of a 10 μ M mixture of forward and reverse primers, 2 μ l of genomic DNA, and 8 μ l of ultrapure water. The thermocycling program on BioRad C1000 TouchThermoCyclerbeganwithaninitial1 min30sat98 °C,followed by cycles of 30 s at 98 °C, 30 s at 60 °C, and 30 s at 72 °C (30 cycles), followed by 5 min at 72 °C and /uniFB01 nally held at 4 °C. Samples were run on a 2% agarose gel with 0.2 mg/ml EtBr. WT alleles are expected to yield a PCR product 130 base pairs in size while KO alleles are expected to yield PCR products that are 150 base pairs in size. For SLC17A3 animals, PCR reactions were performed by using primers for either the Slc17A3 WT allele (forward, 5 -' TCAAATGAAAGTTTATCCTCAATGCCTG-3; ' reverse, 5 -' AGATATATAGAGCCTGTGTCCACTGG-3) or the PreCre ' allele (forward, 5 - GGGATCTCATGCTGGAGTTCTTCG-3 ; reverse, 5 -' ' ' AGATATATAGAGCCTGTGTCCACTGG-3).ThePromegaGoTaqmaster ' mix was used for the PCR reaction. Each 15 μ l reaction consisted of 7.5 μ l of the promega master mix (M7122), 0.45 μ l of a 20 μ Mmixture of forward and reverse primers, 1 μ l of genomic DNA, and 6.05 μ l of ultrapure water. The thermocycling program on BioRad C1000 Touch Thermo Cycler began with 5 min at 94 °C, followed by cycles of 15 s at 94°C, 30 s at 65 °C ( -1 °C/cycle), 40 s at 72 °C (10 cycles), followed by 15 s at 94 °C, 30 s at 55 °C, 40 s at 72 °C (30 cycles), and ending with 5 min at 72 °C and /uniFB01 nally held at 4 °C. Samples were run on a 2% agarose gel with 0.2 mg/ml EtBr. WT alleles are expected to yield a PCR product 348 base pairs in size while KO alleles are expected to yield PCR products that are 559 base pairs in size.
+
+## Shotgun proteomics
+
+Samples were reduced with 10 mM dithiothreitol (DTT) for 20 min at 55 degrees Celsius, cooled to room temperature and then alkylated with 30 mM acrylamide for 30 min. They were then acidi /uniFB01 ed to a pH ~1 with 2.6 ul of 27% phosphoric acid, dissolved in 165 uL of S-trap loading buffer (90% methanol/10% 1 M triethylammonium bicarbonate (TEAB)) and loaded onto S-trap microcolumns (Proti /uniFB01 , C02-micro-80). After loading, the samples were washed sequentially with 150 ul increments of 90% methanol/10% 100 mM TEAB, 90% methanol/10% 20 mM TEAB, and 90% methanol/10% 5 mM TEAB solutions, respectively. Samples weredigestedat47 °Cfortwohourswith600 ngofmassspectrometry grade Trypsin/LysC mix (Promega, V5113). The digested peptides were then eluted with two 35 µ l increments of 0.2% formic acid in water and two more 40uL increments of 80% acetonitrile with 0.2% formic acid in water. The four elutions were consolidated in 1.5 ml S-trap recovery tubes and dried via SpeedVac (Thermo Scienti /uniFB01 c, San Jose CA). Finally, the dried peptides were reconstituted in 2% acetonitrile with 0.1% formic acid in water for LC-MS analysis.
+
+Mass spectrometry experiments were performed using an Orbitrap Exploris 480 mass spectrometer (Thermo Scienti /uniFB01 c, San Jose, CA) attached to an Acquity M-Class UPLC system (Waters Corporation, Milford, MA). The UPLC system was set to a /uniFB02 ow rate of 300 nl/min, where mobile phase A was 0.2% formic acid in water and mobile phase B was 0.2% formic acid in acetonitrile. The analytical column was prepared inhouse with an I.D. of 100 microns pulled to a nanospray emitter using a P2000 laser puller (Sutter Instrument, Novato, CA). The column was packed with Dr. Maisch 1.9 micron C18 stationary phase to a length of approximately 25 cm. Peptides were directly injected onto the column with a gradient of 3 -45%mobilephaseB,followedbyahigh-Bwashovera total of 80 min. The mass spectrometerwasoperatedinadata-dependent mode using HCD fragmentation for MS/MS spectra generation.
+
+RAW data were analyzed using Byonic v4.4.1 (Protein Metrics, Cupertino, CA) to identify peptides and infer proteins. A concatenated FASTA /uniFB01 le containing Uniprot Mus musculus proteins and other likely contaminants and impurities was used to generate an in silico peptide library. Proteolysis with Trypsin/LysC was assumed to be semi-speci /uniFB01 c allowing for N-ragged cleavage with up to two missed cleavage sites. Both precursor and fragment mass accuracies were held within 12 ppm. Cysteine modi /uniFB01 ed with propionamide was set as a /uniFB01 xed modi /uniFB01 cation in the search. Variable modi /uniFB01 cations included oxidation on methionine, histidine and tryptophan, dioxidation on methionine and tryptophan, deamidation on glutamine and asparagine, and acetylation on protein N-terminus. Proteins were held to a false discovery rate of 1% using standard reverse-decoy technique.
+
+## Lac-Phe administration
+
+WT, SLC17A1-KO, or SLC17A3-KO mice were intraperitoneally injected with Lac-Phe at 50 mg/kg. Lac-Phe was dissolved in 18:1:1 (by volume) of saline:DMSO:Kolliphor EL and injected at 5 μ l/g body weight. 30 min after Lac-Phe injection, urine was collected from mice and prepared for LC-MS analysis.
+
+## Statistics
+
+All data are expressed as mean ± SD or SEM as indicated in the legends. A student s two-sided t-test was used for pair-wise comparisons. For ' comparisons of multiple groups, P -values were calculated by one-way ANOVA with Dunnett T3 post-hoc tests. Unless otherwise speci /uniFB01 ed, statistical signi /uniFB01 cance was set as P &lt;0.05.
+
+## Reporting summary
+
+Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.
+
+## Data availability
+
+All data generated or analyzed during this study are included within the published articles and its supplementary information. The LC-MS data generatedinthis study has been deposited to Mendeley Data under DOI: 10.17632/3h32xgtrbc.1 (raw.d mass spectrometry data from this study). The proteomics data generated in this study have been dposited to the ProteomeXchange Consortium via the PRIDE partner repository with dataset identi /uniFB01 er PXD054202. Source data are provided with this paper.
+
+## References
+
+- 1. Rabinowitz, J. D. &amp; Enerbäck, S. Lactate: the ugly duckling of energy metabolism. Nat. Metab. 2 , 566 -571 (2020).
+- 2. Brooks, G. A. Lactate as a fulcrum of metabolism. Redox Biol. 35 , 101454 (2020).
+- 3. Gladden, L. B. Lactate metabolism: A new paradigm for the third millennium. J. Physiol. 558 , 5 -30 (2004).
+- 4. Brooks, G. A. et al. Lactate as a major myokine and exerkine. Nat. Rev. Endocrinol. 18 , 712 (2022).
+
+- 5. Liu, C. et al. Lactate inhibits lipolysis in fat cells through activation of an orphan G-protein-coupled receptor, GPR81. J. Biol. Chem. 284 , 2811 -2822 (2009).
+- 6. Zaborska, K. E. et al. Lactate activation of α -cell KATP channels inhibits glucagon secretion by hyperpolarizing the membrane potential and reducing Ca2+ entry. Mol. Metab. 42 , 101056 (2020).
+- 7. Hollnagel, J. O. et al. Lactate Attenuates Synaptic Transmission and Affects Brain Rhythms Featuring High Energy Expenditure. iScience 23 , 101316 (2020).
+- 8. Zhang, D. et al. Metabolic regulation of gene expression by histone lactylation. Nature 574 , 575 -580 (2019).
+- 9. Li, V. L. et al. An exercise-inducible metabolite that suppresses feeding and obesity. Nature 606 , 785 -790 (2022).
+- 10. Xiao, S. et al. Lac-Phe mediates the effects of metformin on food intake and body weight. Nat. Metab. 2024 6 , 659 -669 (2024).
+- 11. Scott, B. et al. Metformin and feeding increase levels of the appetite-suppressing metabolite Lac-Phe in humans. Nat. Metab. 6 , 651 658 (2024). -
+- 12. Jansen, R. S. et al. N -lactoyl-amino acids are ubiquitous metabolites that originate from CNDP2-mediated reverse proteolysis of lactate and amino acids. Proc. Natl Acad. Sci. 112 , 6601 -6606 (2015).
+- 13. Hoene, M. et al. Exercise-Induced N-Lactoylphenylalanine Predicts Adipose Tissue Loss during Endurance Training in Overweight and Obese Humans. Metabolites 13 , 15 (2022).
+- 14. Schlosser, P. et al. Genetic studies of urinary metabolites illuminate mechanisms of detoxi /uniFB01 cation and excretion in humans. Nat. Genet 52 , 167 -176 (2020).
+- 15. Schlosser, P. et al. Genetic studies of paired metabolomes reveal enzymatic and transport processes at the interface of plasma and urine. Nat. Genet 55 , 995 -1008 (2023).
+- 16. Otani, N., Ouchi, M., Hayashi, K., Jutabha, P. &amp; Anzai, N. Roles of organic anion transporters (OATs) in renal proximal tubules and their localization. Anat. Sci. Int. 92 , 200 206 (2017). -
+- 17. Togawa, N., Miyaji, T., Izawa, S., Omote, H. &amp; Moriyama, Y. A Na +-phosphate cotransporter homologue (SLC17A4 protein) is an intestinal organic anion exporter. Am. J. Physiol. Cell Physiol. 302 , 1652 1660 (2012). -
+- 18. Iharada, M. et al. Type 1 sodium-dependent phosphate transporter (SLC17A1 protein) is a Cl -dependent urate exporter. J. Biol. Chem. 285 , 26107 -26113 (2010).
+- 19. Smith, C. A., Want, E. J., O Maille, G., Abagyan, R. &amp; Siuzdak, G. ' XCMS:Processing mass spectrometry data for metabolite pro /uniFB01 ling using nonlinear peak alignment, matching, and identi /uniFB01 cation. Anal. Chem. 78 , 779 -787 (2006).
+- 20. Lonsdale, J. et al. The Genotype-Tissue Expression (GTEx) project. Nat. Genet 45 , 580 -585 (2013).
+- 21. Wu, C. et al. BioGPS: An extensible and customizable portal for querying and organizing gene annotation resources. Genome Biol. 10 , R130 (2009).
+- 22. Skarnes, W. C. et al. A conditional knockout resource for the genomewide study of mouse gene function. Nature 474 , 337 -344 (2011).
+- 23. Dehghan, A. et al. Association of three genetic loci with uric acid concentration and risk of gout: a genome-wide association study. Lancet 372 , 1953 -1961 (2008).
+- 24. Woodward, O. M. et al. Identi /uniFB01 cation of a urate transporter, ABCG2, with a common functional polymorphism causing gout. Proc. Natl Acad. Sci. USA 106 , 10338 -10342 (2009).
+- 25. Kratzer, J. T. et al. Evolutionary history and metabolic insights of ancient mammalian uricases. Proc. Natl Acad. Sci. USA 111 , 3763 3768 (2014). -
+- 26. Morville, T., Sahl, R. E., Moritz, T., Helge, J. W. &amp; Clemmensen, C. Plasma Metabolome Pro /uniFB01 ling of Resistance Exercise and Endurance Exercise in Humans. Cell Rep. 33 , 108554 (2020).
+- 27. Chiba, T. et al. NPT1/SLC17A1 is a renal urate exporter in humans and its common gain-of-function variant decreases the risk of renal
+- underexcretion gout. Arthritis Rheumatol. 67 , 281 -287 (2015).
+- 28. Jutabha, P. et al. Human sodium phosphate transporter 4 (hNPT4/ SLC17A3) as a common renal secretory pathway for drugs and urate. J. Biol. Chem. 285 , 35123 -35132 (2010).
+
+## Acknowledgements
+
+We thank members of the Long lab for helpful discussions. This work was supported by the NIH (DK124265 and DK136526 to J.Z.L.; GM113854 to V.L.L.), the Stanford Diabetes Research Center (P30DK116074), and the Wu Tsai Human Performance Alliance (fellowship to A.L.W. and research grant to J.Z.L.), the Ono Pharma Foundation (research grant to J.Z.L.), and the Phil &amp; Penny Knight Initiative for Brain Resilience at the Wu Tsai Neurosciences Institute (research grant to J.Z.L.). The work of S.X. is supported by a Postdoctoral Fellowship from the American Heart Association (24POST1200064). The work of P.S. was supported by the German Research Foundation (DFG) Project-ID 523737608 (SCHL 2292/ 2-1). The work of N.S. and A.K. was supported by German Research Foundation (DFG) project ID 431984000 (SFB 1453).
+
+## Author contributions
+
+Conceptualization: V.L.L., J.Z.L.; investigation: V.L.L., S.X., P.S., N.S., A.L.W., J.S., A.S.H.T.; writing -original draft, V.L.L., J.Z.L.; writing -reviewing &amp; editing, V.L.L., P.S., N.S., A.K., J.Z.L.; resources E.D.K., A.K., J.Z.L., supervision and funding acquisition, A.K., J.Z.L.
+
+## Competing interests
+
+The authors declare no competing interests.
+
+## Additional information
+
+Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41467-024-51174-3.
+
+Correspondence and requests for materials should be addressed to Jonathan Z. Long.
+
+Peer review information Nature Communications thanks the anonymous reviewers for their contribution to the peer review of this work. A peer review /uniFB01 le is available.
+
+## Reprints and permissions information is available at
+
+http://www.nature.com/reprints
+
+Publisher s note ' Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional af /uniFB01 liations.
+
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modi /uniFB01 ed the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article s Creative ' Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article s Creative Commons ' licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http:// creativecommons.org/licenses/by-nc-nd/4.0/.
+
+- ©The Author(s) 2024

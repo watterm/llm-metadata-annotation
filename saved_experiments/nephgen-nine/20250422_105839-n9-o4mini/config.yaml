@@ -1,0 +1,537 @@
+conversation:
+  api_key: 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
+  api_url: https://openrouter.ai/api/v1/
+  dry_run: false
+  model: openai/o4-mini
+  providers: null
+  turns:
+  - name: Step 1
+    request_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: PublicationEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: A list of biomedical entities in the publication
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                required:
+                - entity_name
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Publication entity list container
+          type: object
+        strict: true
+      key_for_context_storage: publication_list
+      type: handlers.StructuredOutputHandler
+    - additional_context:
+        format_instructions: You MUST format your response according to the provided
+          JSON schema.
+        step_instructions: 'Analyze the appended scientific publication to identify
+          all biomedical entities mentioned. Exclude entities mentioned only in the
+          discussion section or the bibliography. Provide a comprehensive list of
+          these entities. '
+        step_title: '# Step 1: Identification of Biomedical Entities'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        {format_instructions}
+
+
+        ## Publication
+
+
+        {publication}'
+      type: handlers.AddUserMessageHandler
+    response_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: PublicationEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: A list of biomedical entities in the publication
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                required:
+                - entity_name
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Publication entity list container
+          type: object
+        strict: true
+      key_for_context_storage: publication_list
+      type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 2
+    request_handlers:
+    - force_tool_use: true
+      type: handlers.PubtatorToolUseHandler
+      use_find_entity_id_endpoint: false
+    - apply_in_tool_cycle: true
+      json_schema:
+        name: PubtatorEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication with information
+                from Pubtator
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  in_pubtator:
+                    description: True if the entity is listed in Pubtator
+                    title: Entity listed in PubTator
+                    type: boolean
+                  pubtator_id:
+                    description: The ID for the Pubtator entity. Must start with @
+                      and can not contain spaces. Only use one ID. Leave empty, if
+                      entity is not in Pubtator.
+                    title: Pubtator ID
+                    type: string
+                required:
+                - entity_name
+                - in_pubtator
+                - pubtator_id
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Pubtator entity list container
+          type: object
+        strict: true
+      key_for_context_storage: pubtator_list
+      type: handlers.StructuredOutputHandler
+    - additional_context:
+        format_instructions: You MUST format your response according to the provided
+          JSON schema.
+        pubtator_tool: You MUST use the provided Pubtator tool to verify all entities!
+        step_instructions: For each biomedical entity identified in Step 1, determine
+          whether it is listed in PubTator. Provide a list of these entities along
+          with their existence status in PubTator. Do not include examples or elaborate
+          explanations. A Pubtator ID starts with '@' and does NOT contain a space
+          character. If a Pubtator entity has several IDs, pick the best match.
+        step_title: '# Step 2: PubTator Analysis'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        {pubtator_tool}
+
+
+        {format_instructions}'
+      type: handlers.AddUserMessageHandler
+    response_handlers:
+    - force_tool_use: false
+      type: handlers.PubtatorToolUseHandler
+      use_find_entity_id_endpoint: false
+    - apply_in_tool_cycle: true
+      json_schema:
+        name: PubtatorEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication with information
+                from Pubtator
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  in_pubtator:
+                    description: True if the entity is listed in Pubtator
+                    title: Entity listed in PubTator
+                    type: boolean
+                  pubtator_id:
+                    description: The ID for the Pubtator entity. Must start with @
+                      and can not contain spaces. Only use one ID. Leave empty, if
+                      entity is not in Pubtator.
+                    title: Pubtator ID
+                    type: string
+                required:
+                - entity_name
+                - in_pubtator
+                - pubtator_id
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Pubtator entity list container
+          type: object
+        strict: true
+      key_for_context_storage: pubtator_list
+      type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 3
+    request_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: SchemaEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication referenced in the
+                metadata schema
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  from_provided_schema:
+                    description: True if the entity is listed in the provided schema
+                    title: Entity listed in provided schema
+                    type: boolean
+                  schema_category:
+                    description: The category in which the entity is listed in the
+                      schema. Leave empty, if entry is not in schema.
+                    title: Metadata schema category
+                    type: string
+                required:
+                - entity_name
+                - from_provided_schema
+                - schema_category
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Schema entity list container
+          type: object
+        strict: true
+      key_for_context_storage: schema_list
+      type: handlers.StructuredOutputHandler
+    - additional_context:
+        format_instructions: You MUST format your response according to the provided
+          JSON schema.
+        step_instructions: "Reanalyze the scientific publication to identify the presence\
+          \ of specific entities from different schema categories listed below as\
+          \ subheadings. \nFollow these rules:\n  - Only include entities explicitly\
+          \ mentioned in the publication, excluding mentions from the discussion section\
+          \ or bibliography. \n  - If the entity is a synonym of the one listed in\
+          \ the schema, use the name from the schema.\n  - Do not use the category\
+          \ names as entity names. \n  - If entities are listed hierachically, use\
+          \ the most specific entities.\n  - If you notice entities that are not listed\
+          \ in the subheadings, include them in the list of entities as well."
+        step_title: '# Step 3: Reanalysis for Specific Entities'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        {format_instructions}
+
+
+        ## Schema
+
+        ### Organism
+
+        {schema[organisms]}
+
+        ### Cell Lines
+
+        {schema[cell_lines]}
+
+        ### Tissue source
+
+        {schema[tissue_source]}
+
+        ### Health status
+
+        {schema[health_status]}
+
+        ### Mouse line
+
+        {schema[mouse_line]}
+
+        ### Sample preparation
+
+        {schema[sample_preparation]}
+
+        ### Sample processing
+
+        {schema[sample_processing]}
+
+        ### Readout
+
+        {schema[readout]}
+
+        ### Probes
+
+        {schema[probes]}'
+      type: handlers.AddUserMessageHandler
+    response_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: SchemaEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication referenced in the
+                metadata schema
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  from_provided_schema:
+                    description: True if the entity is listed in the provided schema
+                    title: Entity listed in provided schema
+                    type: boolean
+                  schema_category:
+                    description: The category in which the entity is listed in the
+                      schema. Leave empty, if entry is not in schema.
+                    title: Metadata schema category
+                    type: string
+                required:
+                - entity_name
+                - from_provided_schema
+                - schema_category
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Schema entity list container
+          type: object
+        strict: true
+      key_for_context_storage: schema_list
+      type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 4
+    request_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: ConsolidatedEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication with information
+                from Pubtator and the metadata schema
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  from_provided_schema:
+                    description: True if the entity is listed in the provided schema
+                    title: Entity listed in provided schema
+                    type: boolean
+                  in_pubtator:
+                    description: True if the entity is listed in Pubtator
+                    title: Entity listed in PubTator
+                    type: boolean
+                  pubtator_id:
+                    description: The ID for the Pubtator entity. Must start with @
+                      and can not contain spaces. Only use one ID. Leave empty, if
+                      entity is not in Pubtator.
+                    title: Pubtator ID
+                    type: string
+                  schema_category:
+                    description: The category in which the entity is listed in the
+                      schema. Leave empty, if entry is not in schema.
+                    title: Metadata schema category
+                    type: string
+                required:
+                - entity_name
+                - in_pubtator
+                - pubtator_id
+                - from_provided_schema
+                - schema_category
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Consolidated entity list container
+          type: object
+        strict: true
+      key_for_context_storage: consolidated_list
+      type: handlers.StructuredOutputHandler
+    - additional_context:
+        format_instructions: You MUST format your response according to the provided
+          JSON schema.
+        step_instructions: 'Consolidate the results of Steps 2 and 3:
+
+          For each category listed in Step 3, list all entities identified in Step
+          3 and add the entities identified in Step 2 to the correct categories. If
+          an entity is listed in both steps, include it only once in the final list,
+          preferably with the schema name from Step 3.
+
+          If an entity does not fit in the existing categories, you may add new ones.
+          Try to use categories that are of the same scope as the existing ones.'
+        step_title: '# Step 4: Consolidation of Results'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        {format_instructions}'
+      type: handlers.AddUserMessageHandler
+    response_handlers:
+    - apply_in_tool_cycle: false
+      json_schema:
+        name: ConsolidatedEntityList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            entity_list:
+              description: The entities listed in the publication with information
+                from Pubtator and the metadata schema
+              items:
+                additionalProperties: false
+                description: A biomedical entity
+                properties:
+                  entity_name:
+                    description: The name of the entity
+                    title: Entity name
+                    type: string
+                  from_provided_schema:
+                    description: True if the entity is listed in the provided schema
+                    title: Entity listed in provided schema
+                    type: boolean
+                  in_pubtator:
+                    description: True if the entity is listed in Pubtator
+                    title: Entity listed in PubTator
+                    type: boolean
+                  pubtator_id:
+                    description: The ID for the Pubtator entity. Must start with @
+                      and can not contain spaces. Only use one ID. Leave empty, if
+                      entity is not in Pubtator.
+                    title: Pubtator ID
+                    type: string
+                  schema_category:
+                    description: The category in which the entity is listed in the
+                      schema. Leave empty, if entry is not in schema.
+                    title: Metadata schema category
+                    type: string
+                required:
+                - entity_name
+                - in_pubtator
+                - pubtator_id
+                - from_provided_schema
+                - schema_category
+                title: Biomedical Entity
+                type: object
+              title: Entity list
+              type: array
+          required:
+          - entity_list
+          - comment
+          title: Consolidated entity list container
+          type: object
+        strict: true
+      key_for_context_storage: consolidated_list
+      type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  type: conversation.OpenRouterConversation
+dataset:
+  dataset_folder: datasets/nephgen-nine
+  metadata_schema:
+    base_path: ''
+    entity_collection: []
+    load_collection_from_file: datasets/1453-dataset/schema_entities.json
+    save_collection_to_file: null
+    schema_folder: null
+    type: schema.Schema
+  type: dataset.Dataset
+  uuids: null
+experiment:
+  max_requests_per_second: 4.0
+  num_trials_per_publication: 1
+  type: experiments.async_experiment.AsyncExperiment
+log_level: DEBUG
+name: n9-o4mini
+no_save: false
+publication:
+  type: publication.Publication
+silent: false

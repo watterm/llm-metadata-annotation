@@ -1,0 +1,126 @@
+[project]
+name = "llm-annotation-prediction"
+version = "0.1.0"
+description = "Experimental framework to annotate publications with LLMs"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Manuel Watter", email = "watter@imbi.uni-freiburg.de" }
+]
+keywords = ["llm", "metadata", "annotation", "scientific-publications", "natural-language-processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+    "Typing :: Typed"
+]
+
+requires-python = "~=3.12"
+dependencies = [
+    "aiometer>=0.5.0",
+    "httpx>=0.28.1",
+    "json-repair>=0.41.1",
+    "jsonschema>=4.23.0",
+    "pydantic>=2.10.6",
+    "pydantic-settings>=2.7.1",
+    "pyyaml>=6.0.2",
+    "rich>=13.9.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/[username]/llm-metadata-annotation"
+Repository = "https://github.com/[username]/llm-metadata-annotation"
+Documentation = "https://github.com/[username]/llm-metadata-annotation#readme"
+"Bug Tracker" = "https://github.com/[username]/llm-metadata-annotation/issues"
+
+[project.scripts]
+# Runs an experiment with a configuration file
+start = "llm_annotation_prediction.main:main"
+experiment = "llm_annotation_prediction.main:main"
+
+# Extra tool to create a dataset from a fredato repository
+dataset = "llm_annotation_prediction.tools.dataset:main"
+
+# Helper tool to show results from an experiment
+show = "llm_annotation_prediction.tools.show:main"
+
+# Helper to render the output of all experiments to PDFs
+# Requires Chrome to be installed for HTML to PDF conversion
+render = "llm_annotation_prediction.tools.render:main"
+
+# Analyze experiment results
+analyze = "llm_annotation_prediction.tools.analyze:main"
+
+[project.optional-dependencies]
+docling = [
+    "torch>=2.2.2",
+    "torchvision>=0",
+    "docling>=2.26"
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "ruff>=0.9.3",
+    "types-jsonschema>=4.23.0.20241208",
+    "types-pyyaml>=6.0.12.20250402",
+]
+
+analysis = [
+    "pandas>=2.2.3",
+    "pandas-stubs>=2.2.3.250527",
+    "seaborn>=0.13.2",
+    "types-seaborn>=0.13.2.20250516",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+torchvision = [
+    { index = "pytorch-cpu" },
+]
+
+[tool.ruff]
+line-length = 88 # Lines longer than this will be formatted
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+fixable = ["ALL"]  # Enable autofix for long lines when possible
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 100 # E501 reports lines that exceed the length of 100.
+
+# 4. Ignore `E402` (import violations) in all `__init__.py` files
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+
+[tool.mypy]
+files = ["src/llm_annotation_prediction"]
+strict = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+

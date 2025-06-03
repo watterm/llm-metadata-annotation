@@ -1,0 +1,168 @@
+name: "n9-gpt41"
+
+log_level: "DEBUG"
+
+experiment:
+  type: "experiments.async_experiment.AsyncExperiment"
+  max_requests_per_second: 4
+  num_trials_per_publication: 1
+
+dataset:
+  type: "dataset.Dataset"
+  dataset_folder: "datasets/nephgen-nine"
+
+  metadata_schema:
+    type: "schema.Schema"
+    load_collection_from_file: "datasets/1453-dataset/schema_entities.json"
+
+publication:
+  type: "publication.Publication"
+
+conversation:
+  type: "conversation.OpenRouterConversation"
+  # https://openrouter.ai/openai/gpt-4.1
+  model: "openai/gpt-4.1"
+
+  turns:
+    - name: "Step 1"
+      request_handlers:
+        - &1_publication_handler 
+          type:  "handlers.StructuredOutputHandler" 
+          key_for_context_storage: "publication_list"
+          json_schema: !include common/schemas.yml:1_publication_response_schema
+        - type: "handlers.AddUserMessageHandler"
+          message: >-
+            {step_title}
+
+
+            {step_instructions}
+
+
+            {format_instructions}
+
+
+            ## Publication
+
+
+            {publication}
+          additional_context: 
+            step_title: !include common/messages.yml:step_1_title
+            step_instructions: !include common/messages.yml:step_1
+            format_instructions: !include common/messages.yml:structured_output
+      response_handlers:
+        - *1_publication_handler
+    - name: "Step 2"
+      request_handlers:
+        - type: "handlers.PubtatorToolUseHandler"
+          force_tool_use: true
+        - &2_pubtator_list
+          type: "handlers.StructuredOutputHandler"
+          apply_in_tool_cycle: True
+          key_for_context_storage: "pubtator_list"
+          json_schema: !include common/schemas.yml:2_pubtator_response_schema
+
+        - type: "handlers.AddUserMessageHandler"
+          message: >-
+            {step_title}
+
+
+            {step_instructions}
+
+
+            {pubtator_tool}
+
+
+            {format_instructions}
+          additional_context: 
+            step_title: !include common/messages.yml:step_2_title
+            step_instructions: !include common/messages.yml:step_2
+            pubtator_tool: !include common/messages.yml:pubtator_tool
+            format_instructions: !include common/messages.yml:structured_output
+      response_handlers:
+        - type: "handlers.PubtatorToolUseHandler"
+        - *2_pubtator_list
+    - name: "Step 3"
+      request_handlers:
+        - &3_schema_list
+          type: "handlers.StructuredOutputHandler"
+          apply_in_tool_cycle: False
+          key_for_context_storage: "schema_list"
+          json_schema: !include common/schemas.yml:3_schema_response_schema
+           
+        - type: "handlers.AddUserMessageHandler"
+          message: >-
+            {step_title}
+
+
+            {step_instructions}
+
+
+            {format_instructions}
+            
+            
+            ## Schema
+
+            ### Organism
+
+            {schema[organisms]}
+
+            ### Cell Lines
+
+            {schema[cell_lines]}
+
+            ### Tissue source
+
+            {schema[tissue_source]}
+
+            ### Health status
+
+            {schema[health_status]}
+
+            ### Mouse line
+
+            {schema[mouse_line]}
+
+            ### Sample preparation
+
+            {schema[sample_preparation]}
+
+            ### Sample processing
+
+            {schema[sample_processing]}
+
+            ### Readout
+
+            {schema[readout]}
+
+            ### Probes
+
+            {schema[probes]}
+          additional_context: 
+            step_title: !include common/messages.yml:step_3_title
+            step_instructions: !include common/messages.yml:step_3
+            format_instructions: !include common/messages.yml:structured_output
+      response_handlers:
+        - *3_schema_list
+    - name: "Step 4"
+      request_handlers:
+        - &4_consolidated_list
+          type: "handlers.StructuredOutputHandler"
+          apply_in_tool_cycle: False
+          key_for_context_storage: "consolidated_list"
+          json_schema: !include common/schemas.yml:4_consolidated_response_schema
+            
+        - type: "handlers.AddUserMessageHandler"
+          message: >-
+            {step_title}
+
+
+            {step_instructions}
+
+
+            {format_instructions}
+          additional_context: 
+            step_title: !include common/messages.yml:step_4_title
+            step_instructions: !include common/messages.yml:step_4
+            format_instructions: !include common/messages.yml:structured_output
+      response_handlers:
+        - *4_consolidated_list

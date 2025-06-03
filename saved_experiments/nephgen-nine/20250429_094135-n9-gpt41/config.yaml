@@ -1,0 +1,59 @@
+conversation:
+  api_key: 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
+  api_url: https://openrouter.ai/api/v1/
+  dry_run: false
+  model: openai/gpt-4.1
+  providers: null
+  turns:
+  - name: Step 1
+    request_handlers:
+    - type: handlers.StructuredOutputHandler
+    - type: handlers.AddUserMessageHandler
+    response_handlers:
+    - type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 2
+    request_handlers:
+    - type: handlers.PubtatorToolUseHandler
+    - type: handlers.StructuredOutputHandler
+    - type: handlers.AddUserMessageHandler
+    response_handlers:
+    - type: handlers.PubtatorToolUseHandler
+    - type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 3
+    request_handlers:
+    - type: handlers.StructuredOutputHandler
+    - type: handlers.AddUserMessageHandler
+    response_handlers:
+    - type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  - name: Step 4
+    request_handlers:
+    - type: handlers.StructuredOutputHandler
+    - type: handlers.AddUserMessageHandler
+    response_handlers:
+    - type: handlers.StructuredOutputHandler
+    type: TurnConfig
+  type: conversation.OpenRouterConversation
+dataset:
+  dataset_folder: datasets/nephgen-nine
+  metadata_schema:
+    base_path: ''
+    entity_collection: []
+    load_collection_from_file: datasets/1453-dataset/schema_entities.json
+    save_collection_to_file: null
+    schema_folder: null
+    type: schema.Schema
+  type: dataset.Dataset
+  uuids: null
+experiment:
+  max_requests_per_second: 4.0
+  num_trials_per_publication: 1
+  type: experiments.async_experiment.AsyncExperiment
+log_level: DEBUG
+name: n9-gpt41
+no_save: false
+publication:
+  type: publication.Publication
+silent: false
