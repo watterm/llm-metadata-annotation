@@ -1,0 +1,1191 @@
+{
+    "organisms": [
+        {
+            "key": "cellLine",
+            "display": "Cell line"
+        },
+        {
+            "key": "fruitfly",
+            "display": "Fruit Fly",
+            "uri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14202"
+        },
+        {
+            "key": "human",
+            "display": "Human",
+            "uri": "http://purl.bioontology.org/ontology/STY/T016"
+        },
+        {
+            "key": "mouse",
+            "display": "Mouse",
+            "uri": "http://purl.bioontology.org/ontology/NCBITAXON/10090"
+        },
+        {
+            "key": "cElegans",
+            "display": "C. Elegans",
+            "uri": "http://purl.bioontology.org/ontology/NCBITAXON/6239"
+        },
+        {
+            "key": "rabbit",
+            "display": "Rabbit",
+            "uri": "http://purl.bioontology.org/ontology/NCBITAXON/9986"
+        },
+        {
+            "key": "rat",
+            "display": "Rat",
+            "uri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C160998"
+        },
+        {
+            "key": "xenopus",
+            "display": "Xenopus",
+            "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/74748005"
+        },
+        {
+            "key": "zebrafish",
+            "display": "Zebrafish",
+            "uri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14287"
+        }
+    ],
+    "cell_lines": [
+        {
+            "display": "293 (HEK 293)"
+        },
+        {
+            "display": "293A (HEK 293A)"
+        },
+        {
+            "display": "293T (HEK 293T)"
+        },
+        {
+            "display": "AC16 Human Cardiomyocyte Cell Line"
+        },
+        {
+            "display": "HAF"
+        },
+        {
+            "display": "HeLa"
+        },
+        {
+            "display": "HeLa 229"
+        },
+        {
+            "display": "HL-1"
+        },
+        {
+            "display": "HUVEC"
+        },
+        {
+            "display": "THP-1"
+        },
+        {
+            "display": "MDCK"
+        },
+        {
+            "display": "mIMCD-3"
+        },
+        {
+            "display": "LLC-PK1"
+        },
+        {
+            "display": "RPTEC"
+        }
+    ],
+    "tissue_source": [
+        {
+            "key": "adrenalGland",
+            "display": "Adrenal gland",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000047"
+        },
+        {
+            "key": "blood",
+            "display": "Blood",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000089",
+            "children": [
+                {
+                    "key": "plasma",
+                    "display": "Blood plasma",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000131"
+                },
+                {
+                    "key": "serum",
+                    "display": "Blood serum",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000133"
+                },
+                {
+                    "key": "whole",
+                    "display": "Whole blood",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000089"
+                }
+            ]
+        },
+        {
+            "key": "boneMarrow",
+            "display": "Bone marrow",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000141"
+        },
+        {
+            "key": "brain",
+            "display": "Brain",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000142"
+        },
+        {
+            "key": "embryonalTissue",
+            "display": "Embryonal tissue",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000174"
+        },
+        {
+            "key": "heart",
+            "display": "Heart",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000562"
+        },
+        {
+            "key": "intestine",
+            "display": "Intestine",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000648"
+        },
+        {
+            "key": "kidney",
+            "display": "Kidney",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000671",
+            "children": [
+                {
+                    "key": "headKidney",
+                    "display": "Head kidney",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0005189"
+                },
+                {
+                    "key": "juxtaglomerularApparatus",
+                    "display": "Juxtaglomerular apparatus",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0005157",
+                    "children": [
+                        {
+                            "key": "extraglomerularMesangialCell",
+                            "display": "Extraglomerular mesangial cell",
+                            "uri": "http://purl.obolibrary.org/obo/BTO_0005159"
+                        },
+                        {
+                            "key": "juxtaglomerularCell",
+                            "display": "Juxtaglomerular cell",
+                            "uri": "http://purl.obolibrary.org/obo/BTO_0005158"
+                        },
+                        {
+                            "key": "maculaDensa",
+                            "display": "Macula densa",
+                            "uri": "http://purl.obolibrary.org/obo/BTO_0003940"
+                        }
+                    ]
+                },
+                {
+                    "key": "cancerCell",
+                    "display": "Kidney cancer cell",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000680"
+                },
+                {
+                    "key": "nephridium",
+                    "display": "Nephridium",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000923"
+                },
+                {
+                    "key": "nephron",
+                    "display": "Nephron",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000924",
+                    "children": [
+                        {
+                            "key": "renalCorpuscle",
+                            "display": "Renal corpuscle",
+                            "uri": "http://purl.obolibrary.org/obo/BTO_0000333"
+                        },
+                        {
+                            "key": "renalTubule",
+                            "display": "Renal tubule",
+                            "uri": "http://purl.obolibrary.org/obo/BTO_0000343",
+                            "children": [
+                                {
+                                    "key": "collectingDuct",
+                                    "display": "Collecting duct",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0000761"
+                                },
+                                {
+                                    "key": "henlesLoop",
+                                    "display": "Henles loop",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0004608"
+                                },
+                                {
+                                    "key": "renalClearCell",
+                                    "display": "Renal clear cell",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0004098"
+                                },
+                                {
+                                    "key": "renalDistalTubule",
+                                    "display": "Renal distal tubule",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0000482"
+                                },
+                                {
+                                    "key": "renalProximalTubule",
+                                    "display": "Renal proximal tubule",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0001498"
+                                },
+                                {
+                                    "key": "renalTubuleEpithelium",
+                                    "display": "Renal tubule epithelium",
+                                    "uri": "http://purl.obolibrary.org/obo/BTO_0005239"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "opisthonephros",
+                    "display": "Opisthonephros",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0006370"
+                },
+                {
+                    "key": "renalArtery",
+                    "display": "Renal artery",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0001165"
+                },
+                {
+                    "key": "renalCortex",
+                    "display": "Renal cortex",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0001166"
+                },
+                {
+                    "key": "renalEpithelium",
+                    "display": "Renal epithelium",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000059"
+                },
+                {
+                    "key": "renalMedulla",
+                    "display": "Renal medulla",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0001167"
+                },
+                {
+                    "key": "renalNeoplasmCell",
+                    "display": "Renal neoplasm cell",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0006357"
+                },
+                {
+                    "key": "renalParenchyma",
+                    "display": "Renal parenchyma",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0003604"
+                },
+                {
+                    "key": "renalPyramid",
+                    "display": "Renal pyramid",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0003926"
+                },
+                {
+                    "key": "trunkKidney",
+                    "display": "Trunk kidney",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0005188"
+                },
+                {
+                    "key": "tubulointerstitium",
+                    "display": "Tubulointerstitium",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0006279"
+                }
+            ]
+        },
+        {
+            "key": "liver",
+            "display": "Liver",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000759"
+        },
+        {
+            "key": "lung",
+            "display": "Lung",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000763"
+        },
+        {
+            "key": "lymphNode",
+            "display": "Lymph node",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000784"
+        },
+        {
+            "key": "nerve",
+            "display": "Nerve",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0000925"
+        },
+        {
+            "key": "skin",
+            "display": "Skin",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0001253"
+        },
+        {
+            "key": "spleen",
+            "display": "Spleen",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0001281"
+        },
+        {
+            "key": "thymus",
+            "display": "Thymus",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0001374"
+        },
+        {
+            "key": "urine",
+            "display": "Urine",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0001419"
+        },
+        {
+            "key": "vascularSystem",
+            "display": "Vascular system",
+            "uri": "http://purl.obolibrary.org/obo/BTO_0003718"
+        }
+    ],
+    "health_status": [
+        {
+            "key": "adpkd",
+            "display": "Autosomal Dominant Polycystic Kidney Disease (ADPKD)",
+            "uri": "http://purl.bioontology.org/ontology/RCD/PD11."
+        },
+        {
+            "key": "nephronophthisis",
+            "display": "Nephronophthisis",
+            "uri": "http://purl.bioontology.org/ontology/RCD/PD120"
+        },
+        {
+            "key": "ckd",
+            "display": "Chronic Kidney Disease (CKD)",
+            "uri": "http://purl.bioontology.org/ontology/LNC/LA32626-6"
+        },
+        {
+            "key": "nephroticSyndrome",
+            "display": "Nephrotic syndrome",
+            "uri": "http://purl.bioontology.org/ontology/RCD/K01.."
+        },
+        {
+            "key": "ccrcc",
+            "display": "Clear cell renal carcinoma (ccRCC)",
+            "uri": "http://purl.bioontology.org/ontology/MEDDRA/10038416"
+        },
+        {
+            "key": "vonHippelLindauSyndrome",
+            "display": "Von Hippel Lindau syndrome",
+            "uri": "http://purl.bioontology.org/ontology/RCD/PK62."
+        },
+        {
+            "key": "abnormalityKidney",
+            "display": "Congenital abnormality of the kidney",
+            "uri": "http://purl.bioontology.org/ontology/RCD/X785S"
+        },
+        {
+            "key": "abnormalityUreter",
+            "display": "Congenital abnormality of the ureter",
+            "uri": "http://purl.bioontology.org/ontology/RCD/X785y"
+        }
+    ],
+    "mouse_line": [
+        {
+            "display": "C57BL/6J (wildtype)"
+        },
+        {
+            "display": "Ksp-Cre"
+        },
+        {
+            "display": "Pax8-Cre (Pax8rtTA)"
+        },
+        {
+            "display": "Pgk-Cre"
+        },
+        {
+            "display": "Pod-Cre"
+        },
+        {
+            "display": "LC1-Cre"
+        },
+        {
+            "display": "Tam-Cre"
+        },
+        {
+            "display": "Pkd1-flox"
+        },
+        {
+            "display": "Pkd1-"
+        },
+        {
+            "display": "Dnajb11 tm1a"
+        },
+        {
+            "display": "Dnajb11-flox"
+        },
+        {
+            "display": "Dnajb11-"
+        }
+    ],
+    "sample_preparation": [
+        {
+            "key": "culturCell",
+            "display": "Cultured cells",
+            "children": [
+                {
+                    "display": "Adipocyte"
+                },
+                {
+                    "display": "Cardiomyocyte"
+                },
+                {
+                    "display": "Dendritic cell"
+                },
+                {
+                    "display": "Embryonic cardiomyocytes"
+                },
+                {
+                    "display": "Endothelial cell"
+                },
+                {
+                    "display": "Epithelial cell"
+                },
+                {
+                    "display": "Fibroblast"
+                },
+                {
+                    "display": "hiPSC-CM"
+                },
+                {
+                    "display": "hiPSC-FB"
+                },
+                {
+                    "display": "Immune cell"
+                },
+                {
+                    "display": "Leukocytes"
+                },
+                {
+                    "display": "Lymphocytes"
+                },
+                {
+                    "display": "Macrophage"
+                },
+                {
+                    "display": "Monocytes"
+                },
+                {
+                    "display": "Natural killer cells"
+                },
+                {
+                    "display": "Neuronal cell"
+                },
+                {
+                    "display": "Neurones"
+                },
+                {
+                    "display": "Neutrophils"
+                },
+                {
+                    "display": "Oocyte"
+                },
+                {
+                    "display": "Pericytes"
+                },
+                {
+                    "display": "Platelet"
+                },
+                {
+                    "display": "Smooth muscle cells"
+                },
+                {
+                    "display": "T cells"
+                }
+            ]
+        },
+        {
+            "key": "isoCell",
+            "display": "Isolated cells",
+            "children": [
+                {
+                    "display": "Adipocyte"
+                },
+                {
+                    "display": "Cardiomyocyte"
+                },
+                {
+                    "display": "Dendritic cell"
+                },
+                {
+                    "display": "Embryonic cardiomyocytes"
+                },
+                {
+                    "display": "Endothelial cell"
+                },
+                {
+                    "display": "Epithelial cell"
+                },
+                {
+                    "display": "Fibroblast"
+                },
+                {
+                    "display": "hiPSC-CM"
+                },
+                {
+                    "display": "hiPSC-FB"
+                },
+                {
+                    "display": "Immune cell"
+                },
+                {
+                    "display": "Leukocytes"
+                },
+                {
+                    "display": "Lymphocytes"
+                },
+                {
+                    "display": "Macrophage"
+                },
+                {
+                    "display": "Monocytes"
+                },
+                {
+                    "display": "Natural killer cells"
+                },
+                {
+                    "display": "Neuronal cell"
+                },
+                {
+                    "display": "Neurones"
+                },
+                {
+                    "display": "Neutrophils"
+                },
+                {
+                    "display": "Oocyte"
+                },
+                {
+                    "display": "Pericytes"
+                },
+                {
+                    "display": "Platelet"
+                },
+                {
+                    "display": "Smooth muscle cells"
+                },
+                {
+                    "display": "T cells"
+                }
+            ]
+        },
+        {
+            "key": "tissChunk",
+            "display": "Tissue chunk"
+        },
+        {
+            "key": "tissSect",
+            "display": "Tissue section (thin)"
+        },
+        {
+            "key": "tissSlice",
+            "display": "Tissue slice"
+        },
+        {
+            "key": "wholeOrg",
+            "display": "Whole organ "
+        }
+    ],
+    "sample_processing": [
+        {
+            "display": "Cleared fixed tissue "
+        },
+        {
+            "display": "Formaldehyde fixed and parafin embedded (FFPE)"
+        },
+        {
+            "display": "Formaldehyde-fixation"
+        },
+        {
+            "display": "High pressure frozen"
+        },
+        {
+            "display": "None (Physiological solution)"
+        },
+        {
+            "display": "OCT embedded and frozen"
+        }
+    ],
+    "readout": [
+        {
+            "key": "biomechanics",
+            "display": "Biomechanics",
+            "children": [
+                {
+                    "key": "cellStretch",
+                    "display": "Cell stretching"
+                },
+                {
+                    "key": "nanoindentation",
+                    "display": "Nanoindentation"
+                },
+                {
+                    "key": "sacromLength",
+                    "display": "Sarcomer Length"
+                },
+                {
+                    "key": "singleCellStretch",
+                    "display": "Single cell stretching"
+                },
+                {
+                    "key": "tissueStretching",
+                    "display": "Tissue stretching"
+                },
+                {
+                    "key": "tissueStretchMD",
+                    "display": "Tissue stretching Myodish"
+                }
+            ]
+        },
+        {
+            "key": "clinicImaging",
+            "display": "Clinical Imaging",
+            "children": [
+                {
+                    "key": "ct",
+                    "display": "Computed tomography scan"
+                },
+                {
+                    "key": "ecg",
+                    "display": "Echocardiography"
+                },
+                {
+                    "key": "mri",
+                    "display": "Magnetic resonance imaging"
+                },
+                {
+                    "key": "pet",
+                    "display": "Positron emission tomography"
+                }
+            ]
+        },
+        {
+            "key": "computModelling",
+            "display": "Computational modelling"
+        },
+        {
+            "key": "electronMicroscopy",
+            "display": "Electron microscopy "
+        },
+        {
+            "key": "electrophysiologyClinical",
+            "display": "Electrophysiology (clinical)"
+        },
+        {
+            "key": "electrophysiologyLab",
+            "display": "Electrophysiology (lab)",
+            "children": [
+                {
+                    "key": "patchClampCC",
+                    "display": "Patch Clamp - current clamp"
+                },
+                {
+                    "key": "patchClampVC",
+                    "display": "Patch Clamp - voltage clamp",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23VoltageClamp"
+                },
+                {
+                    "key": "sharpElectrode",
+                    "display": "Sharp Electrode",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23SharpElectrodeVoltageClamp"
+                }
+            ]
+        },
+        {
+            "key": "cytometry",
+            "display": "Flow cytometry / FACS"
+        },
+        {
+            "key": "lightMicroscopy",
+            "display": "Light microscopy",
+            "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23LightMicroscope",
+            "children": [
+                {
+                    "key": "confocal",
+                    "display": "Confocal",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23ConfocalMicroscope"
+                },
+                {
+                    "key": "multiphoton",
+                    "display": "Multiphoton",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23MultiPhotonMicroscope"
+                },
+                {
+                    "key": "slidescanner",
+                    "display": "Slidescanner"
+                },
+                {
+                    "key": "widefield",
+                    "display": "Widefield"
+                }
+            ]
+        },
+        {
+            "key": "molecularBiology",
+            "display": "Molecular Biology",
+            "children": [
+                {
+                    "key": "aptamer",
+                    "display": "Aptamer (Proteomics)"
+                },
+                {
+                    "key": "bulkChromatinAccessibility",
+                    "display": "Bulk chromatin accessibility"
+                },
+                {
+                    "key": "dnaMethylArray",
+                    "display": "DNA Methylation (array)"
+                },
+                {
+                    "key": "elisa",
+                    "display": "Enzyme-linked immunosorbent assay (ELISA)"
+                },
+                {
+                    "key": "geneExpr",
+                    "display": "Gene Expression (array)"
+                },
+                {
+                    "key": "genotyping",
+                    "display": "Genotyping array and imputation "
+                },
+                {
+                    "key": "pea",
+                    "display": "Proximity extension assay (PEA)"
+                },
+                {
+                    "key": "qPCR",
+                    "display": "Quantitative polymerase chain reaction (qPCR)"
+                },
+                {
+                    "key": "standardBiochemicalAssay",
+                    "display": "Standard biochemical assay"
+                },
+                {
+                    "key": "westBlot",
+                    "display": "Westernblot"
+                }
+            ]
+        },
+        {
+            "key": "opticalMapping",
+            "display": "Optical mapping"
+        },
+        {
+            "key": "optoAcoustics",
+            "display": "Optoacoustics"
+        },
+        {
+            "key": "sequencing",
+            "display": "Sequencing",
+            "children": [
+                {
+                    "key": "atacSeq",
+                    "display": "ATAC sequencing"
+                },
+                {
+                    "key": "dnaMethylationWgbs",
+                    "display": "DNA methylation (WGBS)"
+                },
+                {
+                    "key": "rnaSeq",
+                    "display": "RNA sequencing"
+                },
+                {
+                    "key": "Single Cell chromatin accessibility",
+                    "display": "Single Cell chromatin accessibility"
+                },
+                {
+                    "key": "scRNASeq",
+                    "display": "Single cell RNA seq  "
+                },
+                {
+                    "key": "exome",
+                    "display": "Whole exome sequencing"
+                },
+                {
+                    "key": "genome",
+                    "display": "Whole genome sequencing"
+                }
+            ]
+        },
+        {
+            "key": "massSpectrometry",
+            "display": "Mass Spectrometry",
+            "children": [
+                {
+                    "key": "interactionProteomics",
+                    "display": "Interaction proteomics"
+                },
+                {
+                    "key": "metabolomics",
+                    "display": "Metabolomics"
+                },
+                {
+                    "key": "proteomics",
+                    "display": "Proteomics"
+                }
+            ]
+        }
+    ],
+    "probes": [
+        {
+            "key": "antibodies",
+            "display": "Antibodies",
+            "children": [
+                {
+                    "key": "alphaact",
+                    "display": "alpha-Actinin"
+                },
+                {
+                    "key": "alphaSMA",
+                    "display": "alpha-SMA (Smooth Muscle Actin)"
+                },
+                {
+                    "key": "amphiph2",
+                    "display": "Amphiphysin II"
+                },
+                {
+                    "key": "atp5b",
+                    "display": "ATP5B"
+                },
+                {
+                    "key": "bdnf",
+                    "display": "BDNF"
+                },
+                {
+                    "key": "betaActin",
+                    "display": "beta-Actin"
+                },
+                {
+                    "key": "betaTub",
+                    "display": "beta-Tubulin"
+                },
+                {
+                    "key": "bin1",
+                    "display": "Bin1"
+                },
+                {
+                    "key": "cacna2d1",
+                    "display": "CACNA2D1"
+                },
+                {
+                    "key": "calnexin",
+                    "display": "Calnexin"
+                },
+                {
+                    "key": "cav1.2",
+                    "display": "CaV1.2 (CACNA1C) "
+                },
+                {
+                    "key": "caveloin3",
+                    "display": "Caveolin-3"
+                },
+                {
+                    "key": "ccl2",
+                    "display": "CCL2"
+                },
+                {
+                    "key": "cd107b",
+                    "display": "CD107b / Mac-3"
+                },
+                {
+                    "key": "cd14",
+                    "display": "CD14"
+                },
+                {
+                    "key": "cd329",
+                    "display": "CD29"
+                },
+                {
+                    "key": "cd31",
+                    "display": "CD31"
+                },
+                {
+                    "key": "cd45",
+                    "display": "CD45"
+                },
+                {
+                    "key": "cd68",
+                    "display": "CD68"
+                },
+                {
+                    "key": "cd90.1",
+                    "display": "CD90.1 (Thy-1.1)"
+                },
+                {
+                    "key": "col1a1",
+                    "display": "Collagen-I-A1 (COL1A1)"
+                },
+                {
+                    "key": "cx40",
+                    "display": "Connexin 40"
+                },
+                {
+                    "key": "cx43",
+                    "display": "Connexin 43"
+                },
+                {
+                    "key": "coupTF2",
+                    "display": "COUP-TF II/NR2F2 "
+                },
+                {
+                    "key": "cxcl1",
+                    "display": "CXCL1/GRO-alpha/KC/CINC-1"
+                },
+                {
+                    "key": "ddr2",
+                    "display": "DDR2"
+                },
+                {
+                    "key": "gapdh",
+                    "display": "GAPDH"
+                },
+                {
+                    "key": "gfp",
+                    "display": "GFP (green fluorescent protein)"
+                },
+                {
+                    "key": "hcn4",
+                    "display": "HCN4"
+                },
+                {
+                    "key": "histone3",
+                    "display": "Histone 3 (PhosphoS10)"
+                },
+                {
+                    "key": "integrinA1",
+                    "display": "Integrin-alpha-1"
+                },
+                {
+                    "key": "integrinB1",
+                    "display": "Integrin-beta-1"
+                },
+                {
+                    "key": "kca1.1",
+                    "display": "KCa1.1/BK"
+                },
+                {
+                    "key": "kir1.2",
+                    "display": "Kir1.2"
+                },
+                {
+                    "key": "kir2.1",
+                    "display": "Kir2.1"
+                },
+                {
+                    "key": "kv1.3",
+                    "display": "KV1.3"
+                },
+                {
+                    "key": "kv1.5",
+                    "display": "KV1.5"
+                },
+                {
+                    "key": "mcherry",
+                    "display": "mCherry"
+                },
+                {
+                    "key": "mar2",
+                    "display": "Muscarinic Acetycholine Receptor 2/CM2"
+                },
+                {
+                    "key": "mlc2",
+                    "display": "Myosin Light Chain 2 "
+                },
+                {
+                    "key": "nfm",
+                    "display": "Neurofilament Medium"
+                },
+                {
+                    "key": "p53",
+                    "display": "p53"
+                },
+                {
+                    "key": "pdgfrA",
+                    "display": "PDGFR-alpha"
+                },
+                {
+                    "key": "phSMAD2",
+                    "display": "Phospho-SMAD2"
+                },
+                {
+                    "key": "piezo1",
+                    "display": "Piezo1"
+                },
+                {
+                    "key": "rfp",
+                    "display": "RFP (red fluorescent protein)"
+                },
+                {
+                    "key": "ryanr",
+                    "display": "Ryanodine Receptor"
+                },
+                {
+                    "key": "s100b",
+                    "display": "S100B"
+                },
+                {
+                    "key": "sarcAActinin",
+                    "display": "Sarcomeric alpha-Actinin"
+                },
+                {
+                    "key": "serca2",
+                    "display": "SERCA2 ATPase"
+                },
+                {
+                    "key": "sla2dr",
+                    "display": "SLA Class II DR"
+                },
+                {
+                    "key": "ncax",
+                    "display": "Sodium/Calcium Exchanger"
+                },
+                {
+                    "key": "sox10",
+                    "display": "SOX10"
+                },
+                {
+                    "key": "swc3",
+                    "display": "SWC3"
+                },
+                {
+                    "key": "talin1",
+                    "display": "Talin 1"
+                },
+                {
+                    "key": "tgfB1",
+                    "display": "TGF-beta-1 "
+                },
+                {
+                    "key": "trop1",
+                    "display": "Troponin I "
+                },
+                {
+                    "key": "trp1",
+                    "display": "TRP1 "
+                },
+                {
+                    "key": "turbgfp",
+                    "display": "TurboGFP"
+                },
+                {
+                    "key": "tyrhydr",
+                    "display": "Tyrosine Hydroxylase "
+                },
+                {
+                    "key": "vim",
+                    "display": "Vimentin"
+                },
+                {
+                    "key": "yap",
+                    "display": "YAP"
+                }
+            ]
+        },
+        {
+            "key": "reporter",
+            "display": "Reporter / Marker molecules",
+            "children": [
+                {
+                    "key": "berst1",
+                    "display": "BeRST 1"
+                },
+                {
+                    "key": "cellbrite",
+                    "display": "CellBrite"
+                },
+                {
+                    "key": "cellmask",
+                    "display": "Cellmask"
+                },
+                {
+                    "key": "celltracker",
+                    "display": "CellTracker"
+                },
+                {
+                    "key": "cna35",
+                    "display": "CNA-35 (collagen probe)"
+                },
+                {
+                    "key": "dapi",
+                    "display": "DAPI"
+                },
+                {
+                    "key": "dextran",
+                    "display": "Dextran"
+                },
+                {
+                    "key": "di4anbdqpq",
+                    "display": "DI-4-ANBDQPQ"
+                },
+                {
+                    "key": "di4aneppdhq",
+                    "display": "Di-4-ANEPPDHQ"
+                },
+                {
+                    "key": "di4aneqfptea",
+                    "display": "Di-4-ANEQ(F)PTEA"
+                },
+                {
+                    "key": "fluo4",
+                    "display": "Fluo-4"
+                },
+                {
+                    "key": "fura2",
+                    "display": "Fura-2"
+                },
+                {
+                    "key": "hoechst",
+                    "display": "Hoechst 33342"
+                },
+                {
+                    "key": "memglow",
+                    "display": "Memglow"
+                },
+                {
+                    "key": "phalloidin",
+                    "display": "Phalloidin"
+                },
+                {
+                    "key": "rhod2",
+                    "display": "Rhod-2"
+                },
+                {
+                    "key": "streptavidin",
+                    "display": "Streptavidin"
+                },
+                {
+                    "key": "sytox",
+                    "display": "Sytox Dead Cell Stain"
+                },
+                {
+                    "key": "tubtracker",
+                    "display": "Tubulin Tracker"
+                },
+                {
+                    "key": "uea1",
+                    "display": "Ulex Europaeus Agglutinin I (UEA I)"
+                },
+                {
+                    "key": "WGA",
+                    "display": "Wheat germ agglutinin"
+                }
+            ]
+        },
+        {
+            "key": "stains",
+            "display": "Stain",
+            "children": [
+                {
+                    "key": "hAndE",
+                    "display": "Hematoxylin and eosin "
+                },
+                {
+                    "key": "hrp",
+                    "display": "Horse radish peroxidase"
+                },
+                {
+                    "key": "massTriChr",
+                    "display": "Masson's Trichrome"
+                },
+                {
+                    "key": "sirRed",
+                    "display": "Sirius Red"
+                }
+            ]
+        }
+    ]
+}

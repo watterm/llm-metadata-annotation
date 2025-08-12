@@ -1,0 +1,36 @@
+
+step_1_title: "# Step 1: Identification of Biomedical Entities"
+step_1: >-
+  Analyze the appended scientific publication to identify all biomedical entities mentioned. Exclude entities mentioned only in the discussion section or the bibliography. Provide a comprehensive list of these entities. 
+
+step_2_title: "# Step 2: PubTator Analysis"
+step_2: >-
+  For each biomedical entity identified in Step 1, determine whether it is listed in PubTator. Provide a list of these entities along with their existence status in PubTator. Do not include examples or elaborate explanations. A Pubtator ID starts with '@' and does NOT contain a space character. If a Pubtator entity has several IDs, pick the best match.
+
+step_3_title: "# Step 3: Reanalysis for Specific Entities"
+step_3: >- 
+  Reanalyze the scientific publication to identify the presence of specific entities from different schema categories listed below as subheadings. 
+  
+  Follow these rules:
+    - Only include entities explicitly mentioned in the publication, excluding mentions from the discussion section or bibliography. 
+    - If the entity is a synonym of the one listed in the schema, use the name from the schema.
+    - Do not use the category names as entity names. 
+    - If entities are listed hierachically, use the most specific entities.
+    - If you notice entities that are not listed in the subheadings, include them in the list of entities as well.
+
+step_4_title: "# Step 4: Consolidation of Results"
+step_4: >-
+  Consolidate the results of Steps 2 and 3:
+
+  For each category listed in Step 3, list all entities identified in Step 3 and add the entities identified in Step 2 to the correct categories. If an entity is listed in both steps, include it only once in the final list, preferably with the schema name from Step 3.
+
+  If an entity does not fit in the existing categories, you may add new ones. Try to use categories that are of the same scope as the existing ones.
+
+pubtator_tool: >-
+  You MUST use the provided Pubtator tool to verify all entities!
+
+structured_output: >-
+  You MUST format your response according to the provided JSON schema.
+
+fenced_output: >-
+  You MUST format your response in a fenced JSON code block. Your JSON content MUST follow this JSON schema:

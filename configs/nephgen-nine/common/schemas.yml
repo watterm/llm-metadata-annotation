@@ -1,0 +1,120 @@
+1_publication_response_schema:
+  __ignore_types__: true
+  name: "PublicationEntityList"
+  strict: True
+  schema:
+    type: "object"
+    title: "Publication entity list container"
+    additionalProperties: False
+    required: &container_required
+      - "entity_list"
+      - "comment"
+    properties:
+      entity_list: &base_entity_list
+        type: "array"
+        title: "Entity list"
+        description: "A list of biomedical entities in the publication"
+        items: &base_entity
+          type: "object"
+          title: "Biomedical Entity"
+          description: "A biomedical entity"
+          additionalProperties: False
+          required:
+            - "entity_name"
+          properties: &base_properties
+            entity_name:
+              type: string
+              title: "Entity name"
+              description: "The name of the entity"
+      comment: &comment
+        type: "string"
+        description: "You can comment here about the reasoning for your list."
+
+2_pubtator_response_schema:
+  __ignore_types__: true  
+  name: "PubtatorEntityList"
+  strict: True
+  schema:
+    type: "object"
+    title: "Pubtator entity list container"
+    additionalProperties: False
+    required: *container_required
+    properties:
+      entity_list:
+        <<: *base_entity_list
+        description: "The entities listed in the publication with information from Pubtator"
+        items: &pubtator_entity
+          <<: *base_entity
+          required:
+            - "entity_name"
+            - "in_pubtator"
+            - "pubtator_id"
+          properties: &pubtator_properties
+            <<: *base_properties
+            in_pubtator:
+              type: "boolean"
+              title: "Entity listed in PubTator"
+              description: "True if the entity is listed in Pubtator"
+            pubtator_id:
+              type: string
+              title: "Pubtator ID"
+              description: "The ID for the Pubtator entity. Must start with @ and can not contain spaces. Only use one ID. Leave empty, if entity is not in Pubtator."
+      comment: *comment
+
+3_schema_response_schema:
+  __ignore_types__: true
+  name: "SchemaEntityList"
+  strict: True
+  schema:
+    type: "object"
+    title: "Schema entity list container"
+    additionalProperties: False
+    required: *container_required
+    properties:
+      entity_list:
+        <<: *base_entity_list
+        description: "The entities listed in the publication referenced in the metadata schema"
+        items: &schema_entity
+          <<: *base_entity
+          required:
+            - "entity_name"
+            - "from_provided_schema"
+            - "schema_category"
+          properties: &schema_properties
+            <<: *base_properties
+            from_provided_schema:
+              type: "boolean"
+              title: "Entity listed in provided schema"
+              description: "True if the entity is listed in the provided schema"
+            schema_category:
+              type: "string"
+              title: "Metadata schema category"
+              description: "The category in which the entity is listed in the schema. Leave empty, if entry is not in schema."
+
+      comment: *comment      
+
+4_consolidated_response_schema:
+  __ignore_types__: true
+  name: "ConsolidatedEntityList"
+  strict: True
+  schema:
+    type: "object"
+    title: "Consolidated entity list container"
+    additionalProperties: False
+    required: *container_required
+    properties:
+      entity_list:
+        <<: *base_entity_list
+        description: "The entities listed in the publication with information from Pubtator and the metadata schema"
+        items: &consolidated_entity
+          <<: *base_entity
+          required:
+            - "entity_name"
+            - "in_pubtator"
+            - "pubtator_id"
+            - "from_provided_schema"
+            - "schema_category"
+          properties:
+            <<: *pubtator_properties
+            <<: *schema_properties
+      comment: *comment

@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with debugging configuration",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/llm_annotation_prediction/main.py",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "args": [
+                "configs/debug.yml"
+            ],
+            "console": "integratedTerminal",
+        }
+    ]
+}
