@@ -1,0 +1,11 @@
+step_1_title: "# Step 1:  Identification of datasets in public repositories"
+step_1: |-
+  Analyze the uploaded manuscript to identify the datasets that were used in the article and published in public repositories. Try to identify the URLs to the datasets in the public repositories. Do not provide additional information, but only list these datasets and the accompanying URLs.
+
+step_2_title: "# Step 2: Identification of specific aspects within datasets"
+step_2_simple: |-
+  For each dataset identified in Step 1, use the URL and look at the website of the dataset. Use the information provided on the respective website to identify biomedical entities of the dataset. For structuring such entities, use the list of entities below. Maintain the formatting and organization provided below, and provide a comprehensive list for each subheading. Do not provide additional information or explanation, but only list the results according to the formatting and organization provided below.
+
+step_3_title: "# Step 3: Use information from the manuscript to enrich the information regarding the datasets"
+step_3_simple: |-
+  Use the results of Steps 2. In addition, reanalyze the manuscript and try to add missing information for each dataset using the list of entities from Step 2. Complete this step for every dataset entirely before proceeding to the next step. Do not provide additional information, but only list the results according to the formatting and organization provided before.

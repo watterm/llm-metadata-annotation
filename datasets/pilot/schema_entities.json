@@ -1,0 +1,1474 @@
+{
+    "organisms": [
+        {
+            "key": "human",
+            "display": "Human",
+            "uri": "http://purl.bioontology.org/ontology/STY/T016",
+            "gen_id": "@O-HMN-79A54"
+        },
+        {
+            "key": "mouse",
+            "display": "Mouse",
+            "uri": "http://purl.bioontology.org/ontology/NCBITAXON/10090",
+            "gen_id": "@O-MS-47C5C"
+        },
+        {
+            "key": "pig",
+            "display": "Pig",
+            "uri": "http://purl.bioontology.org/ontology/NCBITAXON/9823",
+            "gen_id": "@O-PG-F0B8C"
+        }
+    ],
+    "tissue_sources": [
+        {
+            "key": "entry0",
+            "display": "Blood",
+            "children": [
+                {
+                    "key": "plasma",
+                    "display": "Blood plasma",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000131",
+                    "gen_id": "@BLD-BP-F1602"
+                },
+                {
+                    "key": "serum",
+                    "display": "Blood serum",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000133",
+                    "gen_id": "@BLD-BS-81E33"
+                },
+                {
+                    "key": "whole",
+                    "display": "Whole blood",
+                    "uri": "http://purl.obolibrary.org/obo/BTO_0000089",
+                    "gen_id": "@BLD-WB-09122"
+                },
+                {
+                    "key": "bloodCells",
+                    "display": "Blood cells",
+                    "uri": "http://purl.obolibrary.org/obo/CL_0000081",
+                    "gen_id": "@BLD-BC-18111"
+                },
+                {
+                    "key": "cordBlood",
+                    "display": "Cord blood",
+                    "gen_id": "@BLD-CB-F84B0"
+                },
+                {
+                    "key": "peripheralBlood",
+                    "display": "Peripheral blood",
+                    "gen_id": "@BLD-PB-B50B2"
+                }
+            ],
+            "gen_id": "@TS-BLD-3E8E4"
+        },
+        {
+            "key": "entry1",
+            "display": "Bone marrow",
+            "gen_id": "@TS-BM-FA9A1"
+        },
+        {
+            "key": "entry2",
+            "display": "Heart",
+            "gen_id": "@TS-HRT-3CB96"
+        },
+        {
+            "key": "entry3",
+            "display": "Intestine",
+            "children": [
+                {
+                    "key": "smallIntestine",
+                    "display": "Small intestine",
+                    "gen_id": "@NTS-SI-C593B"
+                },
+                {
+                    "key": "colon",
+                    "display": "Colon",
+                    "gen_id": "@NTS-CLN-06D62"
+                },
+                {
+                    "key": "cecum",
+                    "display": "Cecum",
+                    "gen_id": "@NTS-CCM-3A9BD"
+                },
+                {
+                    "key": "feces",
+                    "display": "Feces",
+                    "gen_id": "@NTS-FCS-46563"
+                },
+                {
+                    "key": "peyersPatches",
+                    "display": "Peyer's patches",
+                    "gen_id": "@NTS-PSP-925B8"
+                }
+            ],
+            "gen_id": "@TS-NTS-B60ED"
+        },
+        {
+            "key": "entry14",
+            "display": "Placenta",
+            "gen_id": "@TS-PLC-14B6F"
+        },
+        {
+            "key": "entry15",
+            "display": "Yolk sac",
+            "gen_id": "@TS-YS-28041"
+        },
+        {
+            "key": "entry4",
+            "display": "Liver",
+            "gen_id": "@TS-LVR-EBAF4"
+        },
+        {
+            "key": "entry5",
+            "display": "Lung",
+            "gen_id": "@TS-LNG-D08C7"
+        },
+        {
+            "key": "entry6",
+            "display": "Lymph node",
+            "children": [
+                {
+                    "key": "cervical",
+                    "display": "Cervical",
+                    "gen_id": "@LN-CRV-6B9A9"
+                },
+                {
+                    "key": "axillary",
+                    "display": "Axillary",
+                    "gen_id": "@LN-XLL-FC9FC"
+                },
+                {
+                    "key": "mediastinal",
+                    "display": "Mediastinal",
+                    "gen_id": "@LN-MDS-0CAEC"
+                },
+                {
+                    "key": "abdominal",
+                    "display": "Abdominal",
+                    "gen_id": "@LN-BDM-CB701"
+                },
+                {
+                    "key": "inguinal",
+                    "display": "Inguinal",
+                    "gen_id": "@LN-NGN-C87EF"
+                }
+            ],
+            "gen_id": "@TS-LN-A5DC7"
+        },
+        {
+            "key": "entry7",
+            "display": "Nerve",
+            "gen_id": "@TS-NRV-5A1C2"
+        },
+        {
+            "key": "entry8",
+            "display": "Skin",
+            "gen_id": "@TS-SKN-2A007"
+        },
+        {
+            "key": "entry9",
+            "display": "Spleen",
+            "gen_id": "@TS-SPL-9D486"
+        },
+        {
+            "key": "entry10",
+            "display": "Thymus",
+            "gen_id": "@TS-THY-B3C0C"
+        },
+        {
+            "key": "entry11",
+            "display": "Vascular system",
+            "gen_id": "@TS-VS-2F274"
+        },
+        {
+            "key": "entry12",
+            "display": "Adipose tissue",
+            "gen_id": "@TS-AT-A35D7"
+        },
+        {
+            "key": "entry13",
+            "display": "CNS",
+            "gen_id": "@TS-CNS-827A5"
+        },
+        {
+            "key": "entry19",
+            "display": "Kidney",
+            "gen_id": "@TS-KDN-1DF1F"
+        },
+        {
+            "key": "entry20",
+            "display": "Whole organism",
+            "gen_id": "@TS-WO-5306F"
+        }
+    ],
+    "cell_lines": [
+        {
+            "display": "3T3 cell",
+            "gen_id": "@CL-3C-E89EA"
+        },
+        {
+            "display": "A2780",
+            "gen_id": "@CL-A27-07ADE"
+        },
+        {
+            "display": "A549",
+            "gen_id": "@CL-A54-45637"
+        },
+        {
+            "display": "AGS",
+            "gen_id": "@CL-GS-8534A"
+        },
+        {
+            "display": "AsPC-1",
+            "gen_id": "@CL-A1-F0B59"
+        },
+        {
+            "display": "BEAS-2B",
+            "gen_id": "@CL-B2-2CE4D"
+        },
+        {
+            "display": "BHK-21",
+            "gen_id": "@CL-B2-523B1"
+        },
+        {
+            "display": "BT-474",
+            "gen_id": "@CL-B4-FD4A6"
+        },
+        {
+            "display": "BxPC-3",
+            "gen_id": "@CL-B3-63048"
+        },
+        {
+            "display": "C2C12",
+            "gen_id": "@CL-CC-27B84"
+        },
+        {
+            "display": "C6",
+            "gen_id": "@CL-C-6DB53"
+        },
+        {
+            "display": "Caco-2 cell",
+            "gen_id": "@CL-C2C-2135C"
+        },
+        {
+            "display": "Calu-3",
+            "gen_id": "@CL-C3-54082"
+        },
+        {
+            "display": "Calu-6",
+            "gen_id": "@CL-C6-F0743"
+        },
+        {
+            "display": "Capan-1",
+            "gen_id": "@CL-C1-23B84"
+        },
+        {
+            "display": "Capan-2",
+            "gen_id": "@CL-C2-A170E"
+        },
+        {
+            "display": "CCRF-CEM",
+            "gen_id": "@CL-CC-1EB7F"
+        },
+        {
+            "display": "CHO cells",
+            "gen_id": "@CL-CC-A9432"
+        },
+        {
+            "display": "CHO-K1",
+            "gen_id": "@CL-CK-51EE5"
+        },
+        {
+            "display": "COS-7",
+            "gen_id": "@CL-C7-2115F"
+        },
+        {
+            "display": "Daoy",
+            "gen_id": "@CL-DY-8C27F"
+        },
+        {
+            "display": "DLD-1 cell",
+            "gen_id": "@CL-D1C-02221"
+        },
+        {
+            "display": "DU145",
+            "gen_id": "@CL-D-93A9E"
+        },
+        {
+            "display": "EA.hy926",
+            "gen_id": "@CL-EH-F3FFC"
+        },
+        {
+            "display": "F9",
+            "gen_id": "@CL-F-07DE6"
+        },
+        {
+            "display": "H1",
+            "gen_id": "@CL-H-33112"
+        },
+        {
+            "display": "H1299",
+            "gen_id": "@CL-H-8873A"
+        },
+        {
+            "display": "H1975",
+            "gen_id": "@CL-H-F1199"
+        },
+        {
+            "display": "H460",
+            "gen_id": "@CL-H-2DAE8"
+        },
+        {
+            "display": "H9",
+            "gen_id": "@CL-H-A4206"
+        },
+        {
+            "display": "HaCaT",
+            "gen_id": "@CL-HCT-ACA0C"
+        },
+        {
+            "display": "HCT 116 cell",
+            "gen_id": "@CL-H1C-CB760"
+        },
+        {
+            "display": "HEK293",
+            "gen_id": "@CL-HK-F7534"
+        },
+        {
+            "display": "HEK293T",
+            "gen_id": "@CL-HKT-3B593"
+        },
+        {
+            "display": "HeLa",
+            "gen_id": "@CL-HL-B1A44"
+        },
+        {
+            "display": "HEP-2",
+            "gen_id": "@CL-H2-E0E69"
+        },
+        {
+            "display": "Hep3B",
+            "gen_id": "@CL-HPB-29E38"
+        },
+        {
+            "display": "HEPG2",
+            "gen_id": "@CL-HPG-8C6D1"
+        },
+        {
+            "display": "HL-60",
+            "gen_id": "@CL-H6-332F0"
+        },
+        {
+            "display": "HL-60",
+            "gen_id": "@CL-H6-332F0"
+        },
+        {
+            "display": "HOS",
+            "gen_id": "@CL-HS-7540B"
+        },
+        {
+            "display": "HT-29",
+            "gen_id": "@CL-H2-147E6"
+        },
+        {
+            "display": "Huh7",
+            "gen_id": "@CL-HH-EDAFA"
+        },
+        {
+            "display": "HUVEC",
+            "gen_id": "@CL-HVC-244CE"
+        },
+        {
+            "display": "HUV-EC-C",
+            "gen_id": "@CL-HEC-4E39A"
+        },
+        {
+            "display": "J774A.1 cell",
+            "gen_id": "@CL-J1C-3EB54"
+        },
+        {
+            "display": "Jurkat",
+            "gen_id": "@CL-JRK-F8DC0"
+        },
+        {
+            "display": "Jurkat J6",
+            "gen_id": "@CL-JJ-D5F1D"
+        },
+        {
+            "display": "K562",
+            "gen_id": "@CL-K-B31E8"
+        },
+        {
+            "display": "K562",
+            "gen_id": "@CL-K-B31E8"
+        },
+        {
+            "display": "KG-1",
+            "gen_id": "@CL-K1-5C177"
+        },
+        {
+            "display": "KG-1a",
+            "gen_id": "@CL-K1-1C65C"
+        },
+        {
+            "display": "L929",
+            "gen_id": "@CL-L-638B6"
+        },
+        {
+            "display": "LN229",
+            "gen_id": "@CL-LN-DA3D3"
+        },
+        {
+            "display": "LNCaP clone FGC",
+            "gen_id": "@CL-LCF-F2594"
+        },
+        {
+            "display": "LoVo",
+            "gen_id": "@CL-LV-6E47B"
+        },
+        {
+            "display": "MCF10A",
+            "gen_id": "@CL-MCF-C00AB"
+        },
+        {
+            "display": "MCF7 cell",
+            "gen_id": "@CL-MC-E189D"
+        },
+        {
+            "display": "MDA-MB-231",
+            "gen_id": "@CL-MM2-3EAE8"
+        },
+        {
+            "display": "MDA-MB-453",
+            "gen_id": "@CL-MM4-B8910"
+        },
+        {
+            "display": "MDA-MB-468",
+            "gen_id": "@CL-MM4-C7B94"
+        },
+        {
+            "display": "MDCK",
+            "gen_id": "@CL-MDC-F15CA"
+        },
+        {
+            "display": "MEF (C57BL/6) cell",
+            "gen_id": "@CL-MC6-F66F7"
+        },
+        {
+            "display": "MG-63",
+            "gen_id": "@CL-M6-59471"
+        },
+        {
+            "display": "MIA PaCa-2",
+            "gen_id": "@CL-MP2-50E77"
+        },
+        {
+            "display": "MKN28",
+            "gen_id": "@CL-MKN-B2598"
+        },
+        {
+            "display": "MKN-45",
+            "gen_id": "@CL-M4-7A448"
+        },
+        {
+            "display": "MOLT-4",
+            "gen_id": "@CL-M4-1EC64"
+        },
+        {
+            "display": "MRC-5",
+            "gen_id": "@CL-M5-C468D"
+        },
+        {
+            "display": "NB4",
+            "gen_id": "@CL-NB-E8E00"
+        },
+        {
+            "display": "NCI-H1299",
+            "gen_id": "@CL-NH-56657"
+        },
+        {
+            "display": "NCI-H1975",
+            "gen_id": "@CL-NH-F154C"
+        },
+        {
+            "display": "NCI-H460",
+            "gen_id": "@CL-NH-D76D5"
+        },
+        {
+            "display": "NIH-3T3",
+            "gen_id": "@CL-N3-85C9C"
+        },
+        {
+            "display": "NT2-D1",
+            "gen_id": "@CL-ND-6B602"
+        },
+        {
+            "display": "NTERA-2 cl.D1",
+            "gen_id": "@CL-N2C-F26CB"
+        },
+        {
+            "display": "OVCAR-3",
+            "gen_id": "@CL-O3-CF593"
+        },
+        {
+            "display": "OVCAR-4",
+            "gen_id": "@CL-O4-26C56"
+        },
+        {
+            "display": "P19",
+            "gen_id": "@CL-P-A3313"
+        },
+        {
+            "display": "PANC-1",
+            "gen_id": "@CL-P1-814D0"
+        },
+        {
+            "display": "PC-3",
+            "gen_id": "@CL-P3-2B871"
+        },
+        {
+            "display": "PLC/PRF/5",
+            "gen_id": "@CL-PP5-629A8"
+        },
+        {
+            "display": "Raji",
+            "gen_id": "@CL-RJ-353AC"
+        },
+        {
+            "display": "Ramos",
+            "gen_id": "@CL-RMS-46A1E"
+        },
+        {
+            "display": "RAW 264.7 cell",
+            "gen_id": "@CL-R27-3110F"
+        },
+        {
+            "display": "RWPE-1",
+            "gen_id": "@CL-R1-E4523"
+        },
+        {
+            "display": "Saos-2",
+            "gen_id": "@CL-S2-55DEA"
+        },
+        {
+            "display": "SH-SY5Y",
+            "gen_id": "@CL-SS-23A89"
+        },
+        {
+            "display": "SK-BR-3",
+            "gen_id": "@CL-SB3-06C9E"
+        },
+        {
+            "display": "SK-N-SH",
+            "gen_id": "@CL-SNS-DDAE4"
+        },
+        {
+            "display": "SK-OV-3",
+            "gen_id": "@CL-SO3-2C6DC"
+        },
+        {
+            "display": "SupT1",
+            "gen_id": "@CL-SPT-2B1C5"
+        },
+        {
+            "display": "SW480",
+            "gen_id": "@CL-SW-D830C"
+        },
+        {
+            "display": "SW620",
+            "gen_id": "@CL-SW-06DB3"
+        },
+        {
+            "display": "T47D",
+            "gen_id": "@CL-TD-0EEEB"
+        },
+        {
+            "display": "T98G",
+            "gen_id": "@CL-TG-F23EC"
+        },
+        {
+            "display": "THP-1",
+            "gen_id": "@CL-T1-91B9D"
+        },
+        {
+            "display": "U251",
+            "gen_id": "@CL-U25-25308"
+        },
+        {
+            "display": "U2OS",
+            "gen_id": "@CL-S-5F59A"
+        },
+        {
+            "display": "U87MG",
+            "gen_id": "@CL-MG-8F9DD"
+        },
+        {
+            "display": "U937",
+            "gen_id": "@CL-U93-4305C"
+        },
+        {
+            "display": "U937",
+            "gen_id": "@CL-U93-4305C"
+        },
+        {
+            "display": "Vero",
+            "gen_id": "@CL-VR-5CCA6"
+        },
+        {
+            "display": "WI-38",
+            "gen_id": "@CL-W3-7AE82"
+        },
+        {
+            "display": "HoxB8",
+            "gen_id": "@CL-HXB-50612"
+        }
+    ],
+    "time_lines": [
+        {
+            "display": "embryonic/prenatal",
+            "gen_id": "@TL-EP-61572"
+        },
+        {
+            "display": "postnatal",
+            "gen_id": "@TL-PST-AAABA"
+        },
+        {
+            "display": "adult",
+            "gen_id": "@TL-DLT-7FDC3"
+        }
+    ],
+    "mouse_lines": [
+        {
+            "display": "beta-actin-dsRed",
+            "gen_id": "@ML-BAD-4B8DA"
+        },
+        {
+            "display": "beta-actin-GFP",
+            "gen_id": "@ML-BAG-88B66"
+        },
+        {
+            "display": "C57BL/6J (wildtype)",
+            "gen_id": "@ML-C6W-64B2E"
+        },
+        {
+            "display": "C57/BL6Crl (->WT mice)",
+            "gen_id": "@ML-CBW-EBEFD"
+        },
+        {
+            "display": "CAG-CreER",
+            "gen_id": "@ML-CC-1B27C"
+        },
+        {
+            "display": "Ccr2-/-",
+            "gen_id": "@ML-CCR-47298"
+        },
+        {
+            "display": "Cd11c-Cre",
+            "gen_id": "@ML-CC-2ED7D"
+        },
+        {
+            "display": "Cd45.1",
+            "gen_id": "@ML-C1-0D920"
+        },
+        {
+            "display": "Clec4F-Cre",
+            "gen_id": "@ML-CC-94293"
+        },
+        {
+            "display": "Csf2rb-/-",
+            "gen_id": "@ML-CSF-6B91B"
+        },
+        {
+            "display": "Csf2rb-flox",
+            "gen_id": "@ML-CF-D6A49"
+        },
+        {
+            "display": "Cx3cr1-Cre",
+            "gen_id": "@ML-CC-BB2EC"
+        },
+        {
+            "display": "Cx3cr1-CreER",
+            "gen_id": "@ML-CC-3DBE5"
+        },
+        {
+            "display": "Cx3cr1-GFP",
+            "gen_id": "@ML-CG-A1B4A"
+        },
+        {
+            "display": "Cxcr4-CreER",
+            "gen_id": "@ML-CC-426E3"
+        },
+        {
+            "display": "DTA-flox",
+            "gen_id": "@ML-DF-DF8A7"
+        },
+        {
+            "display": "DTR-flox",
+            "gen_id": "@ML-DF-BCC10"
+        },
+        {
+            "display": "gp91-/-",
+            "gen_id": "@ML-GP-BF93E"
+        },
+        {
+            "display": "Hif1a-flox",
+            "gen_id": "@ML-HF-93B49"
+        },
+        {
+            "display": "Ifnar1-flox",
+            "gen_id": "@ML-IF-CE453"
+        },
+        {
+            "display": "iNos-/-",
+            "gen_id": "@ML-NS-BC56D"
+        },
+        {
+            "display": "Irf8-/-",
+            "gen_id": "@ML-RF-7EA54"
+        },
+        {
+            "display": "LysM-Cre",
+            "gen_id": "@ML-LC-05B7B"
+        },
+        {
+            "display": "Ly6G-tdTomato",
+            "gen_id": "@ML-LT-03441"
+        },
+        {
+            "display": "Mrc1-CreER",
+            "gen_id": "@ML-MC-2DC89"
+        },
+        {
+            "display": "Ms4a3-Cre",
+            "gen_id": "@ML-MC-FF75F"
+        },
+        {
+            "display": "MyD88-flox",
+            "gen_id": "@ML-MF-C71E7"
+        },
+        {
+            "display": "Nav1.8-Cre",
+            "gen_id": "@ML-N8C-F4D4B"
+        },
+        {
+            "display": "p47-/-",
+            "gen_id": "@ML-P-EA467"
+        },
+        {
+            "display": "Pdgfra-CreER",
+            "gen_id": "@ML-PC-89369"
+        },
+        {
+            "display": "Sftpc-CreER",
+            "gen_id": "@ML-SC-E1766"
+        },
+        {
+            "display": "Tgfbr2-flox",
+            "gen_id": "@ML-TF-70AE5"
+        },
+        {
+            "display": "Tnfaip3 fl/fl",
+            "gen_id": "@ML-TFF-E164C"
+        },
+        {
+            "display": "Tomato-flox",
+            "gen_id": "@ML-TF-DBD5E"
+        },
+        {
+            "display": "Villin-Cre",
+            "gen_id": "@ML-VC-CB7CA"
+        },
+        {
+            "display": "YFP-flox",
+            "gen_id": "@ML-YF-4D68D"
+        },
+        {
+            "display": "C57BL/6J RccHsd (wildtype without nnt mutation)",
+            "gen_id": "@ML-C6R-27C95"
+        },
+        {
+            "display": "Clec9a-cre x Rosa-tdTomato",
+            "gen_id": "@ML-CCX-0E811"
+        },
+        {
+            "display": "Clec9a-cre x Rosa-YFP",
+            "gen_id": "@ML-CCX-EEBC6"
+        },
+        {
+            "display": "Clec9a-cre x CD64-DTR",
+            "gen_id": "@ML-CCX-90C8A"
+        },
+        {
+            "display": "RORgt-eGFP",
+            "gen_id": "@ML-RE-291C8"
+        },
+        {
+            "display": "Cd11c-Cre x Stat1-flox",
+            "gen_id": "@ML-CCX-4C4EE"
+        },
+        {
+            "display": "Clec9a-cre x Stat1-flox",
+            "gen_id": "@ML-CCX-8A354"
+        },
+        {
+            "display": "Clec9a-cre x Irf8-flox",
+            "gen_id": "@ML-CCX-0A416"
+        },
+        {
+            "display": "OT-I",
+            "gen_id": "@ML-OI-A7566"
+        },
+        {
+            "display": "OT-I x Nr4a1-eGFP",
+            "gen_id": "@ML-OIX-DA53C"
+        },
+        {
+            "display": "OT-II (Thy1.1)",
+            "gen_id": "@ML-OIT-FF305"
+        },
+        {
+            "display": "Clec9a-cre x Irf4-flox-GFP",
+            "gen_id": "@ML-CCX-0F960"
+        },
+        {
+            "display": "Clec9a-cre x EP2-KO x EP4-flox",
+            "gen_id": "@ML-CCX-A6A82"
+        }
+    ],
+    "interventions": [
+        {
+            "key": "geneMod",
+            "display": "Genetic modification",
+            "children": [
+                {
+                    "display": "TGFB1",
+                    "gen_id": "@GM-TGF-3E126"
+                },
+                {
+                    "display": "MRC1",
+                    "gen_id": "@GM-MRC-833DC"
+                },
+                {
+                    "display": "MYD88",
+                    "gen_id": "@GM-MYD-E6EBC"
+                },
+                {
+                    "display": "GP91",
+                    "gen_id": "@GM-GP-CC36E"
+                },
+                {
+                    "display": "P47",
+                    "gen_id": "@GM-P-1254C"
+                },
+                {
+                    "display": "HIF1A",
+                    "gen_id": "@GM-HF-025E8"
+                },
+                {
+                    "display": "NOS2",
+                    "gen_id": "@GM-NS-FCE56"
+                },
+                {
+                    "display": "TNFAIP3",
+                    "gen_id": "@GM-TNF-411EE"
+                }
+            ],
+            "gen_id": "@I-GM-3C332"
+        },
+        {
+            "key": "pharmacolTreat",
+            "display": "Pharmacological treatment",
+            "children": [
+                {
+                    "key": "highFat",
+                    "display": "High fat diet",
+                    "gen_id": "@PT-HFD-60FBE"
+                },
+                {
+                    "key": "TamoxifenInduction",
+                    "display": "Tamoxifen induction",
+                    "gen_id": "@PT-TI-7C0AB"
+                },
+                {
+                    "key": "DSSTreatment",
+                    "display": "DSS treatment",
+                    "gen_id": "@PT-DT-4F996"
+                },
+                {
+                    "key": "Csf1RInhibitorTreatment",
+                    "display": "Csf1R inhibitor treatment",
+                    "gen_id": "@PT-CIT-CF9A4"
+                },
+                {
+                    "key": "DTTreatment",
+                    "display": "Diphteria toxin treatment",
+                    "gen_id": "@PT-DTT-A59D3"
+                }
+            ],
+            "gen_id": "@I-PT-EC45D"
+        },
+        {
+            "key": "infectionList",
+            "display": "Infection",
+            "children": [
+                {
+                    "key": "Bacille Calmette Guérin (BCG)",
+                    "display": "Bacille Calmette Guérin (BCG)",
+                    "gen_id": "@NFC-BCG-D3904"
+                },
+                {
+                    "key": "Guillain-Barre syndrome (GBS)",
+                    "display": "Guillain-Barre syndrome (GBS)",
+                    "gen_id": "@NFC-GBS-251E4"
+                },
+                {
+                    "key": "Staphylococcus aureus",
+                    "display": "Staphylococcus aureus",
+                    "gen_id": "@NFC-SA-988BD"
+                },
+                {
+                    "key": "Cytomegalovirus",
+                    "display": "Cytomegalovirus",
+                    "gen_id": "@NFC-CYT-832D5"
+                },
+                {
+                    "key": "Mycobacterium marinum",
+                    "display": "Mycobacterium marinum",
+                    "gen_id": "@NFC-MM-F92AB"
+                },
+                {
+                    "key": "Mycobacterium avium",
+                    "display": "Mycobacterium avium",
+                    "gen_id": "@NFC-MA-6CDFE"
+                },
+                {
+                    "key": "Legionella pneumophila",
+                    "display": "Legionella pneumophila",
+                    "gen_id": "@NFC-LP-292DD"
+                },
+                {
+                    "key": "salmonella",
+                    "display": "Salmonella",
+                    "gen_id": "@NFC-SLM-7AB86"
+                }
+            ],
+            "gen_id": "@I-NFC-3F36E"
+        },
+        {
+            "key": "InjectionList",
+            "display": "Injection",
+            "children": [
+                {
+                    "key": "polyinosinicPolycytidylicAcid",
+                    "display": "Poly I:C",
+                    "gen_id": "@NJC-PIC-8200B"
+                },
+                {
+                    "key": "maternalInflammation",
+                    "display": "Maternal Inflammation (Poly I:C)",
+                    "gen_id": "@NJC-MIP-37B87"
+                },
+                {
+                    "key": "CpG",
+                    "display": "CpG",
+                    "gen_id": "@NJC-CPG-BF8E7"
+                },
+                {
+                    "key": "R848",
+                    "display": "R848",
+                    "gen_id": "@NJC-R-251FD"
+                },
+                {
+                    "key": "tns",
+                    "display": "TNS",
+                    "gen_id": "@NJC-TNS-3FDCB"
+                }
+            ],
+            "gen_id": "@I-NJC-545A7"
+        },
+        {
+            "key": "housingConditionList",
+            "display": "Housing condition",
+            "gen_id": "@I-HC-CC96A"
+        },
+        {
+            "key": "stimulation",
+            "display": "Stimulation",
+            "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/122545008",
+            "gen_id": "@I-STM-41A14"
+        },
+        {
+            "key": "injury",
+            "display": "Injury",
+            "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/417163006",
+            "gen_id": "@I-NJR-A945A"
+        }
+    ],
+    "sample_processings": [
+        {
+            "display": "Cleared fixed tissue ",
+            "gen_id": "@SPO-CFT-380B3"
+        },
+        {
+            "display": "Formaldehyde fixed and parafin embedded (FFPE)",
+            "gen_id": "@SPO-FFA-B2031"
+        },
+        {
+            "display": "Formaldehyde-fixation",
+            "gen_id": "@SPO-FF-DD6F7"
+        },
+        {
+            "display": "High pressure frozen",
+            "gen_id": "@SPO-HPF-38D3B"
+        },
+        {
+            "display": "None (Physiological solution)",
+            "gen_id": "@SPO-NPS-E63FF"
+        },
+        {
+            "display": "OCT embedded and frozen",
+            "gen_id": "@SPO-OEA-B859D"
+        }
+    ],
+    "sample_preparations": [
+        {
+            "key": "culturCell",
+            "display": "Cultured cells",
+            "children": [
+                {
+                    "display": "Adipocyte",
+                    "gen_id": "@CC-DPC-2FFE4"
+                },
+                {
+                    "display": "Dendritic cell",
+                    "gen_id": "@CC-DC-20756"
+                },
+                {
+                    "display": "Endothelial cell",
+                    "gen_id": "@CC-EC-C4598"
+                },
+                {
+                    "display": "Epithelial cell",
+                    "gen_id": "@CC-EC-46C36"
+                },
+                {
+                    "display": "Fibroblast",
+                    "gen_id": "@CC-FBR-38B23"
+                },
+                {
+                    "display": "Innate lymphoid cells (ILC)",
+                    "gen_id": "@CC-ILC-0F1BF"
+                },
+                {
+                    "display": "Leukocytes",
+                    "gen_id": "@CC-LKC-4D47F"
+                },
+                {
+                    "display": "Lymphocytes",
+                    "gen_id": "@CC-LYM-6D229"
+                },
+                {
+                    "display": "Macrophage",
+                    "gen_id": "@CC-MCR-3E75D"
+                },
+                {
+                    "display": "Monocytes",
+                    "gen_id": "@CC-MNC-AE19D"
+                },
+                {
+                    "display": "Natural killer cells",
+                    "gen_id": "@CC-NKC-C0247"
+                },
+                {
+                    "display": "Neuronal cell",
+                    "gen_id": "@CC-NC-CB288"
+                },
+                {
+                    "display": "Neurones",
+                    "gen_id": "@CC-NRN-49818"
+                },
+                {
+                    "display": "Neutrophils",
+                    "gen_id": "@CC-NTR-6C650"
+                },
+                {
+                    "display": "Oocyte",
+                    "gen_id": "@CC-CYT-6B2CA"
+                },
+                {
+                    "display": "Pericytes",
+                    "gen_id": "@CC-PRC-79B5C"
+                },
+                {
+                    "display": "Platelet",
+                    "gen_id": "@CC-PLT-884A5"
+                },
+                {
+                    "display": "Smooth muscle cells",
+                    "gen_id": "@CC-SMC-DBC78"
+                },
+                {
+                    "display": "T cells",
+                    "gen_id": "@CC-TC-89405"
+                },
+                {
+                    "display": "B cell",
+                    "gen_id": "@CC-BC-15284"
+                }
+            ],
+            "gen_id": "@SPE-CC-6CED5"
+        },
+        {
+            "key": "isoCell",
+            "display": "Isolated cells",
+            "children": [
+                {
+                    "display": "Adipocyte",
+                    "gen_id": "@IC-DPC-50CB4"
+                },
+                {
+                    "display": "Dendritic cell",
+                    "gen_id": "@IC-DC-60076"
+                },
+                {
+                    "display": "Endothelial cell",
+                    "gen_id": "@IC-EC-8AE9C"
+                },
+                {
+                    "display": "Epithelial cell",
+                    "gen_id": "@IC-EC-757B8"
+                },
+                {
+                    "display": "Fibroblast",
+                    "gen_id": "@IC-FBR-0B718"
+                },
+                {
+                    "display": "Innate lymphoid cells (ILC)",
+                    "gen_id": "@IC-ILC-57C56"
+                },
+                {
+                    "display": "Leukocytes",
+                    "gen_id": "@IC-LKC-C217E"
+                },
+                {
+                    "display": "Lymphocytes",
+                    "gen_id": "@IC-LYM-F1B93"
+                },
+                {
+                    "display": "Macrophage",
+                    "gen_id": "@IC-MCR-96C33"
+                },
+                {
+                    "display": "Monocytes",
+                    "gen_id": "@IC-MNC-0078A"
+                },
+                {
+                    "display": "Natural killer cells",
+                    "gen_id": "@IC-NKC-CF478"
+                },
+                {
+                    "display": "Neuronal cell",
+                    "gen_id": "@IC-NC-B04C6"
+                },
+                {
+                    "display": "Neurones",
+                    "gen_id": "@IC-NRN-33840"
+                },
+                {
+                    "display": "Neutrophils",
+                    "gen_id": "@IC-NTR-C8B31"
+                },
+                {
+                    "display": "Oocyte",
+                    "gen_id": "@IC-CYT-0E1EF"
+                },
+                {
+                    "display": "Pericytes",
+                    "gen_id": "@IC-PRC-B8B1C"
+                },
+                {
+                    "display": "Platelet",
+                    "gen_id": "@IC-PLT-B6C98"
+                },
+                {
+                    "display": "Smooth muscle cells",
+                    "gen_id": "@IC-SMC-A995A"
+                },
+                {
+                    "display": "T cells",
+                    "gen_id": "@IC-TC-28EB3"
+                },
+                {
+                    "display": "B cell",
+                    "gen_id": "@IC-BC-3BC93"
+                }
+            ],
+            "gen_id": "@SPE-IC-2A7AA"
+        },
+        {
+            "key": "tissChunk",
+            "display": "Tissue chunk",
+            "gen_id": "@SPE-TC-56C88"
+        },
+        {
+            "key": "tissSect",
+            "display": "Tissue section (thin)",
+            "gen_id": "@SPE-TST-985DC"
+        },
+        {
+            "key": "tissSlice",
+            "display": "Tissue slice",
+            "gen_id": "@SPE-TS-981BD"
+        },
+        {
+            "key": "wholeOrg",
+            "display": "Whole organ ",
+            "gen_id": "@SPE-WO-79F3F"
+        }
+    ],
+    "readouts": [
+        {
+            "key": "biomechanics",
+            "display": "Biomechanics",
+            "children": [
+                {
+                    "key": "cellStretch",
+                    "display": "Cell stretching",
+                    "gen_id": "@BMC-CS-A0042"
+                },
+                {
+                    "key": "nanoindentation",
+                    "display": "Nanoindentation",
+                    "gen_id": "@BMC-NNN-FB328"
+                },
+                {
+                    "key": "sacromLength",
+                    "display": "Sarcomer Length",
+                    "gen_id": "@BMC-SL-FC932"
+                },
+                {
+                    "key": "singleCellStretch",
+                    "display": "Single cell stretching",
+                    "gen_id": "@BMC-SCS-92DAD"
+                },
+                {
+                    "key": "tissueStretching",
+                    "display": "Tissue stretching",
+                    "gen_id": "@BMC-TS-DD4F4"
+                },
+                {
+                    "key": "tissueStretchMD",
+                    "display": "Tissue stretching Myodish",
+                    "gen_id": "@BMC-TSM-6C18D"
+                }
+            ],
+            "gen_id": "@R-BMC-6329A"
+        },
+        {
+            "key": "clinicImaging",
+            "display": "Clinical monitoring",
+            "gen_id": "@R-CM-676A4"
+        },
+        {
+            "key": "computModelling",
+            "display": "Computational modelling",
+            "children": [
+                {
+                    "key": "cellTypeAnalysis",
+                    "display": "Cell type analysis",
+                    "gen_id": "@CM-CTA-78172"
+                },
+                {
+                    "key": "dge",
+                    "display": "Differential gene expression (DGE)",
+                    "gen_id": "@CM-DGE-90255"
+                },
+                {
+                    "key": "qtl",
+                    "display": "Quantitative trait locus (QTL)",
+                    "gen_id": "@CM-QTL-B488D"
+                }
+            ],
+            "gen_id": "@R-CM-C152F"
+        },
+        {
+            "key": "electronMicroscopy",
+            "display": "Electron microscopy ",
+            "gen_id": "@R-EM-15715"
+        },
+        {
+            "key": "cytometry",
+            "display": "Flow cytometry / FACS",
+            "gen_id": "@R-FCF-63FEE"
+        },
+        {
+            "key": "lightMicroscopy",
+            "display": "Light microscopy",
+            "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23LightMicroscope",
+            "children": [
+                {
+                    "key": "confocal",
+                    "display": "Confocal",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23ConfocalMicroscope",
+                    "gen_id": "@LM-CNF-E05AF"
+                },
+                {
+                    "key": "multiphoton",
+                    "display": "Multiphoton",
+                    "uri": "http://purl.bioontology.org/ontology/EP?conceptid=http%3A%2F%2Fwww.cvrgrid.org%2Fontologies%2FElectrophysiology%23MultiPhotonMicroscope",
+                    "gen_id": "@LM-MLT-AC026"
+                },
+                {
+                    "key": "slidescanner",
+                    "display": "Slidescanner",
+                    "gen_id": "@LM-SLD-7A1C1"
+                },
+                {
+                    "key": "widefield",
+                    "display": "Widefield",
+                    "gen_id": "@LM-WDF-FFAC8"
+                },
+                {
+                    "key": "fluorescence",
+                    "display": "Fluorescence",
+                    "gen_id": "@LM-FLR-F56D8"
+                }
+            ],
+            "gen_id": "@R-LM-C6BB7"
+        },
+        {
+            "key": "cellMolecBiology",
+            "display": "Cellular/molecular Biology",
+            "children": [
+                {
+                    "key": "aptamer",
+                    "display": "Aptamer",
+                    "gen_id": "@CMB-PTM-8E26B"
+                },
+                {
+                    "key": "proteomics",
+                    "display": "Proteomics",
+                    "uri": "http://purl.obolibrary.org/obo/OMIT_0023015",
+                    "gen_id": "@CMB-PRT-FE500"
+                },
+                {
+                    "key": "cytokineImmuneProfiling",
+                    "display": "Cytokine immune profiling",
+                    "gen_id": "@CMB-CIP-71341"
+                },
+                {
+                    "key": "cellSubsetComposition",
+                    "display": "Cell subset composition",
+                    "gen_id": "@CMB-CSC-B0BE8"
+                },
+                {
+                    "key": "cellFunctionStates",
+                    "display": "Cell function & cell states",
+                    "gen_id": "@CMB-CFC-B147F"
+                },
+                {
+                    "key": "epigenomics",
+                    "display": "Epigenomics",
+                    "uri": "http://purl.obolibrary.org/obo/OMIT_0027036",
+                    "gen_id": "@CMB-PGN-A91EF"
+                },
+                {
+                    "key": "transcriptome",
+                    "display": "Transcriptome",
+                    "uri": "http://purl.obolibrary.org/obo/OMIT_0027609",
+                    "gen_id": "@CMB-TRN-71984"
+                },
+                {
+                    "key": "inflammation",
+                    "display": "Inflammation",
+                    "uri": "http://purl.obolibrary.org/obo/OMIT_0008376",
+                    "gen_id": "@CMB-NFL-59923"
+                },
+                {
+                    "key": "metabolomics",
+                    "display": "Metabolomics",
+                    "uri": "http://purl.obolibrary.org/obo/OMIT_0026286",
+                    "gen_id": "@CMB-MTB-478B0"
+                }
+            ],
+            "gen_id": "@R-CMB-D50CB"
+        },
+        {
+            "key": "opticalMapping",
+            "display": "Optical mapping",
+            "gen_id": "@R-OM-A0D62"
+        },
+        {
+            "key": "optoAcoustics",
+            "display": "Optoacoustics",
+            "gen_id": "@R-PTC-2B419"
+        },
+        {
+            "key": "sequencing",
+            "display": "Sequencing",
+            "children": [
+                {
+                    "key": "atacSeq",
+                    "display": "ATAC sequencing",
+                    "gen_id": "@SQN-AS-26D60"
+                },
+                {
+                    "key": "dnaMethylationWgbs",
+                    "display": "DNA methylation (WGBS)",
+                    "gen_id": "@SQN-DMW-41181"
+                },
+                {
+                    "key": "mrnaSeq",
+                    "display": "RNA sequencing",
+                    "gen_id": "@SQN-RS-59D90"
+                },
+                {
+                    "key": "totalrnaSeq",
+                    "display": "totalRNA sequencing",
+                    "gen_id": "@SQN-TS-38135"
+                },
+                {
+                    "key": "16SrRNASeq",
+                    "display": "16S rRNA-seq",
+                    "gen_id": "@SQN-1RS-0072D"
+                },
+                {
+                    "key": "Single Cell chromatin accessibility",
+                    "display": "Single Cell chromatin accessibility",
+                    "gen_id": "@SQN-SCC-9B9B9"
+                },
+                {
+                    "key": "scRNASeq",
+                    "display": "Single cell RNA sequencing  ",
+                    "gen_id": "@SQN-SCR-553DF"
+                },
+                {
+                    "key": "exome",
+                    "display": "Whole exome sequencing",
+                    "gen_id": "@SQN-WES-9B0B2"
+                },
+                {
+                    "key": "genome",
+                    "display": "Whole genome sequencing",
+                    "gen_id": "@SQN-WGS-75967"
+                },
+                {
+                    "key": "spatial",
+                    "display": "Spatial Transcriptomics",
+                    "gen_id": "@SQN-ST-389E2"
+                },
+                {
+                    "key": "CITEseq",
+                    "display": "CITE sequencing",
+                    "gen_id": "@SQN-CS-09AB3"
+                }
+            ],
+            "gen_id": "@R-SQN-8DC08"
+        },
+        {
+            "key": "electrophysiology",
+            "display": "Electrophysiology",
+            "gen_id": "@R-LCT-3BD79"
+        }
+    ]
+}

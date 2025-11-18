@@ -1,0 +1,173 @@
+name: "pilot-review-simplified"
+
+log_level: "DEBUG"
+
+experiment:
+  type: "experiments.async_experiment.AsyncExperiment"
+  max_requests_per_second: 4
+  num_trials_per_publication: 1
+
+dataset:
+  type: "dataset.Dataset"
+  dataset_folder: "datasets/pilot"
+
+  metadata_schema:
+    type: "schema.Schema"
+    print_ids: False
+
+    load_collection_from_file: "datasets/pilot/schema_entities.json"
+
+    entity_collection:
+      - name: "organisms"
+        reference: "excel2schema/organisms.json#/organismList/anyOf"
+        id_prefix: "O"
+        depth: 0
+      - name: "tissue_sources"
+        reference: "excel2schema/otherFields.json#/common/tissueSource/tissueSourceList"
+        id_prefix: "TS"
+      - name: "cell_lines"
+        reference: "excel2schema/organisms.json#/cellLine/cellLineList"
+        id_prefix: "CL"
+      - name: "time_lines"
+        reference: "excel2schema/organisms.json#/timeLine/timeLineList"
+        id_prefix: "TL"
+      - name: "mouse_lines"
+        reference: "excel2schema/organisms.json#/mouse/line/mouseLineList"
+        id_prefix: "ML"
+      - name: "interventions"
+        reference: "excel2schema/otherFields.json#/interventions/interventionsList/anyOf"
+        id_prefix: "I"
+      - name: "sample_processings"
+        reference: "excel2schema/otherFields.json#/samples/processing/sampleProcessingList"
+        id_prefix: "SPO"
+      - name: "sample_preparations"
+        reference: "excel2schema/otherFields.json#/samples/preparation/samplePreparationList"
+        id_prefix: "SPE"
+      - name: "readouts"
+        reference: "excel2schema/otherFields.json#/readout/readOutList/anyOf"
+        id_prefix: "R"
+publication:
+  type: "publication.Publication"
+
+  # We're attaching the markdown text to the first message
+  require_markdown: True
+  load_base64_pdf: False
+
+conversation:
+  type: "conversation.OpenRouterConversation"
+  # https://openrouter.ai/google/gemini-2.5-pro
+  model: "google/gemini-2.5-pro"
+
+  # dry_run: True
+
+  turns:
+    - name: "Step 1"
+      request_handlers:
+        # The structured output handler forces the LLM to respond with valid JSON and specified fields
+        # The schema is loaded from the referenced file: common/schemas.yml
+        - &1_publication_handler
+          type: "handlers.StructuredOutputHandler"
+          key_for_context_storage: "found_datasets"
+          json_schema: !include common/schemas.yml:1_publication_response_schema
+        # The message we send has placeholders that will be filled from the context
+        # We also provide additional context entries that can be used in the message
+        - type: "handlers.AddUserMessageHandler"
+          message: >-
+            {step_title}
+
+
+            {step_instructions}
+
+
+            # Publication
+
+            {publication}
+          additional_context:
+            step_title: !include common/messages.yml:step_1_title
+            step_instructions: !include common/messages.yml:step_1
+      # We need to reference the request handler to reuse its configuration for JSON validation
+      response_handlers:
+        - *1_publication_handler
+        - type: "handlers.RetrieveWebsiteHandler"
+          context_url_paths: ["found_datasets.dataset_list.dataset_url"]
+          key_for_context_storage: "retrieved_websites"
+          format_template: |
+            ### Source: {url}
+
+            ```html
+            {content}
+            ```
+
+            ---
+          timeout: 30.0
+          use_playwright: True
+          max_urls: 10
+          max_content_length: 25000
+          max_requests_per_second: 1.0
+          max_concurrent_requests: 3
+          max_retries: 2
+
+    - name: "Step 2"
+      request_handlers:
+        - type: "handlers.AddUserMessageHandler"
+          message: |-
+            {step_title}
+
+            {step_instructions}
+
+            ## Identifiers
+
+            ### Organism Identifiers
+
+            {schema[organisms]}
+
+            ### Tissue Source Identifiers
+
+            {schema[tissue_sources]}
+
+            ### Cell Line Identifiers
+
+            {schema[cell_lines]}
+
+            ### Time Line Identifiers
+
+            {schema[time_lines]}
+
+            ### Mouse Line Identifiers
+
+            {schema[mouse_lines]}
+
+            ### Intervention Identifiers
+
+            {schema[interventions]}
+
+            ### Sample Processing Identifiers
+
+            {schema[sample_processings]}
+
+            ### Sample Preparation Identifiers
+
+            {schema[sample_preparations]}
+
+            ### Readout Identifiers
+
+            {schema[readouts]}
+
+            ---
+
+            ## Website Content
+
+            {retrieved_websites}
+          additional_context:
+            step_title: !include common/messages.yml:step_2_title
+            step_instructions: !include common/messages.yml:step_2_simple
+    - name: "Step 3"
+      request_handlers:
+        - type: "handlers.AddUserMessageHandler"
+          message: |-
+            {step_title}
+
+            {step_instructions}
+          additional_context:
+            step_title: !include common/messages.yml:step_3_title
+            step_instructions: !include common/messages.yml:step_3_simple

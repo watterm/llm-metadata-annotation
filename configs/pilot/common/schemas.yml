@@ -1,0 +1,41 @@
+1_publication_response_schema:
+  __ignore_types__: true
+  name: "DatasetList"
+  strict: True
+  schema:
+    type: "object"
+    title: "Dataset list container"
+    additionalProperties: False
+    required: &container_required
+      - "dataset_list"
+      - "comment"
+    properties:
+      dataset_list: &base_dataset_list
+        type: "array"
+        title: "Dataset list"
+        description: "A list of datasets identified in the publication"
+        items: &base_dataset
+          type: "object"
+          title: "Dataset"
+          description: "A dataset identified in the publication"
+          additionalProperties: False
+          required: &base_dataset_required
+            - "repository_name"
+            - "dataset_identifier"
+            - "dataset_url"
+          properties: &base_dataset_properties
+            repository_name:
+              type: string
+              title: "Repository name"
+              description: "The name of the repository where the dataset is published"
+            dataset_identifier:
+              type: string
+              title: "Dataset identifier"
+              description: "The unique identifier of the dataset in the repository"
+            dataset_url:
+              type: string
+              title: "Dataset URL"
+              description: "The URL to access the dataset in the repository"
+      comment: &comment
+        type: "string"
+        description: "You can comment here about the reasoning for your list."

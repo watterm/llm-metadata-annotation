@@ -1,0 +1,238 @@
+conversation:
+  model: google/gemini-2.5-pro
+  turns:
+  - name: Step 1
+    request_handlers:
+    - &id001
+      json_schema:
+        __ignore_types__: true
+        name: DatasetList
+        schema:
+          additionalProperties: false
+          properties:
+            comment:
+              description: You can comment here about the reasoning for your list.
+              type: string
+            dataset_list:
+              description: A list of datasets identified in the publication
+              items:
+                additionalProperties: false
+                description: A dataset identified in the publication
+                properties:
+                  dataset_identifier:
+                    description: The unique identifier of the dataset in the repository
+                    title: Dataset identifier
+                    type: string
+                  dataset_url:
+                    description: The URL to access the dataset in the repository
+                    title: Dataset URL
+                    type: string
+                  repository_name:
+                    description: The name of the repository where the dataset is published
+                    title: Repository name
+                    type: string
+                required:
+                - repository_name
+                - dataset_identifier
+                - dataset_url
+                title: Dataset
+                type: object
+              title: Dataset list
+              type: array
+          required:
+          - dataset_list
+          - comment
+          title: Dataset list container
+          type: object
+        strict: true
+      key_for_context_storage: found_datasets
+      type: handlers.StructuredOutputHandler
+    - additional_context:
+        step_instructions: Analyze the uploaded manuscript to identify the datasets
+          that were used in the article and published in public repositories. Try
+          to identify the URLs to the datasets in the public repositories. Do not
+          provide additional information, but only list these datasets and the accompanying
+          URLs.
+        step_title: '# Step 1:  Identification of datasets in public repositories'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        # Publication
+
+        {publication}'
+      type: handlers.AddUserMessageHandler
+    response_handlers:
+    - *id001
+    - context_url_paths:
+      - found_datasets.dataset_list.dataset_url
+      format_template: '### Source: {url}
+
+
+        ```html
+
+        {content}
+
+        ```
+
+
+        ---
+
+        '
+      key_for_context_storage: retrieved_websites
+      max_concurrent_requests: 3
+      max_content_length: 25000
+      max_requests_per_second: 1.0
+      max_retries: 2
+      max_urls: 10
+      timeout: 30.0
+      type: handlers.RetrieveWebsiteHandler
+      use_playwright: true
+  - name: Step 2
+    request_handlers:
+    - additional_context:
+        step_instructions: For each dataset identified in Step 1, use the URL and
+          look at the website of the dataset. Use the information provided on the
+          respective website to identify biomedical entities of the dataset. For structuring
+          such entities, use the list of entities below. Maintain the formatting and
+          organization provided below, and provide a comprehensive list for each subheading.
+          Do not provide additional information or explanation, but only list the
+          results according to the formatting and organization provided below.
+        step_title: '# Step 2: Identification of specific aspects within datasets'
+      message: '{step_title}
+
+
+        {step_instructions}
+
+
+        ## Identifiers
+
+
+        ### Organism Identifiers
+
+
+        {schema[organisms]}
+
+
+        ### Tissue Source Identifiers
+
+
+        {schema[tissue_sources]}
+
+
+        ### Cell Line Identifiers
+
+
+        {schema[cell_lines]}
+
+
+        ### Time Line Identifiers
+
+
+        {schema[time_lines]}
+
+
+        ### Mouse Line Identifiers
+
+
+        {schema[mouse_lines]}
+
+
+        ### Intervention Identifiers
+
+
+        {schema[interventions]}
+
+
+        ### Sample Processing Identifiers
+
+
+        {schema[sample_processings]}
+
+
+        ### Sample Preparation Identifiers
+
+
+        {schema[sample_preparations]}
+
+
+        ### Readout Identifiers
+
+
+        {schema[readouts]}
+
+
+        ---
+
+
+        ## Website Content
+
+
+        {retrieved_websites}'
+      type: handlers.AddUserMessageHandler
+  - name: Step 3
+    request_handlers:
+    - additional_context:
+        step_instructions: Use the results of Steps 2. In addition, reanalyze the
+          manuscript and try to add missing information for each dataset using the
+          list of entities from Step 2. Complete this step for every dataset entirely
+          before proceeding to the next step. Do not provide additional information,
+          but only list the results according to the formatting and organization provided
+          before.
+        step_title: '# Step 3: Use information from the manuscript to enrich the information
+          regarding the datasets'
+      message: '{step_title}
+
+
+        {step_instructions}'
+      type: handlers.AddUserMessageHandler
+  type: conversation.OpenRouterConversation
+dataset:
+  dataset_folder: datasets/pilot
+  metadata_schema:
+    entity_collection:
+    - depth: 0
+      id_prefix: O
+      name: organisms
+      reference: excel2schema/organisms.json#/organismList/anyOf
+    - id_prefix: TS
+      name: tissue_sources
+      reference: excel2schema/otherFields.json#/common/tissueSource/tissueSourceList
+    - id_prefix: CL
+      name: cell_lines
+      reference: excel2schema/organisms.json#/cellLine/cellLineList
+    - id_prefix: TL
+      name: time_lines
+      reference: excel2schema/organisms.json#/timeLine/timeLineList
+    - id_prefix: ML
+      name: mouse_lines
+      reference: excel2schema/organisms.json#/mouse/line/mouseLineList
+    - id_prefix: I
+      name: interventions
+      reference: excel2schema/otherFields.json#/interventions/interventionsList/anyOf
+    - id_prefix: SPO
+      name: sample_processings
+      reference: excel2schema/otherFields.json#/samples/processing/sampleProcessingList
+    - id_prefix: SPE
+      name: sample_preparations
+      reference: excel2schema/otherFields.json#/samples/preparation/samplePreparationList
+    - id_prefix: R
+      name: readouts
+      reference: excel2schema/otherFields.json#/readout/readOutList/anyOf
+    print_ids: false
+    save_collection_to_file: datasets/pilot/schema_entities.json
+    schema_folder: /home/watter/dev/schemas/359-publication
+    type: schema.Schema
+  type: dataset.Dataset
+experiment:
+  max_requests_per_second: 4
+  num_trials_per_publication: 1
+  type: experiments.async_experiment.AsyncExperiment
+log_level: DEBUG
+name: pilot-review-simplified
+publication:
+  load_base64_pdf: false
+  require_markdown: true
+  type: publication.Publication

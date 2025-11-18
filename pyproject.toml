@@ -1,0 +1,152 @@
+[project]
+name = "llm-annotation-prediction"
+version = "0.1.0"
+description = "Experimental framework to annotate publications with LLMs"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Manuel Watter", email = "manuel.watter@uniklinik-freiburg.de" }
+]
+keywords = ["llm", "metadata", "annotation", "scientific-publications", "natural-language-processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+    "Typing :: Typed"
+]
+
+requires-python = "~=3.12.0"
+dependencies = [
+    "httpx>=0.28.1",
+    "json-repair>=0.41.1",
+    "jsonschema>=4.23.0",
+    "lxml-html-clean>=0.4.3",
+    "playwright>=1.55.0",
+    "pydantic>=2.10.6",
+    "pydantic-settings>=2.7.1",
+    "pyyaml>=6.0.2",
+    "rich>=13.9.4",
+    "transliterate>=1.10.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/watterm/llm-metadata-annotation"
+Repository = "https://github.com/watterm/llm-metadata-annotation"
+Documentation = "https://github.com/watterm/llm-metadata-annotation#readme"
+"Bug Tracker" = "https://github.com/watterm/llm-metadata-annotation/issues"
+
+[project.scripts]
+# Runs an experiment with a configuration file
+start = "llm_annotation_prediction.main:main"
+experiment = "llm_annotation_prediction.main:main"
+
+# Extra tool to create a dataset from a fredato repository
+dataset = "llm_annotation_prediction.tools.dataset:main"
+
+# Helper tool to show results from an experiment
+show = "llm_annotation_prediction.tools.show:main"
+
+# Helper to render the output of all experiments to PDFs
+# Requires Chrome to be installed for HTML to PDF conversion
+render = "llm_annotation_prediction.tools.render:main"
+
+# Validator: aggregate LLM outputs into per-paper CSV sheets and a merged CSV
+json2csv = "llm_annotation_prediction.tools.validator.json2csv:main"
+
+# Validator: attach researcher validations back onto the merged CSV
+backmap = "llm_annotation_prediction.tools.validator.backmap2csv_main:main"
+
+[project.optional-dependencies]
+docling = [
+    "torch>=2.2.2",
+    "torchvision>=0",
+    "docling>=2.26",
+    "easyocr>=1.7.2",
+]
+
+redis = [
+    "redis>=5.0.0"
+]
+
+[dependency-groups]
+dev = [
+    "fakeredis[json,lua]>=2.31.3",
+    "pyright>=1.1.405",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "ruff>=0.9.3",
+    "types-jsonschema>=4.23.0.20241208",
+    "types-lxml>=2025.8.25",
+    "types-pyyaml>=6.0.12.20250402",
+]
+
+analysis = [
+    "matplotlib>=3.10.3",
+    "pandas>=2.2.3",
+    "pandas-stubs>=2.2.3.250527",
+    "seaborn>=0.13.2",
+    "types-seaborn>=0.13.2.20250516",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+torchvision = [
+    { index = "pytorch-cpu" },
+]
+
+[tool.ruff]
+line-length = 88 # Lines longer than this will be formatted
+target-version = "py312"  # Enable modern syntax (PEP 604, etc.)
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "UP", # pyupgrade
+]
+fixable = ["ALL"]  # Enable autofix for long lines when possible
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+combine-as-imports = true
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 100 # E501 reports lines that exceed the length of 100.
+
+# 4. Ignore `E402` (import violations) in all `__init__.py` files
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+
+[tool.pyright]
+strict = ["src"]
+reportUnknownMemberType = "warning"
+reportUnknownVariableType = "warning"
+reportUnknownArgumentType = "warning"
+reportMissingTypeStubs = "warning"
+reportMissingImports = "warning"
+reportMissingModuleSource = "warning"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
